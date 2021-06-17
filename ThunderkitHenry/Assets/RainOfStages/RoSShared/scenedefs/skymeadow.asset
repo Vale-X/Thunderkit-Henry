@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 825212068, guid: d2e201569828c809f3d2502f0471d348, type: 3}
+  m_Name: skymeadow
+  m_EditorClassIdentifier: 
+  nameToken: 
+  subtitleToken: 
+  loreToken: 
+  stageOrder: 0
+  previewTexture: {fileID: 0}
+  portalMaterial: {fileID: 0}
+  portalSelectionMessageString: 
+  dioramaPrefab: {fileID: 0}
+  sceneType: 1
+  mainTrack: {fileID: 11400000, guid: 7dfce6639f045bd4dace11e80889f5ee, type: 2}
+  bossTrack: {fileID: 11400000, guid: 48aa7524425808f48ac9c45d263b035c, type: 2}
+  isOfflineScene: 0
+  suppressPlayerEntry: 0
+  suppressNpcEntry: 0
+  destinations:
+  - {fileID: 11400000, guid: 98104252e24ef424aab41af74c18c367, type: 2}
+  - {fileID: 11400000, guid: 428ef6c7b89321e4bb513d1c95f2cfe1, type: 2}
+  preferredPortalPrefab: {fileID: 0}
+  sceneNameOverrides: []

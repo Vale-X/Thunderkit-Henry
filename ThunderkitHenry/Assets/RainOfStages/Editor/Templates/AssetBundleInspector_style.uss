@@ -1,0 +1,25 @@
+.horizontal {
+	flex-direction: row;
+}
+
+.grow {
+	flex-grow: 1;
+}
+
+.verticalcenter {
+	align-self: center;
+}
+
+.no-margin {
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+Button {
+	margin-top: 4px;
+	margin-left: 4px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+}

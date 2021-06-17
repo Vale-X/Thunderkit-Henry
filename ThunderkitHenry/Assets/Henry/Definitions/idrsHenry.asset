@@ -1,0 +1,1276 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: idrsHenry
+  m_EditorClassIdentifier: HenryDefinition:ThunderHenryMod.Scriptables:CodeBasedIDRS
+  namedItemRuleGroups: []
+  namedEquipmentRuleGroups: []
+  keyAssetRuleGroups:
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: 0.0009, y: 0.2767, z: -0.1}
+        localAngles: {x: 21.4993, y: 358.6616, z: 358.3334}
+        localScale: {x: 0.1, y: 0.1, z: 0.1}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: 0.1009, y: 0.4728, z: -0.1278}
+        localAngles: {x: 22.6043, y: 114.6042, z: 299.1935}
+        localScale: {x: 0.15, y: 0.15, z: 0.15}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: 0.0782, y: 0.4078, z: 0}
+        localAngles: {x: 0, y: 0, z: 313.6211}
+        localScale: {x: 0.3, y: 0.3, z: 0.3}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: 0, y: 0.1687, z: 0.1558}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.3215, y: 0.3034, z: 0.3034}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: -0.0534, y: 0.0352, z: 0}
+        localAngles: {x: 0, y: 0, z: 83.2547}
+        localScale: {x: 0.1, y: 0.1, z: 0.1}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Gun
+        localPos: {x: 0, y: 0.2247, z: -0.1174}
+        localAngles: {x: 6.223, y: 180, z: 0}
+        localScale: {x: 0.1, y: 0.1, z: 0.1}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: -0.3075, y: 0.5204, z: -0.049}
+        localAngles: {x: 0, y: 0, z: 51.9225}
+        localScale: {x: 0.1, y: 0.1, z: 0.1}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: -0.0553, y: 0.2856, z: 0.0945}
+        localAngles: {x: 334.8839, y: 31.5284, z: 34.6784}
+        localScale: {x: 1.2428, y: 1.2428, z: 1.2299}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: CalfL
+        localPos: {x: -0.0071, y: 0.3039, z: -0.051}
+        localAngles: {x: 76.5928, y: 0, z: 0}
+        localScale: {x: 0.0846, y: 0.0846, z: 0.0758}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: -0.0011, y: 0.1031, z: -0.0901}
+        localAngles: {x: 0, y: 180, z: 89.3997}
+        localScale: {x: 0.4749, y: 0.4749, z: 0.4749}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: 0, y: 0.1748, z: 0.0937}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.6313, y: 0.6313, z: 0.6313}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: UpperArmR
+        localPos: {x: -0.0139, y: 0.1068, z: 0}
+        localAngles: {x: 0, y: 0, z: 89.4525}
+        localScale: {x: 0.0501, y: 0.0501, z: 0.0501}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: 0, y: 0.2783, z: -0.002}
+        localAngles: {x: 358.4554, y: 0, z: 0}
+        localScale: {x: 0.5666, y: 0.5666, z: 0.5666}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: -0.1247, y: 0.416, z: 0.1225}
+        localAngles: {x: 11.5211, y: 128.5354, z: 165.922}
+        localScale: {x: 0.2615, y: 0.2615, z: 0.2615}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Pelvis
+        localPos: {x: 0.0168, y: 0.0817, z: -0.0955}
+        localAngles: {x: 0, y: 0, z: 90}
+        localScale: {x: 0.3162, y: 0.3162, z: 0.3162}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: 0.0278, y: 0.2322, z: -0.0877}
+        localAngles: {x: 323.9545, y: 90, z: 270}
+        localScale: {x: 0.1884, y: 0.1884, z: 0.1884}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: UpperArmL
+        localPos: {x: 0, y: 0.3267, z: 0.046}
+        localAngles: {x: 90, y: 0, z: 0}
+        localScale: {x: 0.0289, y: 0.0289, z: 0.0289}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Gun
+        localPos: {x: 0.0004, y: 0.1094, z: -0.1329}
+        localAngles: {x: 85.6192, y: 0.0001, z: 179.4897}
+        localScale: {x: 0.2749, y: 0.2749, z: 0.2749}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: LowerArmL
+        localPos: {x: 0, y: 0.1396, z: 0}
+        localAngles: {x: 86.4709, y: 180, z: 180}
+        localScale: {x: 0.2849, y: 0.2849, z: 0.2849}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: 0, y: 0.1791, z: 0}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 1.1754, y: 1.1754, z: 1.1754}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: UpperArmL
+        localPos: {x: 0.0435, y: 0.0905, z: 0.0118}
+        localAngles: {x: 82.0839, y: 160.9228, z: 100.7722}
+        localScale: {x: 0.7094, y: 0.7094, z: 0.7094}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: LowerArmR
+        localPos: {x: -0.005, y: 0.285, z: 0.0074}
+        localAngles: {x: 358.4802, y: 192.347, z: 88.4811}
+        localScale: {x: 0.3351, y: 0.3351, z: 0.3351}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Gun
+        localPos: {x: 0.0334, y: 0.2587, z: -0.1223}
+        localAngles: {x: 274.3965, y: 90, z: 270}
+        localScale: {x: 0.3627, y: 0.3627, z: 0.3627}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Gun
+        localPos: {x: 0.0352, y: 0.282, z: -0.1223}
+        localAngles: {x: 274.3965, y: 90, z: 270}
+        localScale: {x: 0.3627, y: 0.3627, z: 0.3627}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: UpperArmL
+        localPos: {x: 0, y: 0, z: -0.002}
+        localAngles: {x: -90, y: 0, z: 0}
+        localScale: {x: 0.01, y: 0.01, z: 0.01}
+        limbMask: 0
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: UpperArmR
+        localPos: {x: 0, y: 0, z: -0.002}
+        localAngles: {x: -90, y: 0, z: 0}
+        localScale: {x: 0.01, y: 0.01, z: 0.01}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: 0, y: 0.0529, z: -0.1242}
+        localAngles: {x: 24.419, y: 0, z: 0}
+        localScale: {x: 0.5253, y: 0.5253, z: 0.5253}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: 0.0513, y: 0.0652, z: -0.0792}
+        localAngles: {x: 64.189, y: 90, z: 90}
+        localScale: {x: 0.1722, y: 0.1722, z: 0.1722}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Sword
+        localPos: {x: -0.002, y: 0.1828, z: 0}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.1236, y: 0.1236, z: 0.1236}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: ThighL
+        localPos: {x: 0.0218, y: 0.4276, z: 0}
+        localAngles: {x: 90, y: 180, z: 0}
+        localScale: {x: 0.1971, y: 0.1971, z: 0.1971}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: 0, y: 0.2985, z: -0.0663}
+        localAngles: {x: 90, y: 180, z: 0}
+        localScale: {x: 0.3362, y: 0.3362, z: 0.3362}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: LowerArmL
+        localPos: {x: 0.001, y: 0.2755, z: 0.0454}
+        localAngles: {x: 270, y: 91.2661, z: 0}
+        localScale: {x: 0.0285, y: 0.0285, z: 0.0285}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: 0, y: 0.1219, z: -0.0764}
+        localAngles: {x: 90, y: 90, z: 0}
+        localScale: {x: 0.1936, y: 0.1936, z: 0.1936}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: CalfL
+        localPos: {x: -0.0038, y: 0.3729, z: -0.0046}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.1485, y: 0.1485, z: 0.1485}
+        limbMask: 0
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: CalfR
+        localPos: {x: -0.0038, y: 0.3729, z: -0.0046}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.1485, y: 0.1485, z: 0.1485}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: ThighR
+        localPos: {x: -0.0561, y: 0.1607, z: 0}
+        localAngles: {x: 90, y: 90, z: 0}
+        localScale: {x: 0.1843, y: 0.1843, z: 0.1843}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: 0, y: 0.0791, z: 0.0726}
+        localAngles: {x: 0, y: 270, z: 292.8411}
+        localScale: {x: 0.0773, y: 0.0773, z: 0.0773}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: 0.0949, y: 0.0945, z: 0.0654}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.5349, y: 0.5349, z: 0.5349}
+        limbMask: 0
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: -0.0949, y: 0.0945, z: 0.0105}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: -0.5349, y: 0.5349, z: 0.5349}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Pelvis
+        localPos: {x: -0.0703, y: 0.0238, z: -0.0366}
+        localAngles: {x: 0, y: 45, z: 0}
+        localScale: {x: 0.5253, y: 0.5253, z: 0.5253}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: 0.0039, y: -0.0125, z: -0.0546}
+        localAngles: {x: 290, y: 180, z: 0}
+        localScale: {x: 0.4907, y: 0.4907, z: 0.4907}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: 0.0035, y: 0, z: 0}
+        localAngles: {x: 270, y: 0, z: 0}
+        localScale: {x: 0.1684, y: 0.242, z: 0.242}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: -0.0922, y: 0.4106, z: -0.0015}
+        localAngles: {x: 290.3197, y: 89, z: 0}
+        localScale: {x: 0.214, y: 0.214, z: 0.214}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: ThighL
+        localPos: {x: 0.0494, y: 0.0954, z: 0.0015}
+        localAngles: {x: 90, y: 0, z: 0}
+        localScale: {x: 0.3165, y: 0.3165, z: 0.3165}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: ThighR
+        localPos: {x: 0.001, y: 0.3609, z: 0.0523}
+        localAngles: {x: 90, y: 0, z: 0}
+        localScale: {x: 0.5672, y: 0.5672, z: 0.5672}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Muzzle
+        localPos: {x: 0.0086, y: 0.0069, z: 0.0565}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.1194, y: 0.1194, z: 0.1194}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: -0.0015, y: 0.2234, z: -0.0655}
+        localAngles: {x: 277.637, y: 358.2474, z: 1.4903}
+        localScale: {x: 0.3385, y: 0.3385, z: 0.3385}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: LowerArmL
+        localPos: {x: -0.0186, y: 0.0405, z: -0.0049}
+        localAngles: {x: 78.8707, y: 36.6722, z: 105.8275}
+        localScale: {x: 0.0848, y: 0.0848, z: 0.0848}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: 0.0852, y: 0.0577, z: 0}
+        localAngles: {x: 359.9584, y: 0.1329, z: 39.8304}
+        localScale: {x: 0.0553, y: 0.0553, z: 0.0553}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Pelvis
+        localPos: {x: -0.075, y: 0.095, z: 0}
+        localAngles: {x: 270, y: 251.0168, z: 0}
+        localScale: {x: 0.1655, y: 0.1655, z: 0.1655}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Gun
+        localPos: {x: -0.0018, y: 0.0002, z: 0.097}
+        localAngles: {x: 84.2709, y: 200.5981, z: 25.0139}
+        localScale: {x: 0.0441, y: 0.0441, z: 0.0441}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Pelvis
+        localPos: {x: 0.0594, y: 0.0811, z: 0.0487}
+        localAngles: {x: 8.4958, y: 176.5473, z: 162.7601}
+        localScale: {x: 0.0736, y: 0.0736, z: 0.0736}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Pelvis
+        localPos: {x: 0.0589, y: 0.1056, z: -0.0174}
+        localAngles: {x: 0.2454, y: 195.0205, z: 89.0854}
+        localScale: {x: 0.4092, y: 0.4092, z: 0.4092}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Pelvis
+        localPos: {x: -0.0371, y: 0.0675, z: -0.052}
+        localAngles: {x: 90, y: 41.5689, z: 0}
+        localScale: {x: 0.2279, y: 0.2279, z: 0.2279}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Pelvis
+        localPos: {x: -0.0074, y: 0.076, z: -0.0864}
+        localAngles: {x: 0, y: 23.7651, z: 0}
+        localScale: {x: 0.0687, y: 0.0687, z: 0.0687}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: 0, y: 0.3001, z: 0.0555}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.2645, y: 0.2645, z: 0.2645}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: 0, y: 0.1882, z: 0}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.2638, y: 0.2638, z: 0.2638}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: UpperArmR
+        localPos: {x: -0.0393, y: 0.1484, z: 0}
+        localAngles: {x: 270, y: 90, z: 0}
+        localScale: {x: 0.1511, y: 0.1511, z: 0.1511}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: -0.0722, y: 0.0921, z: 0}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.4208, y: 0.4208, z: 0.4208}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: 0.1003, y: 0.269, z: 0}
+        localAngles: {x: 0, y: 90, z: 0}
+        localScale: {x: 0.3395, y: 0.3395, z: 0.3395}
+        limbMask: 0
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: -0.1003, y: 0.269, z: 0}
+        localAngles: {x: 0, y: 90, z: 0}
+        localScale: {x: 0.3395, y: 0.3395, z: -0.3395}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: -0.0571, y: 0.3027, z: 0.0755}
+        localAngles: {x: 335.0033, y: 343.2951, z: 0}
+        localScale: {x: 0.1191, y: 0.1191, z: 0.1191}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: UpperArmR
+        localPos: {x: -0.0283, y: 0.0452, z: -0.0271}
+        localAngles: {x: 0, y: 270, z: 0}
+        localScale: {x: 0.1385, y: 0.1385, z: 0.1385}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Gun
+        localPos: {x: -0.0097, y: -0.0058, z: -0.0847}
+        localAngles: {x: 0, y: 0, z: 84.3456}
+        localScale: {x: 0.1841, y: 0.1841, z: 0.1841}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: UpperArmL
+        localPos: {x: 0.0399, y: 0.1684, z: 0.0121}
+        localAngles: {x: 0, y: 73.1449, z: 0}
+        localScale: {x: 0.2731, y: 0.2731, z: 0.0273}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: 0, y: 0.2387, z: -0.199}
+        localAngles: {x: 0, y: 270, z: 0}
+        localScale: {x: 0.2833, y: 0.2833, z: 0.2833}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: UpperArmL
+        localPos: {x: 0, y: 0, z: 0}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.4814, y: 0.4814, z: 0.4814}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: 0, y: 0.1738, z: 0.1375}
+        localAngles: {x: 270, y: 0, z: 0}
+        localScale: {x: 0.2866, y: 0.2866, z: 0.2866}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: -0.0484, y: -0.0116, z: 0.0283}
+        localAngles: {x: 316.2306, y: 45.1087, z: 303.6165}
+        localScale: {x: 0.1035, y: 0.1035, z: 0.1035}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: LowerArmL
+        localPos: {x: 0, y: 0.3249, z: 0.0381}
+        localAngles: {x: 0, y: 0, z: 90}
+        localScale: {x: 1, y: 1, z: 1}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: UpperArmR
+        localPos: {x: -0.0663, y: 0.2266, z: 0}
+        localAngles: {x: 4.9717, y: 270, z: 54.4915}
+        localScale: {x: 0.0429, y: 0.0429, z: 0.0429}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: 0, y: 0.3014, z: 0.0662}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.2034, y: 0.2034, z: 0.2034}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: LowerArmR
+        localPos: {x: 0, y: 0.4099, z: 0.0252}
+        localAngles: {x: 277.5254, y: 0, z: 0}
+        localScale: {x: -0.0375, y: -0.0341, z: -0.0464}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Pelvis
+        localPos: {x: 0.0595, y: 0.0696, z: -0.0543}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.0283, y: 0.0283, z: 0.0283}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: -0.1702, y: 0.1366, z: -0.026}
+        localAngles: {x: 344.0657, y: 196.8238, z: 275.5892}
+        localScale: {x: 0.0275, y: 0.0275, z: 0.0275}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Pelvis
+        localPos: {x: 0.1001, y: -0.0132, z: 0}
+        localAngles: {x: 0, y: 0, z: 20.1526}
+        localScale: {x: 0.2845, y: 0.2845, z: 0.2845}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: 0, y: 0.3997, z: 0}
+        localAngles: {x: 270, y: 0, z: 0}
+        localScale: {x: 0.2789, y: 0.2789, z: 0.2789}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: CalfL
+        localPos: {x: -0.0063, y: 0.2032, z: -0.0507}
+        localAngles: {x: 90, y: 0, z: 0}
+        localScale: {x: 0.1454, y: 0.2399, z: 0.16}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: 0, y: 0.2649, z: 0.0689}
+        localAngles: {x: 304.1204, y: 90, z: 270}
+        localScale: {x: 0.1057, y: 0.1057, z: 0.1057}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: 0.0008, y: 0.3747, z: -0.0423}
+        localAngles: {x: 297.6866, y: 1.3864, z: 358.5596}
+        localScale: {x: 0.3229, y: 0.3229, z: 0.3229}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: 0.0868, y: 0.3114, z: 0}
+        localAngles: {x: 348.1819, y: 268.0985, z: 0.3896}
+        localScale: {x: 0.3521, y: 0.3521, z: 0.3521}
+        limbMask: 0
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: -0.0868, y: 0.3114, z: 0}
+        localAngles: {x: 11.8181, y: 268.0985, z: 359.6104}
+        localScale: {x: 0.3521, y: 0.3521, z: -0.3521}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: 0.0417, y: 0.2791, z: -0.0493}
+        localAngles: {x: 284.1172, y: 243.7966, z: 260.89}
+        localScale: {x: 0.6701, y: 0.6701, z: 0.6701}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: 0, y: 0.2556, z: 0}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.4851, y: 0.1617, z: 0.1617}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Pelvis
+        localPos: {x: -0.1509, y: 0.0659, z: 0}
+        localAngles: {x: 0, y: 0, z: 69.9659}
+        localScale: {x: 0.2732, y: 0.2732, z: 0.2732}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: 0, y: 0.3429, z: -0.0671}
+        localAngles: {x: 294.98, y: 180, z: 180}
+        localScale: {x: 0.1245, y: 0.1155, z: 0.1155}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: 0, y: 0.0687, z: 0.0998}
+        localAngles: {x: 344.9017, y: 0, z: 0}
+        localScale: {x: 7.5452, y: 7.5452, z: 7.5452}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: LowerArmR
+        localPos: {x: 0, y: 0, z: 0}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.1, y: 0.1, z: 0.1}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: LowerArmL
+        localPos: {x: 0, y: 0, z: 0}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.1, y: 0.1, z: 0.1}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: ThighR
+        localPos: {x: 0.0155, y: 0.2145, z: 0.0615}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.0475, y: 0.0475, z: 0.0475}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: -0.0164, y: 0.1641, z: -0.0005}
+        localAngles: {x: 0, y: 90, z: 0}
+        localScale: {x: 0.2235, y: 0.3016, z: 0.3528}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Base
+        localPos: {x: -0.658, y: -1.0806, z: 0.015}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 1, y: 1, z: 1}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Base
+        localPos: {x: 0.8357, y: -0.7042, z: -0.2979}
+        localAngles: {x: 270, y: 0, z: 0}
+        localScale: {x: 1, y: 1, z: 1}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: 0, y: 0.0622, z: -0.0822}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.2159, y: 0.2159, z: 0.2159}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Base
+        localPos: {x: -0.0554, y: -1.6605, z: -0.3314}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.1, y: 0.1, z: 0.1}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: 0, y: 0.3453, z: 0}
+        localAngles: {x: 353.0521, y: 317.2421, z: 69.6292}
+        localScale: {x: 0.0528, y: 0.0528, z: 0.0528}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: LowerArmL
+        localPos: {x: 0, y: 0.3365, z: -0.0878}
+        localAngles: {x: 270, y: 0, z: 0}
+        localScale: {x: 0.0761, y: 0.0761, z: 0.0761}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Pelvis
+        localPos: {x: 0.0542, y: 0.0206, z: -0.0019}
+        localAngles: {x: 0, y: 303.4368, z: 0}
+        localScale: {x: 0.0385, y: 0.0385, z: 0.0385}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: ThighR
+        localPos: {x: 0, y: 0.0575, z: -0.0178}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.0486, y: 0.0486, z: 0.0486}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: ThighR
+        localPos: {x: 0.0022, y: 0.084, z: 0.066}
+        localAngles: {x: 352.4521, y: 260.6884, z: 341.5106}
+        localScale: {x: 0.0246, y: 0.0246, z: 0.0246}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: LowerArmL
+        localPos: {x: 0.0709, y: 0.4398, z: 0.0587}
+        localAngles: {x: 349.218, y: 235.9453, z: 0}
+        localScale: {x: 0.0465, y: 0.0465, z: 0.0465}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: -0.0513, y: 0.2348, z: -0.1839}
+        localAngles: {x: 354.7403, y: 305.3714, z: 336.9526}
+        localScale: {x: 0.2118, y: 0.2118, z: 0.2118}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: 0.1201, y: 0.2516, z: 0}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.1036, y: 0.1036, z: 0.1036}
+        limbMask: 0
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: -0.1201, y: 0.2516, z: 0}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: -0.1036, y: 0.1036, z: 0.1036}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: 0, y: 0.2648, z: 0.1528}
+        localAngles: {x: 315, y: 0, z: 0}
+        localScale: {x: 0.2, y: 0.2, z: 0.2}
+        limbMask: 0
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: 0, y: 0.3022, z: 0.1055}
+        localAngles: {x: 300, y: 0, z: 0}
+        localScale: {x: 0.1, y: 0.1, z: 0.1}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: 0, y: 0.2836, z: 0}
+        localAngles: {x: 270, y: 0, z: 0}
+        localScale: {x: 0.0265, y: 0.0265, z: 0.0265}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: 0, y: 0.2679, z: 0}
+        localAngles: {x: 270, y: 0, z: 0}
+        localScale: {x: 0.0496, y: 0.0496, z: 0.0496}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: 0, y: 0.2143, z: 0}
+        localAngles: {x: 270, y: 0, z: 0}
+        localScale: {x: 0.065, y: 0.065, z: 0.065}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: 0, y: 0.1861, z: 0.2328}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.2326, y: 0.2326, z: 0.2326}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Pelvis
+        localPos: {x: 0.0604, y: 0.1269, z: 0}
+        localAngles: {x: 0, y: 90, z: 0}
+        localScale: {x: 0.2641, y: 0.2641, z: 0.2641}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: UpperArmR
+        localPos: {x: 0, y: 0, z: 0}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.3413, y: 0.3413, z: 0.3413}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Pelvis
+        localPos: {x: 0.078, y: 0.065, z: 0}
+        localAngles: {x: 359.1402, y: 0.1068, z: 331.8908}
+        localScale: {x: 0.0307, y: 0.0307, z: 0.0307}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Pelvis
+        localPos: {x: 0.0768, y: -0.0002, z: 0}
+        localAngles: {x: 0, y: 270, z: 0}
+        localScale: {x: 0.2812, y: 0.2812, z: 0.2812}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: 0, y: 0.2584, z: -0.0987}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.2188, y: 0.2188, z: 0.2188}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: CalfR
+        localPos: {x: 0, y: 0.3011, z: 0.0764}
+        localAngles: {x: 77.5634, y: 0, z: 0}
+        localScale: {x: 0.6279, y: 0.6279, z: 0.6279}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: 0, y: 0.1976, z: -0.0993}
+        localAngles: {x: 0, y: 90, z: 0}
+        localScale: {x: 0.0802, y: 0.0802, z: 0.0802}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Pelvis
+        localPos: {x: 0.0727, y: 0.0252, z: 0}
+        localAngles: {x: 270, y: 0, z: 0}
+        localScale: {x: 0.1891, y: 0.1891, z: 0.1891}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Chest
+        localPos: {x: 0, y: 0.1996, z: -0.0489}
+        localAngles: {x: 0, y: 180, z: 0}
+        localScale: {x: 0.0821, y: 0.0821, z: 0.0821}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Pelvis
+        localPos: {x: 0.066, y: 0.058, z: 0}
+        localAngles: {x: 0, y: 90, z: 0}
+        localScale: {x: 0.1252, y: 0.1252, z: 0.1252}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Pelvis
+        localPos: {x: 0.0807, y: 0.0877, z: 0}
+        localAngles: {x: 0, y: 90, z: 0}
+        localScale: {x: 0.0982, y: 0.0982, z: 0.0982}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Base
+        localPos: {x: 0, y: -1.7606, z: -0.9431}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 1, y: 1, z: 1}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Base
+        localPos: {x: 0, y: -1.7606, z: -0.9431}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.1, y: 0.1, z: 0.1}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Base
+        localPos: {x: 0, y: -1.7606, z: -0.9431}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.5, y: 0.5, z: 0.5}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Pelvis
+        localPos: {x: 0.0857, y: 0.0472, z: 0.0195}
+        localAngles: {x: 270, y: 154.175, z: 0}
+        localScale: {x: 0.0861, y: 0.0861, z: 0.0861}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Pelvis
+        localPos: {x: 0, y: 0.028, z: -0.0977}
+        localAngles: {x: 0, y: 180, z: 0}
+        localScale: {x: 0.0596, y: 0.0596, z: 0.0596}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Head
+        localPos: {x: -0.2175, y: 0.4404, z: -0.141}
+        localAngles: {x: 44.0939, y: 33.5151, z: 43.5058}
+        localScale: {x: 0.1246, y: 0.1246, z: 0.1246}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: Pelvis
+        localPos: {x: 0, y: 0, z: 0.1866}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0.1233, y: 0.1233, z: 0.1233}
+        limbMask: 0

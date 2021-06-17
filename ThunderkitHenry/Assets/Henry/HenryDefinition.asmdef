@@ -1,0 +1,16 @@
+{
+    "name": "HenryDefinition",
+    "references": [],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Assembly-CSharp.dll",
+        "BepInEx.dll",
+        "R2API.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

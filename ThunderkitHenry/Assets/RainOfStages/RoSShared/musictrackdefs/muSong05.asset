@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -6086170, guid: d2e201569828c809f3d2502f0471d348, type: 3}
+  m_Name: muSong05
+  m_EditorClassIdentifier:
+  soundBank:
+    valueGuid:
+    WwiseObjectReference: {fileID: 11400000, guid: 93dd2358665c736429cefc84784d1471, type: 2}
+  states:
+  - valueGuid:
+    groupGuid:
+    WwiseObjectReference: {fileID: 11400000, guid: 4e3e9c19a2bddc548bc6cfbe5f810959, type: 2}
+  - valueGuid:
+    groupGuid:
+    WwiseObjectReference: {fileID: 11400000, guid: caf86ae594e3cd34987855764e203a56, type: 2}
+  comment: 'Thermodynamic Equilibrium
+
+    blackbeach boss'

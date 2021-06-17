@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -6086170, guid: d2e201569828c809f3d2502f0471d348, type: 3}
+  m_Name: muMainEndingOutroB
+  m_EditorClassIdentifier:
+  soundBank:
+    valueGuid:
+    WwiseObjectReference: {fileID: 11400000, guid: 93dd2358665c736429cefc84784d1471, type: 2}
+  states:
+  - valueGuid:
+    groupGuid:
+    WwiseObjectReference: {fileID: 11400000, guid: 21418867b27f86d4694ce48b32978ed2, type: 2}
+  - valueGuid:
+    groupGuid:
+    WwiseObjectReference: {fileID: 11400000, guid: a2f88c3be453244468268d797ebdffee, type: 2}
+  comment: Outro B

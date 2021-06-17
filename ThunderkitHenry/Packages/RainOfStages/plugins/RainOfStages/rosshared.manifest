@@ -1,0 +1,245 @@
+ManifestFileVersion: 0
+CRC: 2871477742
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5b81b22eb99aa39cf3525295159cd36b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d972547ec5137459cf51851f2409c091
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 189e5f09e297afb41b5ec8f4e6944f7d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fdda43b12528e5844ab8c9d7c880a661, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e91939622c11be04a8b4a63ec6d990e6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1f1d74c2efd35d04d92c0c41b3d861ce, type: 3}
+- Class: 114
+  Script: {fileID: -104859921, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9c198ee580db8234e9ce7a11fb6ae66c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a4d69506476ea30429ce6c76b04c6964, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 82a35dba5eb64cc40a67cdbfcf886f15, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 208
+  Script: {instanceID: 0}
+Assets:
+- Assets/RainOfStages/RoSShared/scenedefs/goldshores.asset
+- Assets/RainOfStages/RoSShared/Prefabs/BlackbeachProxies/BbRuinPillar1.prefab
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscBrokenDrone2.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscClayBoss.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscSuperRoboBallBoss.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscBrokenMissileDrone.asset
+- Assets/RainOfStages/RoSShared/Mesh/fern.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscRadarTower.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscEquipmentBarrel.asset
+- Assets/RainOfStages/RoSShared/musictrackdefs/muLogbook.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscLockbox.asset
+- Assets/RainOfStages/RoSShared/musictrackdefs/muFULLSong19.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscCategoryChestDamage.asset
+- Assets/RainOfStages/RoSShared/scenedefs/rootjungle.asset
+- Assets/RainOfStages/RoSShared/scenedefs/wispgraveyard.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscMagmaWorm.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/SkyMeadowInteractables.asset
+- Assets/RainOfStages/RoSShared/Prefabs/BlackbeachProxies/BbConif.prefab
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/csctitangoolake.asset
+- Assets/RainOfStages/RoSShared/musictrackdefs/muSong05.asset
+- Assets/RainOfStages/RoSShared/musictrackdefs/muSong21.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscDuplicatorLarge.asset
+- Assets/RainOfStages/RoSShared/scenedefs/moon.asset
+- Assets/RainOfStages/RoSShared/scenedefs/eclipseworld.asset
+- Assets/RainOfStages/RoSShared/musictrackdefs/muMenu.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscChest2.asset
+- Assets/RainOfStages/RoSShared/scenedefs/blackbeach.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscCasinoChest.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscChest1.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscgrandparent.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscLunarWisp.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscShrineCleanse.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscBrother.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscBrokenEquipmentDrone.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscParentPod.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscTitanGold.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscShrineBlood.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/BlackBeachInteractables.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/FrozenWallMonsters.asset
+- Assets/RainOfStages/RoSShared/musictrackdefs/muSong14.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscLunarChest.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscBrokenDrone1.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscScav.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscBrokenFlameDrone.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscArchWisp.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscBrokenMegaDrone.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscClayBruiser.asset
+- Assets/RainOfStages/RoSShared/musictrackdefs/muSong23.asset
+- Assets/RainOfStages/RoSShared/scenedefs/dampcavesimple.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscGolem.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/WispGraveyardInteractables.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscLemurian.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscBrotherGlass.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscBarrel1.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/GolemFamily.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/ArtifactWorldMonsters.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscVagrant.asset
+- Assets/RainOfStages/RoSShared/musictrackdefs/muFULLSong07.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscShrineCombat.asset
+- Assets/RainOfStages/RoSShared/Prefabs/BlackbeachProxies/bbFoxTrot.prefab
+- Assets/RainOfStages/RoSShared/scenedefs/shipgraveyard.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/ArtifactWorldInteractables.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscBeetle.asset
+- Assets/RainOfStages/RoSShared/scenedefs/arena.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/GooLakeInteractables.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscMiniMushroom.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscGoldChest.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscTripleShopEquipment.asset
+- Assets/RainOfStages/RoSShared/musictrackdefs/muNone.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscElectricWorm.asset
+- Assets/RainOfStages/RoSShared/Prefabs/BlackbeachProxies/BbConifYoung.prefab
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/FoggySwampMonsters.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscSquidTurret.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/ImpFamily.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscTeleporterLunar.asset
+- Assets/RainOfStages/RoSShared/Prefabs/BlackbeachProxies/bbBush1.prefab
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscDuplicatorWild.asset
+- Assets/RainOfStages/RoSShared/scenedefs/goolake.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscTeleporter.asset
+- Packages/com.unity.probuilder/Content/Resources/Textures/GridBox_Default.png
+- Packages/com.unity.probuilder/Content/Resources/Materials/ProBuilderDefault.mat
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscGravekeeper.asset
+- Assets/RainOfStages/RoSShared/scenedefs/splash.asset
+- Assets/RainOfStages/RoSShared/scenedefs/mysteryspace.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscBison.asset
+- Assets/RainOfStages/RoSShared/Prefabs/Jump.prefab
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscBrokenTurret1.asset
+- Assets/RainOfStages/RoSShared/musictrackdefs/muSong16.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/GooLakeMonsters.asset
+- Assets/RainOfStages/RoSShared/scenedefs/moon2.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscTripleShopLarge.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/JellyfishFamily.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscHermitCrab.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/BlackBeachMonsters.asset
+- Assets/RainOfStages/RoSShared/scenedefs/golemplains.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/csctitanblackbeach.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/WispFamily.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/csctitandampcave.asset
+- Assets/RainOfStages/RoSShared/scenedefs/crystalworld.asset
+- Assets/RainOfStages/RoSShared/scenedefs/limbo.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscDuplicatorMilitary.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscChest1Stealthed.asset
+- Assets/RainOfStages/RoSShared/musictrackdefs/muSong13.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscCategoryChestUtility.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscShrineHealing.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscBrotherHurt.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/csctitangolemplains.asset
+- Assets/RainOfStages/RoSShared/musictrackdefs/muMainEndingOutroB.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscGoldshoresPortal.asset
+- Assets/RainOfStages/RoSShared/scenedefs/intro.asset
+- Assets/RainOfStages/RoSShared/musictrackdefs/muFULLSong02.asset
+- Assets/RainOfStages/RoSShared/scenedefs/logbook.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscImp.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscBell.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscTitanGoldAlly.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscLunarGolem.asset
+- Assets/RainOfStages/RoSShared/musictrackdefs/muIntroCutscene.asset
+- Assets/RainOfStages/RoSShared/musictrackdefs/muSong04.asset
+- Assets/RainOfStages/RoSShared/musictrackdefs/muSong25.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscRoboBallBoss.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscLesserWisp.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/LemurianFamily.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscJellyfish.asset
+- Assets/RainOfStages/RoSShared/Prefabs/BlackbeachProxies/bbRuinMarker.prefab
+- Assets/RainOfStages/RoSShared/Prefabs/BlackbeachProxies/BbFern.prefab
+- Assets/RainOfStages/RoSShared/Prefabs/BlackbeachProxies/bbBoulderMediumRound.prefab
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscBeetleCrystal.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscShopPortal.asset
+- Assets/RainOfStages/RoSShared/scenedefs/outro.asset
+- Assets/RainOfStages/RoSShared/Mesh/PillarRepresentative.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscScavBackpack.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/FrozenWallInteractables.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscBrokenEmergencyDrone.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscNullifier.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscMSPortal.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/SkyMeadowMonsters.asset
+- Assets/RainOfStages/RoSShared/scenedefs/title.asset
+- Assets/RainOfStages/RoSShared/scenedefs/bazaar.asset
+- Assets/RainOfStages/RoSShared/musictrackdefs/muEscape.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscScavLunarBackpack.asset
+- Packages/com.unity.probuilder/Content/Shader/StandardVertexColor.shader
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscBackupDrone.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscSquidTurret.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscCategoryChestHealing.asset
+- Assets/RainOfStages/RoSShared/musictrackdefs/muMainEndingFull.asset
+- Assets/RainOfStages/RoSShared/scenedefs/lobby.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscBeetleGuardAlly.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscBeetleQueen.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscVulture.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/WispGraveyardMonsters.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/BeetleFamily.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscShrineGoldshoresAccess.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscBeetleGuard.asset
+- Assets/RainOfStages/RoSShared/musictrackdefs/muFULLSong06.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscTripleShop.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/FoggySwampInteractables.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscScavLunar.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscGreaterWisp.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscRoboBallMini.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscLemurianBruiser.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/ShipgraveyardMonsters.asset
+- Assets/RainOfStages/RoSShared/musictrackdefs/muSong24.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/ShipgraveyardInteractables.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscDuplicator.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscShrineRestack.asset
+- Assets/RainOfStages/RoSShared/scenedefs/artifactworld.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/ParentFamily.asset
+- Assets/RainOfStages/RoSShared/scenedefs/foggyswamp.asset
+- Assets/RainOfStages/RoSShared/musictrackdefs/muSong22.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/GolemplainsInteractables.asset
+- Assets/RainOfStages/RoSShared/musictrackdefs/muMainEndingOutroA.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscGoldshoresBeacon.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscImpBoss.asset
+- Assets/RainOfStages/RoSShared/musictrackdefs/muSong08.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscBeetleGuardCrystal.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscShrineChance.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/DampCaveMonsters.asset
+- Assets/RainOfStages/RoSShared/spawncards/characterspawncards/cscParent.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/GoldshoresMonsters.asset
+- Assets/RainOfStages/RoSShared/Mesh/JumpPad.asset
+- Assets/RainOfStages/RoSShared/musictrackdefs/muFULLSong18.asset
+- Assets/RainOfStages/RoSShared/scenedefs/frozenwall.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/DampCaveInteractables.asset
+- Assets/RainOfStages/RoSShared/spawncards/interactablespawncard/iscShrineBoss.asset
+- Assets/RainOfStages/RoSShared/DirectorCardCategorySelection/GolemplainsMonsters.asset
+- Assets/RainOfStages/RoSShared/scenedefs/skymeadow.asset
+Dependencies: []
