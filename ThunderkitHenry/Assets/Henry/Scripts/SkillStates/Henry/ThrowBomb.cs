@@ -3,7 +3,7 @@ using RoR2;
 using RoR2.Projectile;
 using UnityEngine;
 
-namespace ThunderHenryMod.SkillStates
+namespace ThunderHenry.SkillStates
 {
     public class ThrowBomb : BaseSkillState
     {

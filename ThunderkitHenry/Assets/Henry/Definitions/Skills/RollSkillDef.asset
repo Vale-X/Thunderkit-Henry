@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 1391837873, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
   m_Name: RollSkillDef
   m_EditorClassIdentifier: 
-  skillName: ROB_HENRY_BODY_UTILITY_ROLL_NAME
+  skillName: Roll
   skillNameToken: ROB_HENRY_BODY_UTILITY_ROLL_NAME
   skillDescriptionToken: ROB_HENRY_BODY_UTILITY_ROLL_DESCRIPTION
   keywordTokens: []
   icon: {fileID: 21300000, guid: 0f5783e971afb924daa22df12d6c1325, type: 3}
   activationStateMachineName: Slide
   activationState:
-    _typeName: ThunderHenryMod.SkillStates.Roll, HenryDefinition
+    _typeName: ThunderHenry.SkillStates.Roll, ThunderHenry
   interruptPriority: 1
   baseRechargeInterval: 4
   baseMaxStock: 1

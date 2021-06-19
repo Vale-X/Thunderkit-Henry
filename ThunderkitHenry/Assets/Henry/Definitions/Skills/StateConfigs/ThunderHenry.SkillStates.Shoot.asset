@@ -10,14 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 89795172, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
-  m_Name: ThunderHenryMod.SkillStates.ThrowBomb
+  m_Name: ThunderHenry.SkillStates.Shoot
   m_EditorClassIdentifier: 
   targetType:
-    assemblyQualifiedName: ThunderHenryMod.SkillStates.ThrowBomb
+    assemblyQualifiedName: ThunderHenry.SkillStates.Shoot
   serializedFieldsCollection:
-    serializedFields:
-    - fieldName: bombPrefab
-      fieldValue:
-        stringValue: 
-        objectValue: {fileID: 5108796886903473902, guid: 201f3ee149acf3b468badd2d682370cb,
-          type: 3}
+    serializedFields: []

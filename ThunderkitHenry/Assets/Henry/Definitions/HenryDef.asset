@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bodyPrefab: {fileID: 5150082409466045905, guid: bd791d6404f562f49998cfe7297b2846,
     type: 3}
-  displayPrefab: {fileID: 0}
+  displayPrefab: {fileID: 6480957988586946340, guid: 3cb1774da952100409c54350802e3f02,
+    type: 3}
   unlockableName: 
   unlockableDef: {fileID: 0}
   displayNameToken: ROB_HENRY_BODY_NAME

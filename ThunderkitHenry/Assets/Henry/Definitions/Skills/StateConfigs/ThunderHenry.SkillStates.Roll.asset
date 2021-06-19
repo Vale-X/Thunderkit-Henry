@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 89795172, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
-  m_Name: ThunderHenryMod.SkillStates.Roll
+  m_Name: ThunderHenry.SkillStates.Roll
   m_EditorClassIdentifier: 
   targetType:
-    assemblyQualifiedName: ThunderHenryMod.SkillStates.Roll
+    assemblyQualifiedName: ThunderHenry.SkillStates.Roll
   serializedFieldsCollection:
     serializedFields:
     - fieldName: armorBuff

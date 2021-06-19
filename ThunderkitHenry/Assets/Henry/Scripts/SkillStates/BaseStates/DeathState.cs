@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using EntityStates;
 
-namespace ThunderHenryMod.SkillStates.BaseStates
+namespace ThunderHenry.SkillStates.BaseStates
 {
 	public class DeathState : GenericCharacterDeath
 	{

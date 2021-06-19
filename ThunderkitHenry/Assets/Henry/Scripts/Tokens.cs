@@ -1,7 +1,7 @@
 ﻿using R2API;
 using System;
 
-namespace ThunderHenryMod.Modules
+namespace ThunderHenry.Modules
 {
     internal static class Tokens
     {
@@ -28,7 +28,7 @@ namespace ThunderHenryMod.Modules
 
             #region Skins
             LanguageAPI.Add(prefix + "DEFAULT_SKIN_NAME", "Default");
-            LanguageAPI.Add(prefix + "MASTERY_SKIN_NAME", "Alternate");
+            LanguageAPI.Add(prefix + "MASTERY_SKIN_NAMEG", "Alternate");
             #endregion
 
             #region Passive

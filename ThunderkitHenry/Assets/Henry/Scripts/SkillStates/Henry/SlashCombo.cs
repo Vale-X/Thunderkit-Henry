@@ -1,8 +1,8 @@
-﻿using ThunderHenryMod.SkillStates.BaseStates;
+﻿using ThunderHenry.SkillStates.BaseStates;
 using RoR2;
 using UnityEngine;
 
-namespace ThunderHenryMod.SkillStates
+namespace ThunderHenry.SkillStates
 {
     public class SlashCombo : BaseMeleeAttack
     {

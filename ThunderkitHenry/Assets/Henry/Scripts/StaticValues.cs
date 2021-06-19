@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ThunderHenryMod.Modules
+namespace ThunderHenry.Modules
 {
     internal static class StaticValues
     {

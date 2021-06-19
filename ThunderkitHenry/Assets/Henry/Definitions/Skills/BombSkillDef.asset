@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 1391837873, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
   m_Name: BombSkillDef
   m_EditorClassIdentifier: 
-  skillName: ROB_HENRY_BODY_SPECIAL_BOMB_NAME
+  skillName: ThrowBomb
   skillNameToken: ROB_HENRY_BODY_SPECIAL_BOMB_NAME
   skillDescriptionToken: ROB_HENRY_BODY_SPECIAL_BOMB_DESCRIPTION
   keywordTokens: []
   icon: {fileID: 21300000, guid: 44a1d09fd35f1384e819b98e0f18058e, type: 3}
   activationStateMachineName: Slide
   activationState:
-    _typeName: ThunderHenryMod.SkillStates.ThrowBomb, HenryDefinition
+    _typeName: ThunderHenry.SkillStates.ThrowBomb, ThunderHenry
   interruptPriority: 1
   baseRechargeInterval: 10
   baseMaxStock: 1

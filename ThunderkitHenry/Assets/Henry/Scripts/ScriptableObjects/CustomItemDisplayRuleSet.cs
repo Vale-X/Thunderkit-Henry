@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using RoR2;
-using ThunderHenryMod.Modules;
+using ThunderHenry.Modules;
 
-namespace ThunderHenryMod.Scriptables
+namespace ThunderHenry.Scriptables
 {
     [CreateAssetMenu]
     class CodeBasedIDRS : ItemDisplayRuleSet

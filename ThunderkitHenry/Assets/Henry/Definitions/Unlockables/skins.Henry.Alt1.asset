@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13a56dfcde6dc7841a8bb1cbf89fc366, type: 3}
-  m_Name: SettingsWindowData
+  m_Script: {fileID: -1746479147, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
+  m_Name: skins.Henry.Alt1
   m_EditorClassIdentifier: 
-  FirstLoad: 1
-  ShowOnStartup: 0
+  nameToken: ROB_HENRY_BODY_MASTERYUNLOCKABLE_ACHIEVEMENT_NAME
+  displayModelPath: Prefabs/NullModel
+  displayModelPrefab: {fileID: 0}
+  hidden: 0

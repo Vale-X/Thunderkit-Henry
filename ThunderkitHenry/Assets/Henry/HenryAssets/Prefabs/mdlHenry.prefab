@@ -2486,10 +2486,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 0}
-  itemDisplayRuleSet: {fileID: 11400000, guid: aa9876c41f82f694fa0241f36a611b24, type: 2}
+  itemDisplayRuleSet: {fileID: 11400000, guid: 61e2f432fcba08f49a5156e290d059bc, type: 2}
   autoPopulateLightInfos: 1
   baseRendererInfos:
-  - renderer: {fileID: 3811311030718072076}
+  - renderer: {fileID: 3811311030718072078}
     defaultMaterial: {fileID: 2100000, guid: 14d6d121af8aca345b797120c5f6331b, type: 2}
     defaultShadowCastingMode: 0
     ignoreOverlays: 0
@@ -2497,11 +2497,39 @@ MonoBehaviour:
     defaultMaterial: {fileID: 2100000, guid: 14d6d121af8aca345b797120c5f6331b, type: 2}
     defaultShadowCastingMode: 0
     ignoreOverlays: 0
-  - renderer: {fileID: 3811311030718072078}
+  - renderer: {fileID: 3811311030718072076}
     defaultMaterial: {fileID: 2100000, guid: 14d6d121af8aca345b797120c5f6331b, type: 2}
     defaultShadowCastingMode: 0
     ignoreOverlays: 0
   baseLightInfos: []
+  childLocator: {fileID: 0}
+  goldAffixEffect: {fileID: 0}
+  coreTransform: {fileID: 0}
+  _visibility: 0
+  _isGhost: 0
+  _isDoppelganger: 0
+  _isEcho: 0
+  materialsDirty: 0
+  inventoryEquipmentIndex: 0
+  myEliteIndex: 0
+  fade: 0
+  firstPersonFade: 0
+  mainSkinnedMeshRenderer: {fileID: 0}
+  particleMaterialOverride: {fileID: 0}
+  poisonAffixEffect: {fileID: 0}
+  hauntedAffixEffect: {fileID: 0}
+  affixHauntedCloakLockoutDuration: 0
+  currentEquipmentDisplayIndex: 0
+  enabledItemDisplays:
+    array: 
+  limbFlagSet:
+    flagCounts: 
+    flags: 0
+  currentOverlays: []
+  activeOverlayCount: 0
+  wasPreviouslyClayGooed: 0
+  wasPreviouslyHaunted: 0
+  shaderEliteRampIndex: 0
 --- !u!1 &3811311030721185902
 GameObject:
   m_ObjectHideFlags: 0

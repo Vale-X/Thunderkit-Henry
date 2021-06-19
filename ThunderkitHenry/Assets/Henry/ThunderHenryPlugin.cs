@@ -8,7 +8,8 @@ using System.Security.Permissions;
 [module: UnverifiableCode]
 [assembly: SecurityPermission(SecurityAction.RequestMinimum, SkipVerification = true)]
 
-namespace ThunderHenryMod
+//Do a 'Find and Replace' on the ThunderHenry namespace. Make your own, please.
+namespace ThunderHenry
 {
     [BepInDependency("com.bepis.r2api", BepInDependency.DependencyFlags.HardDependency)]
     [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.EveryoneNeedSameModVersion)]
@@ -32,5 +33,23 @@ namespace ThunderHenryMod
         public const string developerPrefix = "ROB";
 
         public static ThunderHenryPlugin instance;
+
+        public static bool debug = true;
+
+        private void Awake()
+        {
+            instance = this;
+
+            // Load/Configure assets and read Config
+            Modules.Assets.Init();
+            Modules.Prefabs.Init();
+            
+            // Any debug stuff you need to do can go here before initialisation
+            if (debug) { Modules.Helpers.RunDebug(); }
+
+            //Initialize Content Pack
+            Modules.ContentPackProvider.Initialize();
+        }
+
     }
 }

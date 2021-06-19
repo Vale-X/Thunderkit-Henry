@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 1391837873, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
   m_Name: SlashSkillDef
   m_EditorClassIdentifier: 
-  skillName: ROB_HENRY_BODY_PRIMARY_SLASH_NAME
+  skillName: SlashCombo
   skillNameToken: ROB_HENRY_BODY_PRIMARY_SLASH_NAME
   skillDescriptionToken: ROB_HENRY_BODY_PRIMARY_SLASH_DESCRIPTION
   keywordTokens:
@@ -20,7 +20,7 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 4d32648010cd8714d980002a6b64b503, type: 3}
   activationStateMachineName: Slide
   activationState:
-    _typeName: ThunderHenryMod.SkillStates.SlashCombo, HenryDefinition
+    _typeName: ThunderHenry.SkillStates.SlashCombo, ThunderHenry
   interruptPriority: 1
   baseRechargeInterval: 0
   baseMaxStock: 1

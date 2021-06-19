@@ -49,8 +49,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9c1dcec44cde3dc4e955aec1e369f548, type: 2}
   - {fileID: 11400000, guid: 75e43ae0a11a10945a3875618e11b4e4, type: 2}
   - {fileID: 11400000, guid: 726b41d12ecabd8498ae8cade39fb246, type: 2}
-  entityStateTypes:
-  - _typeName: ThunderHenryMod.SkillStates.SlashCombo
-  - _typeName: ThunderHenryMod.SkillStates.Shoot
-  - _typeName: ThunderHenryMod.SkillStates.Roll
-  - _typeName: ThunderHenryMod.SkillStates.ThrowBomb
+  entityStateTypes: []

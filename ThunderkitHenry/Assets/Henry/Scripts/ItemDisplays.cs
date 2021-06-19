@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace ThunderHenryMod.Modules
+namespace ThunderHenry.Modules
 {
     internal static class ItemDisplays
     {

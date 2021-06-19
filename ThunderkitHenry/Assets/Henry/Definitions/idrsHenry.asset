@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
   m_Name: idrsHenry
-  m_EditorClassIdentifier: HenryDefinition:ThunderHenryMod.Scriptables:CodeBasedIDRS
+  m_EditorClassIdentifier: ThunderHenry:ThunderHenry.Scriptables:CodeBasedIDRS
   namedItemRuleGroups: []
   namedEquipmentRuleGroups: []
   keyAssetRuleGroups:
@@ -1274,3 +1274,5 @@ MonoBehaviour:
         localAngles: {x: 0, y: 0, z: 0}
         localScale: {x: 0.1233, y: 0.1233, z: 0.1233}
         limbMask: 0
+  runtimeItemRuleGroups: []
+  runtimeEquipmentRuleGroups: []
