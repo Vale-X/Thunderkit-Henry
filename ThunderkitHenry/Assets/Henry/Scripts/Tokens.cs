@@ -5,7 +5,7 @@ namespace ThunderHenry.Modules
 {
     internal static class Tokens
     {
-        internal static void AddTokens()
+        internal static void Init()
         {
             #region Henry
             string prefix = ThunderHenryPlugin.developerPrefix + "_HENRY_BODY_";
@@ -19,7 +19,7 @@ namespace ThunderHenry.Modules
             string outro = "..and so he left, searching for a new identity.";
             string outroFailure = "..and so he vanished, forever a blank slate.";
 
-            LanguageAPI.Add(prefix + "NAME", "Henry");
+            LanguageAPI.Add(prefix + "NAME", "Thunder Henry");
             LanguageAPI.Add(prefix + "DESCRIPTION", desc);
             LanguageAPI.Add(prefix + "SUBTITLE", "The Chosen One");
             LanguageAPI.Add(prefix + "LORE", "sample lore");
@@ -28,7 +28,8 @@ namespace ThunderHenry.Modules
 
             #region Skins
             LanguageAPI.Add(prefix + "DEFAULT_SKIN_NAME", "Default");
-            LanguageAPI.Add(prefix + "MASTERY_SKIN_NAMEG", "Alternate");
+            LanguageAPI.Add(prefix + "MASTERY_SKIN_NAME", "Alternate");
+
             #endregion
 
             #region Passive

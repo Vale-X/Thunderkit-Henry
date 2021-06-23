@@ -10,6 +10,7 @@ using System.Linq;
 using R2API;
 using RoR2;
 using EntityStates;
+using ThunderHenry.Scriptables;
 
 namespace ThunderHenry.Modules
 {
@@ -28,6 +29,8 @@ namespace ThunderHenry.Modules
 		internal static ContentPack mainContentPack = null;
 		internal static SerializableContentPack serialContentPack = null;
 
+		internal static List<EffectDef> effectDefs = new List<EffectDef>();
+
         internal static void Init()
         {
             if (assetBundleName == "myassetbundle")
@@ -43,8 +46,21 @@ namespace ThunderHenry.Modules
             PopulateAssets();
         }
 
+		// Any extra asset stuff not handled or loaded by the Asset Bundle should be sorted here.
+		// This is also a good place to set up any references, if you need to.
+		// References for SkillStates can be done through EntityStateConfigs instead.
+		internal static void PopulateAssets()
+		{
+			if (!mainAssetBundle)
+			{
+				Debug.LogError(ThunderHenryPlugin.MODNAME + ": AssetBundle not found. Unable to Populate Assets.");
+				return;
+			}
+
+		}
+
 		// Loads the AssetBundle, which includes the Content Pack.
-        internal static void LoadAssetBundle()
+		internal static void LoadAssetBundle()
         {
             if (mainAssetBundle == null)
             {
@@ -67,6 +83,7 @@ namespace ThunderHenry.Modules
 			serialContentPack = mainAssetBundle.LoadAsset<SerializableContentPack>(contentPackName);
 			mainContentPack = serialContentPack.CreateContentPack();
 			AddEntityStateTypes();
+			CreateEffectDefs();
 			ContentPackProvider.contentPack = mainContentPack;
 		}
 
@@ -96,18 +113,33 @@ namespace ThunderHenry.Modules
 			}
 		}
 
-		// Any extra asset stuff not handled or loaded by the Asset Bundle should be sorted here.
-		// This is also a good place to set up any references, if you need to.
-		// References for SkillStates can be done through EntityStateConfigs instead.
-        internal static void PopulateAssets()
+		// Gathers all GameObjects with VFXAttributes attached and creates an EffectDef for each one.
+		// Without this, the Effect is unable to be spawned.
+		// Any VFX elements must have a NetWorkIdentity, VFXAttributes and EffectComponent on the base in order to be usable.
+		internal static void CreateEffectDefs()
         {
-			if (!mainAssetBundle)
-            {
-				Debug.LogError(ThunderHenryPlugin.MODNAME + ": AssetBundle not found. Unable to Populate Assets.");
-				return;
-			}
+			List<GameObject> effects = new List<GameObject>();
 
+			GameObject[] assets = mainAssetBundle.LoadAllAssets<GameObject>();
+			foreach (GameObject g in assets)
+            {
+				if (g.GetComponent<EffectComponent>())
+                {
+					effects.Add(g);
+                }
+            }
+			foreach (GameObject g in effects)
+            {
+				EffectDef def = new EffectDef();
+				def.prefab = g;
+
+				effectDefs.Add(def);
+            }
+
+			mainContentPack.effectDefs.Add(effectDefs.ToArray());
         }
+
+
 
 		// Finds all Entity State Types within the mod and adds them to the content pack.
 		// Saves fuss of having to add them manually. Credit to KingEnderBrine for this code.
@@ -115,10 +147,12 @@ namespace ThunderHenry.Modules
         {
 			mainContentPack.entityStateTypes.Add(((IEnumerable<System.Type>)Assembly.GetExecutingAssembly().GetTypes()).Where<System.Type>
 				((Func<System.Type, bool>)(type => typeof(EntityState).IsAssignableFrom(type))).ToArray<System.Type>());
+
+			if (ThunderHenryPlugin.debug)
 			foreach (Type t in mainContentPack.entityStateTypes)
             {
-				Debug.LogWarning(t);
-            }
+					Debug.LogWarning(t);
+			}
 		}
     }
 

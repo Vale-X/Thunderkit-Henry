@@ -60,12 +60,6 @@ namespace ThunderHenry.Modules
                 bodyPrefabs.Add(s.bodyPrefab);
                 displayPrefabs.Add(s.displayPrefab);
             }
-            /*foreach (string s in survivorDefs)
-            {
-                var surv = Assets.mainContentPack.survivorDefs.Find(s);
-                bodyPrefabs.Add(surv.bodyPrefab);
-                displayPrefabs.Add(surv.displayPrefab);
-            }*/
         }
     }
 }

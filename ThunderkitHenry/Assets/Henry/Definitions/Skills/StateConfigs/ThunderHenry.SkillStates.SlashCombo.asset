@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: ThunderHenry.SkillStates.SlashCombo
   m_EditorClassIdentifier: 
   targetType:
-    assemblyQualifiedName: ThunderHenry.SkillStates.SlashCombo
+    assemblyQualifiedName: ThunderHenry.SkillStates.SlashCombo, ThunderHenry, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   serializedFieldsCollection:
     serializedFields:
     - fieldName: swordSwingEffect

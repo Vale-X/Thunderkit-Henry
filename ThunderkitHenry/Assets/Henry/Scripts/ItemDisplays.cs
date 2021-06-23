@@ -1,6 +1,7 @@
 ﻿using RoR2;
 using System.Collections.Generic;
 using UnityEngine;
+using ThunderHenry.Scriptables;
 
 namespace ThunderHenry.Modules
 {
@@ -8,11 +9,23 @@ namespace ThunderHenry.Modules
     {
         private static Dictionary<string, GameObject> itemDisplayPrefabs = new Dictionary<string, GameObject>();
 
-        internal static void PopulateDisplays()
+        internal static void Init()
         {
             PopulateFromBody("Commando");
             PopulateFromBody("Croco");
             PopulateFromBody("Mage");
+            InitItemDisplays();
+        }
+
+        internal static void InitItemDisplays()
+        {
+            var allIDRS = Modules.Assets.mainAssetBundle.LoadAllAssets<CodeBasedIDRS>();
+
+            foreach (CodeBasedIDRS idrs in allIDRS)
+            {
+                Debug.LogWarning(idrs);
+                idrs.ActivateItemDisplays();
+            }
         }
 
         private static void PopulateFromBody(string bodyName)

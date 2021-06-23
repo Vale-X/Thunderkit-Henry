@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 5645881031477574447}
   - component: {fileID: 5141179017943056873}
   - component: {fileID: 5849149825005664729}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: HenryBombProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ GameObject:
   m_Component:
   - component: {fileID: 21761292761573592}
   - component: {fileID: 3885621443621565658}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}

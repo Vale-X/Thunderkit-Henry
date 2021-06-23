@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: SlashSkillDef
   m_EditorClassIdentifier: 
   skillName: SlashCombo
-  skillNameToken: ROB_HENRY_BODY_PRIMARY_SLASH_NAME
-  skillDescriptionToken: ROB_HENRY_BODY_PRIMARY_SLASH_DESCRIPTION
+  skillNameToken: ROBVALE_HENRY_BODY_PRIMARY_SLASH_NAME
+  skillDescriptionToken: ROBVALE_HENRY_BODY_PRIMARY_SLASH_DESCRIPTION
   keywordTokens:
   - KEYWORD_AGILE
   icon: {fileID: 21300000, guid: 4d32648010cd8714d980002a6b64b503, type: 3}
   activationStateMachineName: Slide
   activationState:
     _typeName: ThunderHenry.SkillStates.SlashCombo, ThunderHenry
-  interruptPriority: 1
+  interruptPriority: 0
   baseRechargeInterval: 0
   baseMaxStock: 1
   rechargeStock: 1

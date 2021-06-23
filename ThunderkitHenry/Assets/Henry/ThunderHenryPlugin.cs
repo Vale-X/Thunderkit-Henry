@@ -30,7 +30,7 @@ namespace ThunderHenry
         public const string MODVERSION = "1.0.0";
 
         // a prefix for name tokens to prevent conflicts- please capitalize all name tokens for convention
-        public const string developerPrefix = "ROB";
+        public const string developerPrefix = "ROBVALE";
 
         public static ThunderHenryPlugin instance;
 
@@ -42,10 +42,13 @@ namespace ThunderHenry
 
             // Load/Configure assets and read Config
             Modules.Assets.Init();
+            Modules.Tokens.Init();
             Modules.Prefabs.Init();
+            Modules.ItemDisplays.Init();
+            
             
             // Any debug stuff you need to do can go here before initialisation
-            if (debug) { Modules.Helpers.RunDebug(); }
+            if (debug) { Modules.Helpers.AwakeDebug(); }
 
             //Initialize Content Pack
             Modules.ContentPackProvider.Initialize();

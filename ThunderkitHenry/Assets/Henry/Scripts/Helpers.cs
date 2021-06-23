@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using EntityStates;
+using RoR2;
 using UnityEngine;
 
 namespace ThunderHenry.Modules
@@ -8,20 +9,30 @@ namespace ThunderHenry.Modules
     internal static class Helpers
     {
         internal const string agilePrefix = "<style=cIsUtility>Agile.</style> ";
-        public static void RunDebug()
+
+        // Add any extra debug methods you wanna do here. 
+        public static void AwakeDebug()
         {
             PrintEntityStatesForConfigNames();
+            ItemDisplayTestDebug();
         }
 
-        // Entity State Types require very specific 'Assembly Qualified Names' in order to work correctly.
+        // Entity State Configurations require very specific 'Assembly Qualified Names' in order to work correctly.
         // This should print you the name that you need to put into the Entity State Configuration.
         private static void PrintEntityStatesForConfigNames()
         {
-            foreach (var es in Modules.Assets.mainContentPack.entityStateTypes)
-            {
-                var state = new SerializableEntityStateType(typeof(ThunderHenry.SkillStates.SlashCombo));
-                Debug.LogWarning(ThunderHenryPlugin.MODNAME + ": DEBUG: TypeName print: " + state.typeName);
-            }
+            var state = new SerializableEntityStateType(typeof(ThunderHenry.SkillStates.SlashCombo));
+            Debug.LogWarning(ThunderHenryPlugin.MODNAME + ": DEBUG: TypeName print: " + state.typeName);
+        }
+
+        private static void ItemDisplayTestDebug()
+        {
+            var bodyPrefab = Prefabs.bodyPrefabs[0];
+
+            var bodyModel = bodyPrefab.GetComponentInChildren<CharacterModel>();
+
+            Debug.LogWarning(bodyModel.itemDisplayRuleSet.keyAssetRuleGroups[0].keyAsset);
+            Debug.LogWarning(bodyModel.itemDisplayRuleSet.keyAssetRuleGroups[0].displayRuleGroup.rules[0].followerPrefab);
         }
 
         internal static string ScepterDescription(string desc)

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: BombSkillDef
   m_EditorClassIdentifier: 
   skillName: ThrowBomb
-  skillNameToken: ROB_HENRY_BODY_SPECIAL_BOMB_NAME
-  skillDescriptionToken: ROB_HENRY_BODY_SPECIAL_BOMB_DESCRIPTION
+  skillNameToken: ROBVALE_HENRY_BODY_SPECIAL_BOMB_NAME
+  skillDescriptionToken: ROBVALE_HENRY_BODY_SPECIAL_BOMB_DESCRIPTION
   keywordTokens: []
   icon: {fileID: 21300000, guid: 44a1d09fd35f1384e819b98e0f18058e, type: 3}
   activationStateMachineName: Slide

@@ -18,10 +18,10 @@ MonoBehaviour:
     type: 3}
   unlockableName: 
   unlockableDef: {fileID: 0}
-  displayNameToken: ROB_HENRY_BODY_NAME
-  descriptionToken: ROB_HENRY_BODY_DESCRIPTION
-  outroFlavorToken: ROB_HENRY_BODY_OUTRO_FLAVOR
-  mainEndingEscapeFailureFlavorToken: ROB_HENRY_BODY_OUTRO_FAILUR
+  displayNameToken: ROBVALE_HENRY_BODY_NAME
+  descriptionToken: ROBVALE_HENRY_BODY_DESCRIPTION
+  outroFlavorToken: ROBVALE_HENRY_BODY_OUTRO_FLAVOR
+  mainEndingEscapeFailureFlavorToken: ROBVALE_HENRY_BODY_OUTRO_FAILUR
   primaryColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   desiredSortPosition: 14
   hidden: 0
