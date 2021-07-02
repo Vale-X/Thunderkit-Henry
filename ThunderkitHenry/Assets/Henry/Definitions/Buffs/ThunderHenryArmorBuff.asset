@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: -1783169300, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
   m_Name: ThunderHenryArmorBuff
   m_EditorClassIdentifier: 
-  iconPath: Textures/BuffIcons/texBuffGenericShield
-  iconSprite: {fileID: 0}
-  buffColor: {r: 1, g: 1, b: 1, a: 0}
+  iconPath: 
+  iconSprite: {fileID: 21300000, guid: a19bc52f4e1d5df439a63cb6cea71df3, type: 3}
+  buffColor: {r: 1, g: 1, b: 1, a: 1}
   canStack: 0
   eliteDef: {fileID: 0}
   isDebuff: 0

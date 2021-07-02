@@ -17,17 +17,22 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   serializedFieldsCollection:
     serializedFields:
+    - fieldName: swingEffectPrefab
+      fieldValue:
+        stringValue: 
+        objectValue: {fileID: 7627289222081822211, guid: 3534552e7829f9842ba3156065afc540,
+          type: 3}
+    - fieldName: hitEffectPrefab
+      fieldValue:
+        stringValue: 
+        objectValue: {fileID: 5027040963472518978, guid: 48eebb9268b618943a4b60bb011fb96d,
+          type: 3}
+    - fieldName: impactSound
+      fieldValue:
+        stringValue: 
+        objectValue: {fileID: 11400000, guid: c2a3c6484bedfa046ace1d499d7ddea4, type: 2}
     - fieldName: swordSwingEffect
       fieldValue:
         stringValue: 
         objectValue: {fileID: 7627289222081822211, guid: 3534552e7829f9842ba3156065afc540,
           type: 3}
-    - fieldName: swordHitImpactEffect
-      fieldValue:
-        stringValue: 
-        objectValue: {fileID: 5027040963472518978, guid: 48eebb9268b618943a4b60bb011fb96d,
-          type: 3}
-    - fieldName: swordHitSoundEvent
-      fieldValue:
-        stringValue: 
-        objectValue: {fileID: 11400000, guid: c2a3c6484bedfa046ace1d499d7ddea4, type: 2}

@@ -21,6 +21,7 @@ MonoBehaviour:
   networkedObjectPrefabs: []
   skillDefs:
   - {fileID: 11400000, guid: d02713e6756f42941badf673bf53d45f, type: 2}
+  - {fileID: 11400000, guid: 2fbbbda1ad445284d887189f2be06a25, type: 2}
   - {fileID: 11400000, guid: 2fb0b23fcb83a014db76a30b9e7770c2, type: 2}
   - {fileID: 11400000, guid: 80193ce9b684ab244b7c0342a1852cd5, type: 2}
   - {fileID: 11400000, guid: df617aa3cbf0c0f4f8642ed4a6c10228, type: 2}
@@ -35,13 +36,16 @@ MonoBehaviour:
   buffDefs:
   - {fileID: 11400000, guid: d5bc6e6e2cbd8134a8764594b5749810, type: 2}
   eliteDefs: []
-  unlockableDefs: []
+  unlockableDefs:
+  - {fileID: 11400000, guid: 0221f8f324ed6434ab5a5b9d6dca306b, type: 2}
+  - {fileID: 11400000, guid: c88d91c17e91ed840986475b6c04c761, type: 2}
   survivorDefs:
   - {fileID: 11400000, guid: fb2f77f99ba1aed4e8864dd5b4d784d9, type: 2}
   artifactDefs: []
   surfaceDefs: []
   networkSoundEventDefs:
   - {fileID: 11400000, guid: c2a3c6484bedfa046ace1d499d7ddea4, type: 2}
+  - {fileID: 11400000, guid: 890ab6f2854199d4c88559e717a89dcf, type: 2}
   musicTrackDefs: []
   gameEndingDefs: []
   entityStateConfigurations:
@@ -49,4 +53,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9c1dcec44cde3dc4e955aec1e369f548, type: 2}
   - {fileID: 11400000, guid: 75e43ae0a11a10945a3875618e11b4e4, type: 2}
   - {fileID: 11400000, guid: 726b41d12ecabd8498ae8cade39fb246, type: 2}
+  - {fileID: 11400000, guid: 80b347e83890ea942a7a818bb72ae499, type: 2}
+  - {fileID: 11400000, guid: 0cf67579d33ba894c9dc1722e6fbf3bd, type: 2}
   entityStateTypes: []

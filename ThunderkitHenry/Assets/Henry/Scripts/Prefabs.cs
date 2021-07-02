@@ -22,6 +22,8 @@ namespace ThunderHenry.Modules
         internal static List<GameObject> bodyPrefabs = new List<GameObject>();
         internal static List<GameObject> displayPrefabs = new List<GameObject>();
 
+        private static PhysicMaterial ragdollMaterial;
+
         internal static void Init()
         {
             GetPrefabs();
@@ -33,7 +35,7 @@ namespace ThunderHenry.Modules
             ForEachReferences();
 
             //If you want to change the 'defaults' set in ForEachReferences, then set them for individual bodyPrefabs here.
-            //This is if you want to use a custom crosshair.
+            //This is if you want to use a custom crosshair or other stuff.
 
             // bodyPrefabs[0].GetComponent<CharacterBody>().crosshairPrefab = ...whatever you wanna set here.
         }
@@ -48,6 +50,33 @@ namespace ThunderHenry.Modules
 
                 var fs = g.GetComponentInChildren<FootstepHandler>();
                 fs.footstepDustPrefab = Resources.Load<GameObject>("prefabs/GenericFootstepDust");
+
+                SetupRagdoll(g);
+            }
+        }
+
+        // Code from the original henry to setup Ragdolls for you.
+        // This is so you dont have to manually set the layers for each object in the bones list.
+        private static void SetupRagdoll(GameObject model)
+        {
+            RagdollController ragdollController = model.GetComponent<RagdollController>();
+
+            if (!ragdollController) return;
+
+            if (ragdollMaterial == null) ragdollMaterial = Resources.Load<GameObject>("Prefabs/CharacterBodies/CommandoBody").GetComponentInChildren<RagdollController>().bones[1].GetComponent<Collider>().material;
+
+            foreach (Transform i in ragdollController.bones)
+            {
+                if (i)
+                {
+                    i.gameObject.layer = LayerIndex.ragdoll.intVal;
+                    Collider j = i.GetComponent<Collider>();
+                    if (j)
+                    {
+                        j.material = ragdollMaterial;
+                        j.sharedMaterial = ragdollMaterial;
+                    }
+                }
             }
         }
 

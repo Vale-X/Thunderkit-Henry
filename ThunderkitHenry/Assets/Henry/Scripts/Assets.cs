@@ -10,7 +10,7 @@ using System.Linq;
 using R2API;
 using RoR2;
 using EntityStates;
-using ThunderHenry.Scriptables;
+using StubbedConverter;
 
 namespace ThunderHenry.Modules
 {
@@ -41,14 +41,12 @@ namespace ThunderHenry.Modules
 
             LoadAssetBundle();
             LoadSoundBank();
-
-			//Put anything extra related to Assets in this method.
             PopulateAssets();
         }
 
 		// Any extra asset stuff not handled or loaded by the Asset Bundle should be sorted here.
 		// This is also a good place to set up any references, if you need to.
-		// References for SkillStates can be done through EntityStateConfigs instead.
+		// References within SkillState scripts can be done through EntityStateConfigs instead.
 		internal static void PopulateAssets()
 		{
 			if (!mainAssetBundle)
@@ -77,7 +75,7 @@ namespace ThunderHenry.Modules
         }
 
 		// Sorts out ContentPack related shenanigans.
-		// Sets up variables for reference throughout the mod, and initializes a new content pack based on the SerializableContentPack.
+		// Sets up variables for reference throughout the mod and initializes a new content pack based on the SerializableContentPack.
 		internal static void LoadContentPack()
         {
 			serialContentPack = mainAssetBundle.LoadAsset<SerializableContentPack>(contentPackName);
@@ -89,7 +87,6 @@ namespace ThunderHenry.Modules
 
 
 		// Loads the sound bank for any custom sounds. 
-		// Remove the text inside soundBankName if you don't need one.
         internal static void LoadSoundBank()
         {
 			if (soundBankName == "mysoundbank")

@@ -32,10 +32,10 @@ namespace ThunderHenry.SkillStates.BaseStates
 			}
 		}
 
-		protected override void PlayDeathAnimation(float crossfadeDuration = 0.1f)
+		public override void PlayDeathAnimation(float crossfadeDuration = 0.1f)
 		{
 		}
-		protected override bool shouldAutoDestroy
+		public override bool shouldAutoDestroy
 		{
 			get
 			{

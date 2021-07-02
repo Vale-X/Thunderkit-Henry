@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: RollSkillDef
   m_EditorClassIdentifier: 
   skillName: Roll
-  skillNameToken: ROBVALE_HENRY_BODY_UTILITY_ROLL_NAME
-  skillDescriptionToken: ROBVALE_HENRY_BODY_UTILITY_ROLL_DESCRIPTION
+  skillNameToken: ROBVALE_THUNDERHENRY_BODY_UTILITY_ROLL_NAME
+  skillDescriptionToken: ROBVALE_THUNDERHENRY_BODY_UTILITY_ROLL_DESCRIPTION
   keywordTokens: []
   icon: {fileID: 21300000, guid: 0f5783e971afb924daa22df12d6c1325, type: 3}
-  activationStateMachineName: Slide
+  activationStateMachineName: Body
   activationState:
     _typeName: ThunderHenry.SkillStates.Roll, ThunderHenry
   interruptPriority: 1

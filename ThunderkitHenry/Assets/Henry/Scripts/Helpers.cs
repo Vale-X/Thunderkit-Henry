@@ -14,30 +14,27 @@ namespace ThunderHenry.Modules
         public static void AwakeDebug()
         {
             PrintEntityStatesForConfigNames();
-            ItemDisplayTestDebug();
+            ItemDisplayTestDebug(0);
         }
 
         // Entity State Configurations require very specific 'Assembly Qualified Names' in order to work correctly.
         // This should print you the name that you need to put into the Entity State Configuration.
+        // replace `ThunderHenry.SkillStates.SlashCombo` with a skillstate in your mod. 
         private static void PrintEntityStatesForConfigNames()
         {
-            var state = new SerializableEntityStateType(typeof(ThunderHenry.SkillStates.SlashCombo));
+            var state = new SerializableEntityStateType(typeof(ThunderHenry.SkillStates.PunchCombo));
             Debug.LogWarning(ThunderHenryPlugin.MODNAME + ": DEBUG: TypeName print: " + state.typeName);
         }
 
-        private static void ItemDisplayTestDebug()
+        // Print out the first keyAsset and followerPrefab in an item display ruleset, to see if things work properly.
+        private static void ItemDisplayTestDebug(int contentPackBodyIndex)
         {
-            var bodyPrefab = Prefabs.bodyPrefabs[0];
+            var bodyPrefab = Prefabs.bodyPrefabs[contentPackBodyIndex];
 
             var bodyModel = bodyPrefab.GetComponentInChildren<CharacterModel>();
 
-            Debug.LogWarning(bodyModel.itemDisplayRuleSet.keyAssetRuleGroups[0].keyAsset);
-            Debug.LogWarning(bodyModel.itemDisplayRuleSet.keyAssetRuleGroups[0].displayRuleGroup.rules[0].followerPrefab);
-        }
-
-        internal static string ScepterDescription(string desc)
-        {
-            return "\n<color=#d299ff>SCEPTER: " + desc + "</color>";
+            Debug.LogWarning(ThunderHenryPlugin.MODNAME + ": DEBUG: ItemDisplay KeyAsset: " + bodyModel.itemDisplayRuleSet.keyAssetRuleGroups[0].keyAsset);
+            Debug.LogWarning(ThunderHenryPlugin.MODNAME + ": DEBUG: ItemDisplay FollowerPrefab: " + bodyModel.itemDisplayRuleSet.keyAssetRuleGroups[0].displayRuleGroup.rules[0].followerPrefab);
         }
 
         public static T[] Append<T>(ref T[] array, List<T> list)

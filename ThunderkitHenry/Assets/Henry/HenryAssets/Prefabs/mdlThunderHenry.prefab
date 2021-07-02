@@ -2428,9 +2428,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3811311030721418252}
   - component: {fileID: 3811311030713940940}
-  - component: {fileID: 5407097163187792057}
   m_Layer: 0
-  m_Name: mdlHenry
+  m_Name: mdlThunderHenry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2473,63 +2472,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5407097163187792057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3811311030721185900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1143142494, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  body: {fileID: 0}
-  itemDisplayRuleSet: {fileID: 11400000, guid: 61e2f432fcba08f49a5156e290d059bc, type: 2}
-  autoPopulateLightInfos: 1
-  baseRendererInfos:
-  - renderer: {fileID: 3811311030718072078}
-    defaultMaterial: {fileID: 2100000, guid: 14d6d121af8aca345b797120c5f6331b, type: 2}
-    defaultShadowCastingMode: 0
-    ignoreOverlays: 0
-  - renderer: {fileID: 2590939198108794212}
-    defaultMaterial: {fileID: 2100000, guid: 14d6d121af8aca345b797120c5f6331b, type: 2}
-    defaultShadowCastingMode: 0
-    ignoreOverlays: 0
-  - renderer: {fileID: 3811311030718072076}
-    defaultMaterial: {fileID: 2100000, guid: 14d6d121af8aca345b797120c5f6331b, type: 2}
-    defaultShadowCastingMode: 0
-    ignoreOverlays: 0
-  baseLightInfos: []
-  childLocator: {fileID: 0}
-  goldAffixEffect: {fileID: 0}
-  coreTransform: {fileID: 0}
-  _visibility: 0
-  _isGhost: 0
-  _isDoppelganger: 0
-  _isEcho: 0
-  materialsDirty: 0
-  inventoryEquipmentIndex: 0
-  myEliteIndex: 0
-  fade: 0
-  firstPersonFade: 0
-  mainSkinnedMeshRenderer: {fileID: 0}
-  particleMaterialOverride: {fileID: 0}
-  poisonAffixEffect: {fileID: 0}
-  hauntedAffixEffect: {fileID: 0}
-  affixHauntedCloakLockoutDuration: 0
-  currentEquipmentDisplayIndex: 0
-  enabledItemDisplays:
-    array: 
-  limbFlagSet:
-    flagCounts: 
-    flags: 0
-  currentOverlays: []
-  activeOverlayCount: 0
-  wasPreviouslyClayGooed: 0
-  wasPreviouslyHaunted: 0
-  shaderEliteRampIndex: 0
 --- !u!1 &3811311030721185902
 GameObject:
   m_ObjectHideFlags: 0

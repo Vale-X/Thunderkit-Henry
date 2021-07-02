@@ -30,9 +30,16 @@ namespace ThunderHenry.SkillStates.BaseStates
         protected string swingSoundString = "";
         protected string hitSoundString = "";
         protected string muzzleString = "SwingCenter";
+        protected NetworkSoundEventIndex impactSoundIndex;
+
+        [SerializeField]
+        public NetworkSoundEventDef impactSound;
+
+        [SerializeField]
         protected GameObject swingEffectPrefab;
+
+        [SerializeField]
         protected GameObject hitEffectPrefab;
-        protected NetworkSoundEventIndex impactSound;
 
         private float earlyExitTime;
         public float duration;
@@ -54,8 +61,9 @@ namespace ThunderHenry.SkillStates.BaseStates
             this.hasFired = false;
             this.animator = base.GetModelAnimator();
             base.StartAimMode(0.5f + this.duration, false);
-            //base.characterBody.outOfCombatStopwatch = 0f;
+            base.characterBody.outOfCombatStopwatch = 0f;
             this.animator.SetBool("attacking", true);
+            this.impactSoundIndex = impactSound.index;
 
             HitBoxGroup hitBoxGroup = null;
             Transform modelTransform = base.GetModelTransform();
@@ -79,7 +87,7 @@ namespace ThunderHenry.SkillStates.BaseStates
             this.attack.pushAwayForce = this.pushForce;
             this.attack.hitBoxGroup = hitBoxGroup;
             this.attack.isCrit = base.RollCrit();
-            this.attack.impactSound = this.impactSound;          
+            this.attack.impactSound = this.impactSoundIndex;          
         }
 
         protected virtual void PlayAttackAnimation()

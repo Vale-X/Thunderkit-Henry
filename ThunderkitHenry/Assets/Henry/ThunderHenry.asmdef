@@ -7,9 +7,11 @@
     "allowUnsafeCode": false,
     "overrideReferences": true,
     "precompiledReferences": [
-        "Assembly-CSharp.dll",
+        "Assembly-CSharp.Public.dll",
         "BepInEx.dll",
-        "R2API.dll"
+        "R2API.dll",
+        "MMHOOK_Assembly-CSharp.dll",
+        "StubbedShaderConverter.dll"
     ],
     "autoReferenced": true,
     "defineConstraints": []

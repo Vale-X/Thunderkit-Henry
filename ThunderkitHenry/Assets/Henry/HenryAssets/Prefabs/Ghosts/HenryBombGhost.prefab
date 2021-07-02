@@ -9,9 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6254900371561122587}
-  - component: {fileID: 114167691667841694}
+  - component: {fileID: 114831257985246918}
   - component: {fileID: 114305697980288924}
-  - component: {fileID: 114372601556576420}
   m_Layer: 0
   m_Name: HenryBombGhost
   m_TagString: Untagged
@@ -27,14 +26,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6254900371561122584}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1819756, y: 0.51891863, z: 2.3114138}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_Children:
   - {fileID: 6254900373492174208}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114167691667841694
+--- !u!114 &114831257985246918
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -79,22 +78,8 @@ MonoBehaviour:
   m_Script: {fileID: 678291247, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114372601556576420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6254900371561122584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 816898038, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vfxPriority: 2
-  vfxIntensity: 0
-  optionalLights: []
-  secondaryParticleSystem: []
+  transform: {fileID: 0}
+  migration: 1
 --- !u!1 &6254900373491945888
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,6 +195,14 @@ MonoBehaviour:
   m_DistantDisable: 0
   m_ReferenceObject: {fileID: 0}
   m_DistanceToObject: 20
+  m_LocalGravity: {x: 0, y: 0, z: 0}
+  m_ObjectMove: {x: 0, y: 0, z: 0}
+  m_ObjectPrevPosition: {x: 0, y: 0, z: 0}
+  m_BoneTotalLength: 0
+  m_ObjectScale: 0
+  m_Time: 0
+  m_Weight: 0
+  m_DistantDisabled: 0
 --- !u!114 &7763780903449193909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,7 +276,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  timeMax: 0.45
+  timeMax: 0.1
 --- !u!1 &6254900373491945890
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,7 +572,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1dbc6038d2c2f6e4aa6fbdf87c9752ed, type: 3}
+  - {fileID: 2100000, guid: 3087b48f63a8f124ba671841bb9324e1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

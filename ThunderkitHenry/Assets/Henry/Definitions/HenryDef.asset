@@ -12,16 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: -1881990681, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
   m_Name: HenryDef
   m_EditorClassIdentifier: 
+  _cachedName: 
   bodyPrefab: {fileID: 5150082409466045905, guid: bd791d6404f562f49998cfe7297b2846,
     type: 3}
   displayPrefab: {fileID: 6480957988586946340, guid: 3cb1774da952100409c54350802e3f02,
     type: 3}
   unlockableName: 
   unlockableDef: {fileID: 0}
-  displayNameToken: ROBVALE_HENRY_BODY_NAME
-  descriptionToken: ROBVALE_HENRY_BODY_DESCRIPTION
-  outroFlavorToken: ROBVALE_HENRY_BODY_OUTRO_FLAVOR
-  mainEndingEscapeFailureFlavorToken: ROBVALE_HENRY_BODY_OUTRO_FAILUR
+  displayNameToken: ROBVALE_THUNDERHENRY_BODY_NAME
+  descriptionToken: ROBVALE_THUNDERHENRY_BODY_DESCRIPTION
+  outroFlavorToken: ROBVALE_THUNDERHENRY_BODY_OUTRO_FLAVOR
+  mainEndingEscapeFailureFlavorToken: ROBVALE_THUNDERHENRY_BODY_OUTRO_FAILURE
   primaryColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   desiredSortPosition: 14
   hidden: 0

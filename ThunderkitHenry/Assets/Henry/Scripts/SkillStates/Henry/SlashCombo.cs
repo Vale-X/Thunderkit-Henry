@@ -9,12 +9,6 @@ namespace ThunderHenry.SkillStates
         [SerializeField]
         public GameObject swordSwingEffect;
 
-        [SerializeField]
-        public GameObject swordHitImpactEffect;
-
-        [SerializeField]
-        public NetworkSoundEventDef swordHitSoundEvent;
-
         public override void OnEnter()
         {
             this.hitboxName = "Sword";
@@ -36,9 +30,6 @@ namespace ThunderHenry.SkillStates
             this.hitSoundString = "";
             this.muzzleString = swingIndex % 2 == 0 ? "SwingLeft" : "SwingRight";
             this.swingEffectPrefab = swordSwingEffect;
-            this.hitEffectPrefab = swordHitImpactEffect;
-
-            this.impactSound = swordHitSoundEvent.index;
 
             base.OnEnter();
         }
