@@ -31,6 +31,8 @@ namespace ThunderHenry.Achievements
         public override void OnUninstall()
         {
             base.OnUninstall();
+
+            GameNetworkManager.onServerSceneChangedGlobal -= TestCheck;
         }
     }
 }

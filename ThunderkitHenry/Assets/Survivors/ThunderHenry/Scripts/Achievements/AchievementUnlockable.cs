@@ -2,6 +2,7 @@
 using RoR2.Achievements;
 using UnityEngine;
 using System;
+using JetBrains.Annotations;
 using ThunderHenry.Modules;
 
 namespace ThunderHenry.Achievements
@@ -23,13 +24,23 @@ namespace ThunderHenry.Achievements
         internal string PrerequisiteUnlockableIdentifier;
 
         internal AchievementDef achievementDef;
-        internal BaseAchievement baseAchievement;
+        internal BaseAchievement achievement;
 
         internal virtual void Initialize()
         {
-            achievementCondition = new SerializableAchievement(typeof(ThunderHenry.Achievements.TestHenryAchievement));
-            Debug.LogWarning("0");
-            baseAchievement = InstantiateAchievement(achievementCondition.achievementType);
+            /*this.achievement = new EmptyAchievement();
+            Type achievementType = this.achievementCondition.achievementType;
+            Debug.LogWarning(achievementCondition);
+            Debug.LogWarning(achievementCondition.GetType());
+            Debug.LogWarning(achievementCondition.achievementType);
+            Debug.LogWarning(achievementCondition.achievementName);
+            if (this.achievement is EmptyAchievement && achievementType != null && achievementType.IsSubclassOf(typeof(BaseAchievement)))
+            {
+                this.achievement = InstantiateAchievement(achievementType);
+            }*/
+
+            this.achievementCondition = new SerializableAchievement(typeof(ThunderHenry.Achievements.TestHenryAchievement));
+            this.achievement = InstantiateAchievement(achievementCondition.achievementType);
             Debug.LogWarning("1");
             AchievementNameToken = nameToken;
             AchievementIdentifier = AchievementNameToken + "_ID";
@@ -49,7 +60,8 @@ namespace ThunderHenry.Achievements
             Debug.LogWarning(AchievementNameToken);
             Debug.LogWarning(descToken);
             Debug.LogWarning(icon);
-            Debug.LogWarning(baseAchievement.GetType());
+            Debug.LogWarning(achievement);
+            Debug.LogWarning(achievement.GetType());
             Debug.LogWarning((serverTracked ? achievementDef.GetType() : null));
 
             achievementDef = new AchievementDef 
@@ -60,12 +72,12 @@ namespace ThunderHenry.Achievements
                 nameToken = AchievementNameToken,
                 descriptionToken = descToken,
                 achievedIcon = icon,
-                type = baseAchievement.GetType(),
+                type = achievement.GetType(),
                 serverTrackerType = (serverTracked ? achievementDef.GetType() : null)
             };
             Debug.LogWarning("6");
 
-            //achievementCondition.achievementDef = achievement;
+            achievement.achievementDef = achievementDef;
         }
 
         private BaseAchievement InstantiateAchievement(Type achievementType)
