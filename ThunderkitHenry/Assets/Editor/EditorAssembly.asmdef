@@ -1,6 +1,8 @@
 {
     "name": "EntityStateEditor",
-    "references": [],
+    "references": [
+        "ThunderHenry"
+    ],
     "optionalUnityReferences": [],
     "includePlatforms": [
         "Editor"

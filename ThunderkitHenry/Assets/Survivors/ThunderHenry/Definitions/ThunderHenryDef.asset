@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1881990681, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
+  m_Name: ThunderHenryDef
+  m_EditorClassIdentifier: 
+  bodyPrefab: {fileID: 5150082409466045905, guid: bd791d6404f562f49998cfe7297b2846,
+    type: 3}
+  displayPrefab: {fileID: 6480957988586946340, guid: 3cb1774da952100409c54350802e3f02,
+    type: 3}
+  unlockableName: 
+  unlockableDef: {fileID: 11400000, guid: 36505085e0c034d489d27e5b6546d342, type: 2}
+  displayNameToken: ROBVALE_THUNDERHENRY_BODY_NAME
+  descriptionToken: ROBVALE_THUNDERHENRY_BODY_DESCRIPTION
+  outroFlavorToken: ROBVALE_THUNDERHENRY_BODY_OUTRO_FLAVOR
+  mainEndingEscapeFailureFlavorToken: ROBVALE_THUNDERHENRY_BODY_OUTRO_FAILURE
+  primaryColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  desiredSortPosition: 14
+  hidden: 0
