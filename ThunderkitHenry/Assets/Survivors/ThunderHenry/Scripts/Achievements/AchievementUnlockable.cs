@@ -7,7 +7,7 @@ using ThunderHenry.Modules;
 
 namespace ThunderHenry.Achievements
 {
-    [CreateAssetMenu(menuName = "RoR2/AchievementUnlockable2")]
+    [CreateAssetMenu(menuName = "RoR2/AchievementUnlockable")]
     class AchievementUnlockable : UnlockableDef
     {
         public SerializableAchievement achievementCondition;

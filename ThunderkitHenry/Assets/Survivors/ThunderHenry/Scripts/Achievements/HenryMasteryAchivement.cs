@@ -5,7 +5,7 @@ using ThunderHenry.Modules;
 
 namespace ThunderHenry.Achievements
 {
-   /* internal class ThunderHenryMastery : UnlockableCreator.ThunderHenryUnlockable
+    internal class ThunderHenryMastery : UnlockableCreator.ThunderHenryUnlockable
     {
         public override string Prefix => ThunderHenryPlugin.developerPrefix + "_THUNDERHENRY_BODY_UNLOCK_";
         public override string AchievementNameToken => Prefix + "MASTERY_ACHIEVEMENT_NAME";
@@ -66,5 +66,5 @@ namespace ThunderHenry.Achievements
         });
 
 
-    }*/
+    }
 }

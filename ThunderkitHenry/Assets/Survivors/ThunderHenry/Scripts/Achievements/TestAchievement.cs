@@ -14,7 +14,7 @@ namespace ThunderHenry.Achievements
         public override void OnInstall()
         {
             base.OnInstall();
-
+            Debug.LogWarning("AAAAAA");
             GameNetworkManager.onServerSceneChangedGlobal += TestCheck;
         }
 

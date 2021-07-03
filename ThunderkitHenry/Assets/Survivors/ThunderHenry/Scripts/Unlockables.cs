@@ -13,10 +13,10 @@ namespace ThunderHenry.Modules
 {
     internal static class Unlockables
     {
-        private static readonly HashSet<string> usedRewardIds = new HashSet<string>();
         internal static List<AchievementDef> achievementDefs = new List<AchievementDef>();
         internal static List<UnlockableDef> unlockableDefs = new List<UnlockableDef>();
         private static readonly List<(AchievementDef achievementDef, UnlockableDef unlockableDef, string unlockableName)> moddedUnlocks = new List<(AchievementDef achievementDef, UnlockableDef unlockableDef, string unlockableName)>();
+        private static readonly HashSet<string> usedRewardIds = new HashSet<string>();
         private static List<SerializableAchievement> conditions = new List<SerializableAchievement>();
         
         private static bool addingUnlockables;
@@ -40,32 +40,37 @@ namespace ThunderHenry.Modules
                 throw new InvalidOperationException($"The unlockable identifier '{unlockableIdentifier}' is already used by another mod or used by the base game.");
             }
 
-            unlockableDefs.Add(instance);
-            achievementDefs.Add(instance.achievementDef);
-            moddedUnlocks.Add((instance.achievementDef, instance, instance.UnlockableIdentifier));
-
-            if (!addingUnlockables)
+            AchievementDef def = new AchievementDef
             {
-                addingUnlockables = true;
-                IL.RoR2.AchievementManager.CollectAchievementDefs += BCollectAchievementDefs;
-                IL.RoR2.UnlockableCatalog.Init += BInit_Il;
-            }
+                identifier = instance.AchievementIdentifier,
+                unlockableRewardIdentifier = instance.nameToken,
+                prerequisiteAchievementIdentifier = instance.PrerequisiteUnlockableIdentifier,
+                nameToken = instance.AchievementNameToken,
+                descriptionToken = instance.descToken,
+                achievedIcon = instance.icon,
+                type = instance.GetType(),
+                serverTrackerType = (instance.serverTracked ? instance.GetType() : null)
+            };
+            Debug.LogWarning("UnlockableDef identifier: " + instance.AchievementIdentifier);
+            Debug.LogWarning("UnlockableDef NameToken: " + instance.nameToken);
+            Debug.LogWarning("UnlockableDef prereq: " + instance.PrerequisiteUnlockableIdentifier);
+            Debug.LogWarning("UnlockableDef NameToken: " + instance.nameToken);
+            Debug.LogWarning("UnlockableDef descToken: " + instance.descToken);
+            Debug.LogWarning("UnlockableDef type: " + instance.GetType());
 
-            return instance;
-        }
+            Debug.LogWarning("AchievementDef identifier: " + def.identifier);
+            Debug.LogWarning("AchievementDef rewardIdentifier: " + def.unlockableRewardIdentifier);
+            Debug.LogWarning("AchievementDef prereq: " + def.prerequisiteAchievementIdentifier);
+            Debug.LogWarning("AchievementDef nameToken: " + def.nameToken);
+            Debug.LogWarning("AchievementDef descToken: " + def.descriptionToken);
+            Debug.LogWarning("AchievementDef icon: " + def.achievedIcon);
+            Debug.LogWarning("AchievementDef type: " + def.type);
+            
+            BaseAchievement achievement = (BaseAchievement)Activator.CreateInstance(instance.achievementCondition.achievementType);
+            achievement.achievementDef = def;
 
-        internal static UnlockableDef AddAchievementUnlockable<TUnlockable>() where TUnlockable : AchievementUnlockable, new()
-        {
-            TUnlockable instance = new TUnlockable();
-
-            instance.Initialize();
-
-            string unlockableIdentifier = instance.UnlockableIdentifier;
-
-            if (!usedRewardIds.Add(unlockableIdentifier))
-            {
-                throw new InvalidOperationException($"The unlockable identifier '{unlockableIdentifier}' is already used by another mod or used by the base game.");
-            }
+            Debug.LogWarning("BaseAchievment AchievementDef: " + achievement.achievementDef);
+            Debug.LogWarning("BaseAchievment AchievementDef nameToken: " + achievement.achievementDef.nameToken);
 
             unlockableDefs.Add(instance);
             achievementDefs.Add(instance.achievementDef);
@@ -123,7 +128,7 @@ namespace ThunderHenry.Modules
         }
     }
 
-    /*internal static class UnlockableCreator
+    internal static class UnlockableCreator
     {
         private static readonly HashSet<string> usedRewardIds = new HashSet<string>();
         internal static List<AchievementDef> achievementdefs = new List<AchievementDef>();
@@ -298,5 +303,5 @@ where TDelegate : Delegate
             public override bool wantsBodyCallbacks { get => base.wantsBodyCallbacks; }
             #endregion
         }
-    }*/
+    }
 }
