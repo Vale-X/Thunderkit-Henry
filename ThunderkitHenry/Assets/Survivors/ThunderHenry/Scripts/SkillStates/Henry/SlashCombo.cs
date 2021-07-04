@@ -6,9 +6,6 @@ namespace ThunderHenry.SkillStates
 {
     public class SlashCombo : BaseMeleeAttack
     {
-        [SerializeField]
-        public GameObject swordSwingEffect;
-
         public override void OnEnter()
         {
             this.hitboxName = "Sword";
@@ -29,7 +26,6 @@ namespace ThunderHenry.SkillStates
             this.swingSoundString = "HenrySwordSwing";
             this.hitSoundString = "";
             this.muzzleString = swingIndex % 2 == 0 ? "SwingLeft" : "SwingRight";
-            this.swingEffectPrefab = swordSwingEffect;
 
             base.OnEnter();
         }

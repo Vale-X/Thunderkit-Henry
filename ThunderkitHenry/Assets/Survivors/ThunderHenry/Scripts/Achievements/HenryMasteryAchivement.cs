@@ -5,12 +5,15 @@ using ThunderHenry.Modules;
 
 namespace ThunderHenry.Achievements
 {
-    internal class ThunderHenryMastery : UnlockableCreator.ThunderHenryUnlockable
+    internal class ThunderHenryMastery : UnlockableCreator.ThunderHenryAchievement
     {
-        public override string Prefix => ThunderHenryPlugin.developerPrefix + "_THUNDERHENRY_BODY_UNLOCK_";
-        public override string AchievementNameToken => Prefix + "MASTERY_ACHIEVEMENT_NAME";
-        public override string AchievementDescToken => Prefix + "MASTERY_ACHIEVEMENT_DESC";
-        public override UnlockableDef UnlockableDef => Modules.Assets.mainAssetBundle.LoadAsset<UnlockableDef>("Characters.ThunderHenry");
+        public override string Prefix => ThunderHenryPlugin.developerPrefix + Tokens.henryPrefix + "UNLOCK_";
+        public override string AchievementNameToken => Prefix + "MASTERY_NAME";
+        public override string AchievementDescToken => Prefix + "MASTERY_DESC";
+        public override string AchievementIdentifier => Prefix + "MASTERY_ID";
+        public override string UnlockableIdentifier => Prefix + "MASTERY_REWARD_ID";
+        public override string PrerequisiteUnlockableIdentifier => Prefix + "SURVIVOR_ID";
+        public override UnlockableDef UnlockableDef => Modules.Assets.mainAssetBundle.LoadAsset<UnlockableDef>("Skins.ThunderHenry.Alt1");
         public override Sprite Sprite => Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texHenryAchievement");
 
         public override void Initialize()
@@ -31,38 +34,52 @@ namespace ThunderHenry.Achievements
 
         private void RunEndHenry(Run run, RunReport runReport)
         {
-            if (run is null) return;
-            if (runReport is null) return;
+            if (run is null) { Debug.LogWarning("RunIsNull"); return; }
+            if (runReport is null) { Debug.LogWarning(""); return; }
 
-            if (!runReport.gameEnding) return;
+            if (!runReport.gameEnding) { Debug.LogWarning(""); return; }
 
             if (runReport.gameEnding.isWin)
             {
+                Debug.LogWarning("isWin");
                 DifficultyDef difficultyDef = DifficultyCatalog.GetDifficultyDef(runReport.ruleBook.FindDifficulty());
 
                 if (difficultyDef != null && difficultyDef.countsAsHardMode)
                 {
+                    Debug.LogWarning("IsHardMode");
                     if (base.meetsBodyRequirement)
                     {
+                        Debug.LogWarning("BodyReqMet");
                         base.Grant();
                     }
                 }
             }
         }
 
-        public override string AchievementIdentifier => Prefix + "ACHIEVEMENT_ID";
-        public override string UnlockableIdentifier => Prefix + "REWARD_ID";
-        public override string PrerequisiteUnlockableIdentifier => Prefix + "PREREQ_ID";
+        public override BodyIndex LookUpRequiredBodyIndex()
+        {
+            return BodyCatalog.FindBodyIndex(Prefabs.bodyPrefabs[0]);
+        }
+        public override void OnBodyRequirementMet()
+        {
+            base.OnBodyRequirementMet();
+            base.SetServerTracked(true);
+        }
+        public override void OnBodyRequirementBroken()
+        {
+            base.SetServerTracked(false);
+            base.OnBodyRequirementBroken();
+        }
 
         public override Func<string> GetHowToUnlock => () => Language.GetStringFormatted("UNLOCK_VIA_ACHIEVEMENT_FORMAT", new object[]
         {
             Language.GetString(AchievementNameToken),
             Language.GetString(AchievementDescToken)
         });
-        public override Func<string> GetUnlocked { get; } = () => Language.GetStringFormatted("UNLOCKED_FORMAT", new object[]
+        public override Func<string> GetUnlocked => () => Language.GetStringFormatted("UNLOCKED_FORMAT", new object[]
         {
-            Language.GetString("ROBVALE_THUNDERHENRY_BODY_UNLOCK_ACHIEVEMENT_NAME"),
-            Language.GetString("ROBVALE_THUNDERHENRY_BODY_UNLOCK_ACHIEVEMENT_DESC")
+            Language.GetString(AchievementNameToken),
+            Language.GetString(AchievementDescToken)
         });
 
 

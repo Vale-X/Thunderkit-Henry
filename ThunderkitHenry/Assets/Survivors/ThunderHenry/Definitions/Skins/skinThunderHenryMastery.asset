@@ -17,7 +17,7 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: b6f91ba019353654992c4a536e207a87, type: 3}
   nameToken: ROBVALE_THUNDERHENRY_BODY_MASTERY_SKIN_NAME
   unlockableName: 
-  unlockableDef: {fileID: 0}
+  unlockableDef: {fileID: 11400000, guid: c88d91c17e91ed840986475b6c04c761, type: 2}
   rootObject: {fileID: 8771454438400096566, guid: bd791d6404f562f49998cfe7297b2846,
     type: 3}
   rendererInfos:

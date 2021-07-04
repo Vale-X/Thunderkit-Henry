@@ -34,12 +34,10 @@ namespace ThunderHenry.SkillStates.BaseStates
 
         [SerializeField]
         public NetworkSoundEventDef impactSound;
-
         [SerializeField]
-        protected GameObject swingEffectPrefab;
-
+        public GameObject swingEffectPrefab;
         [SerializeField]
-        protected GameObject hitEffectPrefab;
+        public GameObject hitEffectPrefab;
 
         private float earlyExitTime;
         public float duration;

@@ -36,18 +36,6 @@ namespace ThunderHenry.Modules
             Debug.LogWarning(ThunderHenryPlugin.MODNAME + ": DEBUG: ItemDisplay KeyAsset: " + bodyModel.itemDisplayRuleSet.keyAssetRuleGroups[0].keyAsset);
             Debug.LogWarning(ThunderHenryPlugin.MODNAME + ": DEBUG: ItemDisplay FollowerPrefab: " + bodyModel.itemDisplayRuleSet.keyAssetRuleGroups[0].displayRuleGroup.rules[0].followerPrefab);
         }
-
-        public static T[] Append<T>(ref T[] array, List<T> list)
-        {
-            var orig = array.Length;
-            var added = list.Count;
-            Array.Resize<T>(ref array, orig + added);
-            list.CopyTo(array, orig);
-            return array;
-        }
-
-        public static Func<T[], T[]> AppendDel<T>(List<T> list) => (r) => Append(ref r, list);
-
     }
 
     internal static class ArrayHelper
@@ -59,6 +47,14 @@ namespace ThunderHenry.Modules
             Array.Resize<T>(ref array, orig + added);
             list.CopyTo(array, orig);
             return array;
+        }
+
+        public static T[] AppendSingle<T>(ref T[] array, T item)
+        {
+            List<T> list = new List<T>();
+            list.Add(item);
+            var backArray = Append<T>(ref array, list);
+            return backArray;
         }
 
         public static Func<T[], T[]> AppendDel<T>(List<T> list) => (r) => Append(ref r, list);

@@ -1,4 +1,4 @@
-﻿using RoR2;
+﻿/*using RoR2;
 using RoR2.Achievements;
 using UnityEngine;
 using System;
@@ -28,7 +28,7 @@ namespace ThunderHenry.Achievements
 
         internal virtual void Initialize()
         {
-            /*this.achievement = new EmptyAchievement();
+            *//*this.achievement = new EmptyAchievement();
             Type achievementType = this.achievementCondition.achievementType;
             Debug.LogWarning(achievementCondition);
             Debug.LogWarning(achievementCondition.GetType());
@@ -37,7 +37,7 @@ namespace ThunderHenry.Achievements
             if (this.achievement is EmptyAchievement && achievementType != null && achievementType.IsSubclassOf(typeof(BaseAchievement)))
             {
                 this.achievement = InstantiateAchievement(achievementType);
-            }*/
+            }*//*
 
             this.achievementCondition = new SerializableAchievement(typeof(ThunderHenry.Achievements.TestHenryAchievement));
             this.achievement = InstantiateAchievement(achievementCondition.achievementType);
@@ -107,3 +107,4 @@ namespace ThunderHenry.Achievements
 
     }
 }
+*/

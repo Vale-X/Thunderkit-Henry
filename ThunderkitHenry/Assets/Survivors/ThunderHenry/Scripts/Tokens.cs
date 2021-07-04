@@ -5,10 +5,14 @@ namespace ThunderHenry.Modules
 {
     internal static class Tokens
     {
+        // Used everywhere within tokens. Format is DeveloperPrefix + BodyPrefix + unique per token
+        // A full example token for ThunderHenry would be ROBVALE_THUNDERHENRY_BODY_UNLOCK_SURVIVOR_NAME.
+        internal const string henryPrefix = "_THUNDERHENRY_BODY_";
+
         internal static void Init()
         {
             #region Henry
-            string prefix = ThunderHenryPlugin.developerPrefix + "_THUNDERHENRY_BODY_";
+            string prefix = ThunderHenryPlugin.developerPrefix + henryPrefix;
 
             string desc = "Thunder Henry is a skilled fighter who makes use of a wide arsenal of weaponry to take down his foes.<color=#CCD3E0>" + Environment.NewLine + Environment.NewLine;
             desc = desc + "< ! > Sword is a good all-rounder while Boxing Gloves are better for laying a beatdown on more powerful foes." + Environment.NewLine + Environment.NewLine;
@@ -60,16 +64,17 @@ namespace ThunderHenry.Modules
             #endregion
 
             #region Achievements
-            LanguageAPI.Add(prefix + "UNLOCK_ACHIEVEMENT_NAME", "Thunderous Prelude");
-            LanguageAPI.Add(prefix + "UNLOCK_ACHIEVEMENT_DESC", "Enter Distant Roost.");
-            LanguageAPI.Add(prefix + "UNLOCK_UNLOCKABLE_NAME", "Thunderous Prelude");
-            LanguageAPI.Add(prefix + "UNLOCK_MASTERY_ACHIEVEMENT_NAME", "Thunder Henry: Mastery");
-            LanguageAPI.Add(prefix + "UNLOCK_MASTERY_ACHIEVEMENT_DESC", "As Thunder Henry, beat the game or obliterate on Monsoon.");
+            LanguageAPI.Add(prefix + "UNLOCK_SURVIVOR_NAME", "Thunderous Prelude");
+            LanguageAPI.Add(prefix + "UNLOCK_SURVIVOR_DESC", "Enter Distant Roost.");
+            LanguageAPI.Add(prefix + "UNLOCK_SURVIVOR_UNLOCKABLE_NAME", "Thunderous Prelude");
+
+            LanguageAPI.Add(prefix + "UNLOCK_MASTERY_NAME", "Thunder Henry: Mastery");
+            LanguageAPI.Add(prefix + "UNLOCK_MASTERY_DESC", "As Thunder Henry, beat the game or obliterate on Monsoon.");
             LanguageAPI.Add(prefix + "UNLOCK_MASTERY_UNLOCKABLE_NAME", "Thunder Henry: Mastery");
 
-            LanguageAPI.Add(prefix + "UNLOCK_TEST_NAME", "WOOOO");
-            LanguageAPI.Add(prefix + "UNLOCK_TEST_DESC", "FUCK YEAAAAH");
-            LanguageAPI.Add(prefix + "UNLOCK_UNLOCK_NAME", "WOOOO");
+            LanguageAPI.Add(prefix + "UNLOCK_FIST_NAME", "Thunder Henry: Slice 'n' Smack");
+            LanguageAPI.Add(prefix + "UNLOCK_FIST_DESC", "As Thunder Henry, reach +250% attack speed.");
+            LanguageAPI.Add(prefix + "UNLOCK_FIST_UNLOCKABLE_NAME", "Thunder Henry: Slice 'em to Beat 'em");
             #endregion
             #endregion
         }

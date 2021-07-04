@@ -6,11 +6,14 @@ using RoR2.Networking;
 
 namespace ThunderHenry.Achievements
 {
-   /* internal class ThunderHenryUnlock : UnlockableCreator.ThunderHenryUnlockable
+   internal class ThunderHenryUnlock : UnlockableCreator.ThunderHenryAchievement
     {
-        public override string Prefix => ThunderHenryPlugin.developerPrefix + "_THUNDERHENRY_BODY_UNLOCK_";
-        public override string AchievementNameToken => Prefix + "ACHIEVEMENT_NAME";
-        public override string AchievementDescToken => Prefix + "ACHIEVEMENT_DESC";
+        public override string Prefix => ThunderHenryPlugin.developerPrefix + Tokens.henryPrefix + "UNLOCK_";
+        public override string AchievementNameToken => Prefix + "SURVIVOR_NAME";
+        public override string AchievementDescToken => Prefix + "SURVIVOR_DESC";
+        public override string AchievementIdentifier => Prefix + "SURVIVOR_ID";
+        public override string UnlockableIdentifier => Prefix + "SURVIVOR_REWARD_ID";
+        public override string PrerequisiteUnlockableIdentifier => Prefix + "SURVIVOR_PREREQ_ID";
         public override UnlockableDef UnlockableDef => Modules.Assets.mainAssetBundle.LoadAsset<UnlockableDef>("Characters.ThunderHenry");
         public override Sprite Sprite => Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texHenryAchievement");
 
@@ -40,23 +43,17 @@ namespace ThunderHenry.Achievements
             }
         }
 
-        
-
-        public override string AchievementIdentifier => Prefix + "ACHIEVEMENT_ID";
-        public override string UnlockableIdentifier => Prefix + "REWARD_ID";
-        public override string PrerequisiteUnlockableIdentifier => Prefix + "PREREQ_ID";
-
         public override Func<string> GetHowToUnlock => () => Language.GetStringFormatted("UNLOCK_VIA_ACHIEVEMENT_FORMAT", new object[]
         {
             Language.GetString(AchievementNameToken),
             Language.GetString(AchievementDescToken)
         });
-        public override Func<string> GetUnlocked { get; } = () => Language.GetStringFormatted("UNLOCKED_FORMAT", new object[]
+        public override Func<string> GetUnlocked => () => Language.GetStringFormatted("UNLOCKED_FORMAT", new object[]
         {
-            Language.GetString("ROBVALE_THUNDERHENRY_BODY_UNLOCK_ACHIEVEMENT_NAME"),
-            Language.GetString("ROBVALE_THUNDERHENRY_BODY_UNLOCK_ACHIEVEMENT_DESC")
+            Language.GetString(AchievementNameToken),
+            Language.GetString(AchievementDescToken)
         });
 
-        
-    }*/
+
+    }
 }

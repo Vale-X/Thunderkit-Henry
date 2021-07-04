@@ -1,4 +1,4 @@
-﻿#if UNITY_EDITOR
+﻿/*#if UNITY_EDITOR
 using System.Collections.Generic;
 using System;
 using System.Linq;
@@ -115,4 +115,4 @@ public class AchievementConditionEditor : PropertyDrawer
         public string fullName;
     }
 }
-#endif
+#endif*/

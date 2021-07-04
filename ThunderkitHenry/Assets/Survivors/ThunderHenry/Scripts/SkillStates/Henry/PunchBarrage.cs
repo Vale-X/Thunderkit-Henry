@@ -26,10 +26,6 @@ namespace ThunderHenry.SkillStates
             this.swingSoundString = "HenryPunchSwing";
             this.hitSoundString = "";
             this.muzzleString = "SwingCenter";
-            //this.swingEffectPrefab = Modules.Assets.fistBarrageEffect;
-            //this.hitEffectPrefab = Modules.Assets.punchImpactEffect;
-
-            //this.impactSound = Modules.Assets.punchHitSoundEvent.index;
 
             base.OnEnter();
         }

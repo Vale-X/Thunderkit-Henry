@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1746479147, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
-  m_Name: Skins.ThunderHenry.Alt1
+  m_Name: Skills.ThunderHenry.PrimaryAlt1
   m_EditorClassIdentifier: 
-  nameToken: ROBVALE_THUNDERHENRY_BODY_UNLOCK_MASTERY_NAME
+  nameToken: ROBVALE_THUNDERHENRY_BODY_UNLOCK_FIST_NAME
   displayModelPath: Prefabs/NullModel
   displayModelPrefab: {fileID: 0}
   hidden: 0

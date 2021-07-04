@@ -6,9 +6,6 @@ namespace ThunderHenry.SkillStates
 {
     public class PunchCombo : BaseMeleeAttack
     {
-        [SerializeField]
-        public GameObject punchSwingEffect;
-
         public override void OnEnter()
         {
             this.hitboxName = "Punch";
@@ -25,15 +22,9 @@ namespace ThunderHenry.SkillStates
             this.hitStopDuration = 0.015f;
             this.attackRecoil = 0.75f;
             this.hitHopVelocity = 6f;
-
             this.swingSoundString = "HenryPunchSwing";
             this.hitSoundString = "";
             this.muzzleString = swingIndex % 2 == 0 ? "SwingLeft" : "SwingRight";
-            //this.swingEffectPrefab = Modules.Assets.punchSwingEffect;
-            this.swingEffectPrefab = punchSwingEffect;
-            //this.hitEffectPrefab = Modules.Assets.punchImpactEffect;
-
-            //this.impactSound = Modules.Assets.punchHitSoundEvent.index;
 
             base.OnEnter();
         }

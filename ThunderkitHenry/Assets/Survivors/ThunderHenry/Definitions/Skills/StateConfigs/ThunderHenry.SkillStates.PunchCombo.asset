@@ -31,7 +31,7 @@ MonoBehaviour:
       fieldValue:
         stringValue: 
         objectValue: {fileID: 11400000, guid: 890ab6f2854199d4c88559e717a89dcf, type: 2}
-    - fieldName: puchSwingEffect
+    - fieldName: punchSwingEffect
       fieldValue:
         stringValue: 
         objectValue: {fileID: 3545332878616655138, guid: 4e055243e1b45454cb4811d6614777a2,

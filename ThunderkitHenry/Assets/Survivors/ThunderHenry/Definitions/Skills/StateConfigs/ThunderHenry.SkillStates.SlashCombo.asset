@@ -31,8 +31,3 @@ MonoBehaviour:
       fieldValue:
         stringValue: 
         objectValue: {fileID: 11400000, guid: c2a3c6484bedfa046ace1d499d7ddea4, type: 2}
-    - fieldName: swordSwingEffect
-      fieldValue:
-        stringValue: 
-        objectValue: {fileID: 7627289222081822211, guid: 3534552e7829f9842ba3156065afc540,
-          type: 3}

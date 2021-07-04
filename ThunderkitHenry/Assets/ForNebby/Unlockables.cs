@@ -1,4 +1,4 @@
-﻿using Mono.Cecil.Cil;
+﻿/*using Mono.Cecil.Cil;
 using MonoMod.Cil;
 using RoR2;
 using RoR2.Achievements;
@@ -6,44 +6,131 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using ThunderHenry.Achievements;
 
 namespace ThunderHenry.Modules
 {
-    internal class Unlockables
+    internal static class Unlockables
     {
-        public static UnlockableDef[] loadedUnlockableDefs
+        internal static List<AchievementDef> achievementDefs = new List<AchievementDef>();
+        internal static List<UnlockableDef> unlockableDefs = new List<UnlockableDef>();
+        private static readonly List<(AchievementDef achievementDef, UnlockableDef unlockableDef, string unlockableName)> moddedUnlocks = new List<(AchievementDef achievementDef, UnlockableDef unlockableDef, string unlockableName)>();
+        private static readonly HashSet<string> usedRewardIds = new HashSet<string>();
+        private static List<SerializableAchievement> conditions = new List<SerializableAchievement>();
+        
+        private static bool addingUnlockables;
+        public static bool ableToAdd { get; private set; } = false;
+        internal static void Init()
         {
-            get
+            foreach(AchievementUnlockable def in Assets.mainContentPack.unlockableDefs)
             {
-                return Assets.serialContentPack.unlockableDefs;
+                AddUnlock(def);
             }
         }
 
-        public static Dictionary<UnlockableDef, UnlockableCreator.ThunderHenryAchievement> unlockables = new Dictionary<UnlockableDef, UnlockableCreator.ThunderHenryAchievement>();
-
-        public static void Init()
+        internal static AchievementUnlockable AddUnlock(AchievementUnlockable instance)
         {
-            InitializeUnlocks();
+            instance.Initialize();
+
+            string unlockableIdentifier = instance.UnlockableIdentifier;
+
+            if (!usedRewardIds.Add(unlockableIdentifier))
+            {
+                throw new InvalidOperationException($"The unlockable identifier '{unlockableIdentifier}' is already used by another mod or used by the base game.");
+            }
+
+            AchievementDef def = new AchievementDef
+            {
+                identifier = instance.AchievementIdentifier,
+                unlockableRewardIdentifier = instance.nameToken,
+                prerequisiteAchievementIdentifier = instance.PrerequisiteUnlockableIdentifier,
+                nameToken = instance.AchievementNameToken,
+                descriptionToken = instance.descToken,
+                achievedIcon = instance.icon,
+                type = instance.GetType(),
+                serverTrackerType = (instance.serverTracked ? instance.GetType() : null)
+            };
+            Debug.LogWarning("UnlockableDef identifier: " + instance.AchievementIdentifier);
+            Debug.LogWarning("UnlockableDef NameToken: " + instance.nameToken);
+            Debug.LogWarning("UnlockableDef prereq: " + instance.PrerequisiteUnlockableIdentifier);
+            Debug.LogWarning("UnlockableDef NameToken: " + instance.nameToken);
+            Debug.LogWarning("UnlockableDef descToken: " + instance.descToken);
+            Debug.LogWarning("UnlockableDef type: " + instance.GetType());
+
+            Debug.LogWarning("AchievementDef identifier: " + def.identifier);
+            Debug.LogWarning("AchievementDef rewardIdentifier: " + def.unlockableRewardIdentifier);
+            Debug.LogWarning("AchievementDef prereq: " + def.prerequisiteAchievementIdentifier);
+            Debug.LogWarning("AchievementDef nameToken: " + def.nameToken);
+            Debug.LogWarning("AchievementDef descToken: " + def.descriptionToken);
+            Debug.LogWarning("AchievementDef icon: " + def.achievedIcon);
+            Debug.LogWarning("AchievementDef type: " + def.type);
+            
+            BaseAchievement achievement = (BaseAchievement)Activator.CreateInstance(instance.achievementCondition.achievementType);
+            achievement.achievementDef = def;
+
+            Debug.LogWarning("BaseAchievment AchievementDef: " + achievement.achievementDef);
+            Debug.LogWarning("BaseAchievment AchievementDef nameToken: " + achievement.achievementDef.nameToken);
+
+            unlockableDefs.Add(instance);
+            achievementDefs.Add(instance.achievementDef);
+            moddedUnlocks.Add((instance.achievementDef, instance, instance.UnlockableIdentifier));
+
+            if (!addingUnlockables)
+            {
+                addingUnlockables = true;
+                IL.RoR2.AchievementManager.CollectAchievementDefs += BCollectAchievementDefs;
+                IL.RoR2.UnlockableCatalog.Init += BInit_Il;
+            }
+
+
+
+            return instance;
         }
 
-        private static void InitializeUnlocks()
+        public static ILCursor BCallDel_<TDelegate>(this ILCursor cursor, TDelegate target, out Int32 index) where TDelegate : Delegate
         {
-            var unlocks = Assembly.GetExecutingAssembly().GetTypes().Where(type => !type.IsAbstract && type.IsSubclassOf(typeof(UnlockableCreator.ThunderHenryAchievement)));
-            foreach (Type unlock in unlocks)
+            index = cursor.EmitDelegate<TDelegate>(target);
+            return cursor;
+        }
+        public static ILCursor BCallDel_<TDelegate>(this ILCursor cursor, TDelegate target)
+            where TDelegate : Delegate => cursor.BCallDel_(target, out _);
+
+        private static void BInit_Il(ILContext il) => new ILCursor(il)
+            .GotoNext(MoveType.AfterLabel, x => x.MatchCallOrCallvirt(typeof(UnlockableCatalog), nameof(UnlockableCatalog.SetUnlockableDefs)))
+            .BCallDel_(Modules.ArrayHelper.AppendDel(unlockableDefs));
+
+        private static void BCollectAchievementDefs(ILContext il)
+        {
+            var f1 = typeof(AchievementManager).GetField("achievementIdentifiers", BindingFlags.Public | BindingFlags.Static | BindingFlags.NonPublic);
+            if (f1 is null) throw new NullReferenceException($"Could not find field in {nameof(AchievementManager)}");
+            var cursor = new ILCursor(il);
+            _ = cursor.GotoNext(MoveType.After,
+                x => x.MatchEndfinally(),
+                x => x.MatchLdloc(1)
+            );
+
+            void EmittedDelegate(List<AchievementDef> list, Dictionary<String, AchievementDef> map, List<String> identifiers)
             {
-                var unlockable = (UnlockableCreator.ThunderHenryAchievement)Activator.CreateInstance(unlock);
-                var def = unlockable.UnlockableDef;
-                ArrayHelper.AppendSingle<UnlockableDef>(ref Assets.serialContentPack.unlockableDefs, def);
-                unlockable.Initialize();
-            }    
+                ableToAdd = false;
+                for (Int32 i = 0; i < moddedUnlocks.Count; ++i)
+                {
+                    var (ach, unl, unstr) = moddedUnlocks[i];
+                    if (ach is null) continue;
+                    identifiers.Add(ach.identifier);
+                    list.Add(ach);
+                    map.Add(ach.identifier, ach);
+                }
+            }
+
+            _ = cursor.Emit(OpCodes.Ldarg_0);
+            _ = cursor.Emit(OpCodes.Ldsfld, f1);
+            _ = cursor.EmitDelegate<Action<List<AchievementDef>, Dictionary<String, AchievementDef>, List<String>>>(EmittedDelegate);
+            _ = cursor.Emit(OpCodes.Ldloc_1);
         }
     }
 
-    #region UnlockableCreator
+    *//*#region UnlockableCreator
     internal static class UnlockableCreator
     {
         private static readonly HashSet<string> usedRewardIds = new HashSet<string>();
@@ -129,7 +216,8 @@ namespace ThunderHenry.Modules
             Func<string> GetUnlocked { get; }
         }
 
-        public static ILCursor CallDel_<TDelegate>(this ILCursor cursor, TDelegate target, out Int32 index) where TDelegate : Delegate
+        public static ILCursor CallDel_<TDelegate>(this ILCursor cursor, TDelegate target, out Int32 index)
+where TDelegate : Delegate
         {
             index = cursor.EmitDelegate<TDelegate>(target);
             return cursor;
@@ -169,7 +257,7 @@ namespace ThunderHenry.Modules
             _ = cursor.EmitDelegate<Action<List<AchievementDef>, Dictionary<String, AchievementDef>, List<String>>>(EmittedDelegate);
             _ = cursor.Emit(OpCodes.Ldloc_1);
         }
-        internal abstract class ThunderHenryAchievement : BaseAchievement, IModdedUnlockableDataProvider
+        internal abstract class ThunderHenryUnlockable : BaseAchievement, IModdedUnlockableDataProvider
         {
             #region Implementation
             public void Revoke()
@@ -219,5 +307,6 @@ namespace ThunderHenry.Modules
             #endregion
         }
     }
-    #endregion
+#endregion*//*
 }
+*/

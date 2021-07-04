@@ -36,8 +36,7 @@ MonoBehaviour:
   buffDefs:
   - {fileID: 11400000, guid: d5bc6e6e2cbd8134a8764594b5749810, type: 2}
   eliteDefs: []
-  unlockableDefs:
-  - {fileID: 11400000, guid: 36505085e0c034d489d27e5b6546d342, type: 2}
+  unlockableDefs: []
   survivorDefs:
   - {fileID: 11400000, guid: fb2f77f99ba1aed4e8864dd5b4d784d9, type: 2}
   artifactDefs: []
