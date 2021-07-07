@@ -5,6 +5,7 @@ using UnityEngine;
 namespace ThunderHenry.Modules.Components
 {
     // just a class to run some custom code for things like weapon models
+    // Attached as a component onto ThunderHenryBody.
     public class HenryController : MonoBehaviour
     {
         private CharacterBody characterBody;
@@ -27,23 +28,14 @@ namespace ThunderHenry.Modules.Components
             Invoke("CheckWeapon", 0.2f);
         }
 
+        // Run as an Invoke to give time for everything else to be set up and sorted.
         private void CheckWeapon()
         {
-            switch (this.characterBody.skillLocator.primary.skillDef.skillNameToken)
+            if (this.characterBody.skillLocator.secondary.skillDef.skillNameToken == ThunderHenryPlugin.developerPrefix + "_THUNDERHENRY_BODY_SECONDARY_UZI_NAME")
             {
-                default:
-                    this.childLocator.FindChild("SwordModel").gameObject.SetActive(true);
-                    this.childLocator.FindChild("BoxingGloveL").gameObject.SetActive(false);
-                    this.childLocator.FindChild("BoxingGloveR").gameObject.SetActive(false);
-                    this.modelAnimator.SetLayerWeight(this.modelAnimator.GetLayerIndex("Body, Alt"), 0f);
-                    break;
-                case ThunderHenryPlugin.developerPrefix + "_THUNDERHENRY_BODY_PRIMARY_PUNCH_NAME":
-                    this.childLocator.FindChild("SwordModel").gameObject.SetActive(false);
-                    this.childLocator.FindChild("BoxingGloveL").gameObject.SetActive(true);
-                    this.childLocator.FindChild("BoxingGloveR").gameObject.SetActive(true);
-                    this.modelAnimator.SetLayerWeight(this.modelAnimator.GetLayerIndex("Body, Alt"), 1f);
-                    break;
+                this.childLocator.FindChild("GunModel").GetComponent<SkinnedMeshRenderer>().sharedMesh = Modules.Assets.mainAssetBundle.LoadAsset<Mesh>("meshUzi");
             }
+
         }
     }
 }

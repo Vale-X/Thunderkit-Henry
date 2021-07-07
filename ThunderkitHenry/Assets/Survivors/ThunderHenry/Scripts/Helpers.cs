@@ -10,11 +10,12 @@ namespace ThunderHenry.Modules
     {
         internal const string agilePrefix = "<style=cIsUtility>Agile.</style> ";
 
-        // Add any extra debug methods you wanna do here. 
+        // Add any extra debug methods you wanna do here.
+        // This code wont be run if 'Debug' is off within ThunderHenryPlugin.
+        // Set that to off before you release a mod or update.
         public static void AwakeDebug()
         {
             PrintEntityStatesForConfigNames();
-            ItemDisplayTestDebug(0);
         }
 
         // Entity State Configurations require very specific 'Assembly Qualified Names' in order to work correctly.
@@ -22,19 +23,8 @@ namespace ThunderHenry.Modules
         // replace `ThunderHenry.SkillStates.SlashCombo` with a skillstate in your mod. 
         private static void PrintEntityStatesForConfigNames()
         {
-            var state = new SerializableEntityStateType(typeof(ThunderHenry.SkillStates.PunchCombo));
+            var state = new SerializableEntityStateType(typeof(ThunderHenry.SkillStates.Shoot));
             Debug.LogWarning(ThunderHenryPlugin.MODNAME + ": DEBUG: TypeName print: " + state.typeName);
-        }
-
-        // Print out the first keyAsset and followerPrefab in an item display ruleset, to see if things work properly.
-        private static void ItemDisplayTestDebug(int contentPackBodyIndex)
-        {
-            var bodyPrefab = Prefabs.bodyPrefabs[contentPackBodyIndex];
-
-            var bodyModel = bodyPrefab.GetComponentInChildren<CharacterModel>();
-
-            Debug.LogWarning(ThunderHenryPlugin.MODNAME + ": DEBUG: ItemDisplay KeyAsset: " + bodyModel.itemDisplayRuleSet.keyAssetRuleGroups[0].keyAsset);
-            Debug.LogWarning(ThunderHenryPlugin.MODNAME + ": DEBUG: ItemDisplay FollowerPrefab: " + bodyModel.itemDisplayRuleSet.keyAssetRuleGroups[0].displayRuleGroup.rules[0].followerPrefab);
         }
     }
 

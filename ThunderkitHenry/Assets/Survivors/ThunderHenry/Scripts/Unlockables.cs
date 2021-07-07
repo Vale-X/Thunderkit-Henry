@@ -15,6 +15,7 @@ namespace ThunderHenry.Modules
 {
     internal class Unlockables
     {
+        // Unlockables are added at runtime (do not add them to the content pacK). One for each script that inherits from ThunderHenryAchievement.
         public static UnlockableDef[] loadedUnlockableDefs
         {
             get
@@ -30,6 +31,7 @@ namespace ThunderHenry.Modules
             InitializeUnlocks();
         }
 
+        // Gathers all unlockalbe defs from the ThunderHenryAchievement and initializes them (adds them to the game).
         private static void InitializeUnlocks()
         {
             var unlocks = Assembly.GetExecutingAssembly().GetTypes().Where(type => !type.IsAbstract && type.IsSubclassOf(typeof(UnlockableCreator.ThunderHenryAchievement)));
@@ -43,6 +45,7 @@ namespace ThunderHenry.Modules
         }
     }
 
+    // Code from Rob and Rein that is now in R2API. Have to use this instead of R2API to accomodate thunderkit created UnlockableDefs.
     #region UnlockableCreator
     internal static class UnlockableCreator
     {

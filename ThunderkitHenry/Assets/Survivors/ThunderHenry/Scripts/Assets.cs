@@ -17,10 +17,10 @@ namespace ThunderHenry.Modules
     internal static class Assets
     {
 		//The file name of your asset bundle
-		internal const string assetBundleName = "henryassetbundle";
+		internal const string assetBundleName = "myassetbundle";
 
 		//Should be the same name as your SerializableContentPack in the asset bundle
-		internal const string contentPackName = "HenryContentPack";
+		internal const string contentPackName = "ThunderHenryContentPack";
 
 		//Name of the your soundbank file, if any.
 		internal const string soundBankName = ""; //HenryBank

@@ -121,11 +121,9 @@ MonoBehaviour:
   ghostTransformAnchor: {fileID: 0}
   startSound: 
   flightSoundLoop: {fileID: 0}
-  rigidbody: {fileID: 0}
   allowPrediction: 0
   owner: {fileID: 0}
   procCoefficient: 1
-  myColliders: []
 --- !u!114 &1223842399327603295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,15 +136,9 @@ MonoBehaviour:
   m_Script: {fileID: -270136354, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileController: {fileID: 0}
-  transform: {fileID: 0}
-  rb: {fileID: 0}
-  interpolatedTransform: {fileID: 0}
   positionTransmitInterval: 0.033333335
   interpolationFactor: 1
   allowClientsideCollision: 0
-  serverPosition: {x: 0, y: 0, z: 0}
-  serverRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &5421027752582534901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,7 +151,6 @@ MonoBehaviour:
   m_Script: {fileID: -1895344032, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamIndexInternal: 0
   defaultTeam: -1
 --- !u!114 &2292274262019757530
 MonoBehaviour:
@@ -186,11 +177,6 @@ MonoBehaviour:
   oscillate: 0
   oscillateMagnitude: 20
   oscillateSpeed: 0
-  deltaHeight: 0
-  oscillationStopwatch: 0
-  stopwatch: 0
-  rigidbody: {fileID: 0}
-  transform: {fileID: 0}
 --- !u!114 &5645881031477574447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,9 +189,6 @@ MonoBehaviour:
   m_Script: {fileID: -317677761, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileController: {fileID: 0}
-  projectileDamage: {fileID: 0}
-  alive: 0
   explosionSoundString: 
   falloffModel: 2
   blastRadius: 16
@@ -222,7 +205,6 @@ MonoBehaviour:
   useLocalSpaceForChildren: 0
   projectileHealthComponent: {fileID: 0}
   explosionEffect: {fileID: 0}
-  impactNormal: {x: 0, y: 0, z: 0}
   impactEffect: {fileID: 5462667972647009399, guid: 05b273758480af74a919e826c7b80a86,
     type: 3}
   lifetimeExpiredSoundString: 
@@ -234,10 +216,6 @@ MonoBehaviour:
   lifetime: 12
   lifetimeAfterImpact: 0.1
   lifetimeRandomOffset: 0
-  stopwatch: 0
-  stopwatchAfterImpact: 0
-  hasImpact: 0
-  hasPlayedLifetimeExpiredSound: 0
   transformSpace: 0
 --- !u!114 &5141179017943056873
 MonoBehaviour:

@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -281164913, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
+  m_Name: ThunderHenryContentPack
+  m_EditorClassIdentifier: 
+  bodyPrefabs:
+  - {fileID: 5150082409466045905, guid: bd791d6404f562f49998cfe7297b2846, type: 3}
+  masterPrefabs: []
+  projectilePrefabs:
+  - {fileID: 5108796886903473902, guid: 201f3ee149acf3b468badd2d682370cb, type: 3}
+  gameModePrefabs: []
+  networkedObjectPrefabs: []
+  skillDefs:
+  - {fileID: 11400000, guid: d02713e6756f42941badf673bf53d45f, type: 2}
+  - {fileID: 11400000, guid: 4a1998e7c09824f48bd30fda40b1a588, type: 2}
+  - {fileID: 11400000, guid: 2fb0b23fcb83a014db76a30b9e7770c2, type: 2}
+  - {fileID: 11400000, guid: 80193ce9b684ab244b7c0342a1852cd5, type: 2}
+  - {fileID: 11400000, guid: df617aa3cbf0c0f4f8642ed4a6c10228, type: 2}
+  skillFamilies:
+  - {fileID: 11400000, guid: 03858c0e973eba7489ab3211cfba4599, type: 2}
+  - {fileID: 11400000, guid: b9af8d0bc3c5ec94582a1f771061c578, type: 2}
+  - {fileID: 11400000, guid: cdff63706e775e14987b015de818097e, type: 2}
+  - {fileID: 11400000, guid: c2a0f91f124b15f4bb2df1cb9e0671c0, type: 2}
+  sceneDefs: []
+  itemDefs: []
+  equipmentDefs: []
+  buffDefs:
+  - {fileID: 11400000, guid: d5bc6e6e2cbd8134a8764594b5749810, type: 2}
+  eliteDefs: []
+  unlockableDefs: []
+  survivorDefs:
+  - {fileID: 11400000, guid: fb2f77f99ba1aed4e8864dd5b4d784d9, type: 2}
+  artifactDefs: []
+  surfaceDefs: []
+  networkSoundEventDefs:
+  - {fileID: 11400000, guid: c2a3c6484bedfa046ace1d499d7ddea4, type: 2}
+  - {fileID: 11400000, guid: 890ab6f2854199d4c88559e717a89dcf, type: 2}
+  - {fileID: 11400000, guid: 2da9c7837dafd064cbc509a9f09a5f51, type: 2}
+  - {fileID: 11400000, guid: 14374db55be21ff48bd16ec0f98dc3f5, type: 2}
+  musicTrackDefs: []
+  gameEndingDefs: []
+  entityStateConfigurations:
+  - {fileID: 11400000, guid: 3e0fa7c14fe64914f99146fc56f982e4, type: 2}
+  - {fileID: 11400000, guid: 9c1dcec44cde3dc4e955aec1e369f548, type: 2}
+  - {fileID: 11400000, guid: 75e43ae0a11a10945a3875618e11b4e4, type: 2}
+  - {fileID: 11400000, guid: 726b41d12ecabd8498ae8cade39fb246, type: 2}
+  - {fileID: 11400000, guid: ac1b8c529ecc0714f96924a0f7ac3827, type: 2}
+  entityStateTypes: []

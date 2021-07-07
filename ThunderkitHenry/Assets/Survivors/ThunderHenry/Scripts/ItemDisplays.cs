@@ -16,14 +16,20 @@ namespace ThunderHenry.Modules
             InitItemDisplays();
         }
 
+        // If creating multiple survivors, create a method for each unique ItemDisplayRuleSet
+        // Run the code below for each survivor ruleset you're using.
         internal static void InitItemDisplays()
         {
-
             var henryRules = Prefabs.bodyPrefabs[0].GetComponentInChildren<CharacterModel>().itemDisplayRuleSet;
             henryRules.keyAssetRuleGroups = CreateItemDisplaysHenry();
             henryRules.GenerateRuntimeValues();
+
+            // Survivor 2 code goes here...
         }
 
+        // We don't have RoR2 prefabs in Thunderkit so we have to grab them through code.
+        // Use KingEnderBrine's ItemDisplayPlacementHelper for setting up item displays.
+        // https://thunderstore.io/package/KingEnderBrine/ItemDisplayPlacementHelper/
         private static ItemDisplayRuleSet.KeyAssetRuleGroup[] CreateItemDisplaysHenry()
         {
             var itemDisplayRules = new List<ItemDisplayRuleSet.KeyAssetRuleGroup>();
@@ -2644,6 +2650,7 @@ localScale = new Vector3(0.1233F, 0.1233F, 0.1233F),
             return itemDisplayRules.ToArray();
         }
 
+        // Gathers assets from vanilla characters so we can use them for our own item displays.
         private static void PopulateFromBody(string bodyName)
         {
             ItemDisplayRuleSet itemDisplayRuleSet = Resources.Load<GameObject>("Prefabs/CharacterBodies/" + bodyName + "Body").GetComponent<ModelLocator>().modelTransform.GetComponent<CharacterModel>().itemDisplayRuleSet;

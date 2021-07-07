@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1377982422582304564}
   - component: {fileID: 1377982422582304563}
   m_Layer: 0
-  m_Name: wwwwww
+  m_Name: Ripple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

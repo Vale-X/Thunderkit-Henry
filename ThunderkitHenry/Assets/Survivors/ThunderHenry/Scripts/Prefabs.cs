@@ -10,14 +10,8 @@ namespace ThunderHenry.Modules
 {
     internal static class Prefabs
     {
-        //The order of your SurvivorDefs in your SerializableContentPack determines the order of body/displayPrefabs.
-
-
-        // Name of any SurvivorDefs you have in your asset bundle.
-        // entry 0 of bodyPrefabs/displayPrefabs will be the first entry in survivorDefs, and so on.
+        // The order of your SurvivorDefs in your SerializableContentPack determines the order of body/displayPrefab variables here.
         // This lets you reference any bodyPrefabs or displayPrefabs throughout your code.
-        //internal static string[] survivorDefs = new string[] { "HenryDef" };
-        //variable not actually needed cause you can get which body is which from your ContentPack
 
         internal static List<GameObject> bodyPrefabs = new List<GameObject>();
         internal static List<GameObject> displayPrefabs = new List<GameObject>();
@@ -40,6 +34,8 @@ namespace ThunderHenry.Modules
             // bodyPrefabs[0].GetComponent<CharacterBody>().crosshairPrefab = ...whatever you wanna set here.
         }
 
+        // Some variables have to be set and reference assets we don't have access to in Thunderkit.
+        // So instead we set them here.
         private static void ForEachReferences()
         {
             foreach (GameObject g in bodyPrefabs)
@@ -81,7 +77,6 @@ namespace ThunderHenry.Modules
         }
 
         // Find all relevant prefabs within the content pack, per SurvivorDefs.
-        internal static void GetPrefabs()
         {
             var d = Assets.mainContentPack.survivorDefs;
             foreach (SurvivorDef s in d)

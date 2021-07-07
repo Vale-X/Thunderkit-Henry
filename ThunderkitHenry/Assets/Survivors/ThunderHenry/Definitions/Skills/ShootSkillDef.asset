@@ -15,7 +15,8 @@ MonoBehaviour:
   skillName: Shoot
   skillNameToken: ROBVALE_THUNDERHENRY_BODY_SECONDARY_GUN_NAME
   skillDescriptionToken: ROBVALE_THUNDERHENRY_BODY_SECONDARY_GUN_DESCRIPTION
-  keywordTokens: []
+  keywordTokens:
+  - KEYWORD_AGILE
   icon: {fileID: 21300000, guid: e1b58742d5489f9409faeafa1fe57f42, type: 3}
   activationStateMachineName: Slide
   activationState:
