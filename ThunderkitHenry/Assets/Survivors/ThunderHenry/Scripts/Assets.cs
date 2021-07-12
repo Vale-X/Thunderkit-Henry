@@ -33,9 +33,10 @@ namespace ThunderHenry.Modules
 
         internal static void Init()
         {
-            if (assetBundleName == "myassetbundle")
+            if (assetBundleName == "thunderassetbundle")
             {
                 Debug.LogError(ThunderHenryPlugin.MODNAME + ": AssetBundle name hasn't been changed. Not loading any assets to avoid conflicts.");
+				ThunderHenryPlugin.cancel = true;
                 return;
             }
 
@@ -52,6 +53,7 @@ namespace ThunderHenry.Modules
 			if (!mainAssetBundle)
 			{
 				Debug.LogError(ThunderHenryPlugin.MODNAME + ": AssetBundle not found. Unable to Populate Assets.");
+				ThunderHenryPlugin.cancel = true;
 				return;
 			}
 		}
@@ -67,6 +69,7 @@ namespace ThunderHenry.Modules
 				if (!mainAssetBundle) 
 				{
 					Debug.LogError(ThunderHenryPlugin.MODNAME + ": AssetBundle not found. File missing or assetBundleName is incorrect.");
+					ThunderHenryPlugin.cancel = true;
 					return;
 				}
 				LoadContentPack();

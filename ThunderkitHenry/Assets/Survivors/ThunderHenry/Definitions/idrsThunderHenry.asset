@@ -12,6 +12,36 @@ MonoBehaviour:
   m_Script: {fileID: -1888550019, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
   m_Name: idrsThunderHenry
   m_EditorClassIdentifier: 
-  namedItemRuleGroups: []
-  namedEquipmentRuleGroups: []
-  keyAssetRuleGroups: []
+  namedItemRuleGroups:
+  - name: 
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: 
+        localPos: {x: 0, y: 0, z: 0}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0, y: 0, z: 0}
+        limbMask: 0
+  namedEquipmentRuleGroups:
+  - name: 
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: 
+        localPos: {x: 0, y: 0, z: 0}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0, y: 0, z: 0}
+        limbMask: 0
+  keyAssetRuleGroups:
+  - keyAsset: {fileID: 0}
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        childName: 
+        localPos: {x: 0, y: 0, z: 0}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 0, y: 0, z: 0}
+        limbMask: 0

@@ -77,6 +77,7 @@ namespace ThunderHenry.Modules
         }
 
         // Find all relevant prefabs within the content pack, per SurvivorDefs.
+        private static void GetPrefabs() //wack
         {
             var d = Assets.mainContentPack.survivorDefs;
             foreach (SurvivorDef s in d)

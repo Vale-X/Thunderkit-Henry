@@ -1,82 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &37922257552906614
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5263858739577486368}
-  - component: {fileID: 5024511120769735126}
-  - component: {fileID: 7279482690737451660}
-  m_Layer: 0
-  m_Name: hitboxPreview
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &5263858739577486368
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 37922257552906614}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 6889634326330810439}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5024511120769735126
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 37922257552906614}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &7279482690737451660
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 37922257552906614}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: ac804059bd55d8a499887855410c87f5, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
 --- !u!1 &439736355561355835
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,7 +220,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6109401557624152620}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &7230820536901823684
 CapsuleCollider:
@@ -555,56 +478,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479186665159047408}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.2, z: 2}
+  m_LocalPosition: {x: 8.19, y: 1.2, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6109401557624152620}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1492418811047362533
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6889634326330810439}
-  - component: {fileID: 4402439465625140384}
-  m_Layer: 0
-  m_Name: PunchHitbox
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6889634326330810439
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1492418811047362533}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.955, z: 2.51}
-  m_LocalScale: {x: 7.469042, y: 4.88569, z: 5.504847}
-  m_Children:
-  - {fileID: 5263858739577486368}
-  m_Father: {fileID: 6109401557624152620}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4402439465625140384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1492418811047362533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1783796254, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1724123963728904997
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,83 +553,6 @@ Transform:
   m_Father: {fileID: 7590678767533275033}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 57.270607, y: 90.00043, z: 90.32257}
---- !u!1 &1958296412311196744
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6718969556208430826}
-  - component: {fileID: 5648627208912027118}
-  - component: {fileID: 5063317414591434238}
-  m_Layer: 17
-  m_Name: BoxingGloveR
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &6718969556208430826
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1958296412311196744}
-  m_LocalRotation: {x: -0.6434586, y: 0.08145881, z: 0.070807286, w: 0.7578336}
-  m_LocalPosition: {x: -0.0240194, y: 0.2658786, z: 0.02496382}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_Children: []
-  m_Father: {fileID: 3082732560968201217}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -80.68201, y: 11.522, z: 0.881}
---- !u!33 &5648627208912027118
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1958296412311196744}
-  m_Mesh: {fileID: 4300000, guid: 0c703aeb74ce1f94e9d6725f3b7ebae6, type: 3}
---- !u!23 &5063317414591434238
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1958296412311196744}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 327e0e8f5c745f5418a294ab0a8a3043, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
 --- !u!1 &2014989064795396541
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,7 +615,6 @@ Transform:
   m_Children:
   - {fileID: 4323008789543960255}
   - {fileID: 94909989650026650}
-  - {fileID: 6718969556208430826}
   m_Father: {fileID: 5878186346685683042}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 15.080861, y: 95.88876, z: 12.889458}
@@ -1213,7 +1014,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6109401557624152620}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3180449988578460983
 GameObject:
@@ -1397,7 +1198,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6109401557624152620}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 9.307, y: -26.720001, z: 17.811}
 --- !u!1 &3681037611603131110
 GameObject:
@@ -1427,7 +1228,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6109401557624152620}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 18.555, y: 50.139004, z: -194.87999}
 --- !u!1 &3851828880347434908
 GameObject:
@@ -1459,83 +1260,6 @@ Transform:
   m_Father: {fileID: 3848967846730420046}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -5.541276, y: 0.88937426, z: -3.4344344}
---- !u!1 &4136345181527886454
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3132097047213116911}
-  - component: {fileID: 8511997500311067414}
-  - component: {fileID: 6095712401252130753}
-  m_Layer: 17
-  m_Name: BoxingGloveL
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &3132097047213116911
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4136345181527886454}
-  m_LocalRotation: {x: -0.55616236, y: -0.33636922, z: -0.2678211, w: 0.711204}
-  m_LocalPosition: {x: 0.01592071, y: 0.4121567, z: 0.05211604}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_Children: []
-  m_Father: {fileID: 9027243204742011758}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -103.769, y: 130.66, z: -181.637}
---- !u!33 &8511997500311067414
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4136345181527886454}
-  m_Mesh: {fileID: 4300002, guid: 208e86f0e7c74c447887091034576d9b, type: 3}
---- !u!23 &6095712401252130753
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4136345181527886454}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 327e0e8f5c745f5418a294ab0a8a3043, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
 --- !u!1 &4163256877036238622
 GameObject:
   m_ObjectHideFlags: 0
@@ -2105,11 +1829,10 @@ GameObject:
   - component: {fileID: 8547358971090606424}
   - component: {fileID: 679179361833045543}
   - component: {fileID: 1584232049871338642}
-  - component: {fileID: 5406192945659207257}
   - component: {fileID: 7932989709726024690}
+  - component: {fileID: 5406192945659207257}
   - component: {fileID: 5193476027950814862}
   - component: {fileID: 7269291464753653457}
-  - component: {fileID: 5421485336691505776}
   - component: {fileID: 8974545370554662113}
   - component: {fileID: 5945570793742318618}
   - component: {fileID: 1924159537892393820}
@@ -2119,7 +1842,7 @@ GameObject:
   - component: {fileID: 7547938369507707091}
   - component: {fileID: 5798053586363276620}
   - component: {fileID: 1164185605384601705}
-  - component: {fileID: 114728205093271174}
+  - component: {fileID: 114092017221833178}
   m_Layer: 0
   m_Name: ThunderHenryBody
   m_TagString: Player
@@ -2222,7 +1945,25 @@ MonoBehaviour:
   bodyIndex: -1
   baseNameToken: ROBVALE_THUNDERHENRY_BODY_NAME
   subtitleNameToken: ROBVALE_THUNDERHENRY_BODY_SUBTITLE
+  activeBuffsList: 
+  activeBuffsListCount: 0
+  buffs: 
+  eliteBuffCount: 0
+  warCryEffectInstance: {fileID: 0}
   bodyFlags: 16
+  _masterObject: {fileID: 0}
+  _master: {fileID: 0}
+  linkedToMaster: 0
+  disablingHurtBoxes: 0
+  previousEquipmentIndex: 0
+  transform: {fileID: 0}
+  sfxLocator: {fileID: 0}
+  _isSprinting: 0
+  outOfCombatStopwatch: 0
+  outOfDangerStopwatch: 0
+  _outOfDanger: 0
+  previousPosition: {x: 0, y: 0, z: 0}
+  notMovingStopwatch: 0
   rootMotionInMainState: 0
   mainRootSpeed: 0
   baseMaxHealth: 110
@@ -2247,7 +1988,60 @@ MonoBehaviour:
   levelAttackSpeed: 0
   levelCrit: 0
   levelArmor: 0
+  statsDirty: 0
+  aimTimer: 0
+  warCryAuraController: {fileID: 0}
+  warCryTimer: 0
+  _warCryReady: 0
+  teslaBuffRollTimer: 0
+  teslaFireTimer: 0
+  teslaResetListTimer: 0
+  teslaResetListInterval: 0
+  teslaCrit: 0
+  teslaIsOn: 0
+  previousTeslaTargetList: []
+  helfireController: {fileID: 0}
+  helfireLifetime: 0
+  nearbyDamageBonusIndicator: {fileID: 0}
+  fireTrail: {fileID: 0}
   wasLucky: 0
+  guardResummonCooldown: 0
+  poisonballTimer: 0
+  lunarMissileRechargeTimer: 0
+  lunarMissileTimerBetweenShots: 0
+  remainingMissilesToFire: 0
+  lunarMissilePrefab: {fileID: 0}
+  timeBubbleWardInstance: {fileID: 0}
+  wardResummonCooldown: 0
+  engiShieldTempEffect: {fileID: 0}
+  bucklerShieldTempEffect: {fileID: 0}
+  slowDownTimeTempEffect: {fileID: 0}
+  crippleEffect: {fileID: 0}
+  tonicBuffEffect: {fileID: 0}
+  weakTempEffect: {fileID: 0}
+  energizedTempEffect: {fileID: 0}
+  barrierTempEffect: {fileID: 0}
+  nullifyStack1Effect: {fileID: 0}
+  nullifyStack2Effect: {fileID: 0}
+  nullifyStack3Effect: {fileID: 0}
+  regenBoostEffect: {fileID: 0}
+  nullSafeZoneEffect: {fileID: 0}
+  elephantDefenseEffect: {fileID: 0}
+  healingDisabledEffect: {fileID: 0}
+  noCooldownEffect: {fileID: 0}
+  doppelgangerEffect: {fileID: 0}
+  deathmarkEffect: {fileID: 0}
+  crocoRegenEffect: {fileID: 0}
+  mercExposeEffect: {fileID: 0}
+  lifestealOnHitEffect: {fileID: 0}
+  teamWarCryEffect: {fileID: 0}
+  randomDamageEffect: {fileID: 0}
+  lunarGolemShieldEffect: {fileID: 0}
+  warbannerEffect: {fileID: 0}
+  teslaFieldEffect: {fileID: 0}
+  lunarSecondaryRootEffect: {fileID: 0}
+  lunarDetonatorEffect: {fileID: 0}
+  fruitingEffect: {fileID: 0}
   spreadBloomDecayTime: 0.7
   spreadBloomCurve:
     serializedVersion: 2
@@ -2273,8 +2067,10 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  spreadBloomInternal: 0
   crosshairPrefab: {fileID: 0}
   hideCrosshair: 0
+  multiKillTimer: 0
   aimOriginTransform: {fileID: 4219427529600394877}
   hullClassification: 0
   portraitIcon: {fileID: 2800000, guid: 33c89ac909113894280a0cfd14c99f2e, type: 3}
@@ -2306,6 +2102,14 @@ MonoBehaviour:
   airControl: 0.25
   disableAirControlUntilCollision: 0
   generateParametersOnAwake: 1
+  body: {fileID: 0}
+  capsuleCollider: {fileID: 0}
+  alive: 0
+  restStopwatch: 0
+  previousPosition: {x: 0, y: 0, z: 0}
+  lastVelocity: {x: 0, y: 0, z: 0}
+  _moveDirection: {x: 0, y: 0, z: 0}
+  _safeCollisionEnableCount: 0
   _gravityParameters:
     environmentalAntiGravityGranterCount: 0
     antiGravityNeutralizerCount: 0
@@ -2332,6 +2136,10 @@ MonoBehaviour:
   driveFromRootRotation: 0
   turnSpeed: 720
   turnSoundName: 
+  previousParamsIndex: 0
+  yRotationVelocity: 0
+  _yaw: 0
+  targetVector: {x: 0, y: 0, z: 0}
 --- !u!114 &6845753023060879148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2367,6 +2175,30 @@ MonoBehaviour:
   LedgeHandling: 1
   InteractiveRigidbodyHandling: 1
   SafeMovement: 0
+  _internalProbedColliders: []
+  _rigidbodiesPushedThisMove: []
+  _lastAttachedRigidbody: {fileID: 0}
+  _solveMovementCollisions: 0
+  _solveGrounding: 0
+  _movePositionDirty: 0
+  _movePositionTarget: {x: 0, y: 0, z: 0}
+  _moveRotationDirty: 0
+  _moveRotationTarget: {x: 0, y: 0, z: 0, w: 0}
+  _lastSolvedOverlapNormalDirty: 0
+  _lastSolvedOverlapNormal: {x: 0, y: 0, z: 0}
+  _rigidbodiesPushedCount: 0
+  _rigidbodyProjectionHitCount: 0
+  _internalResultingMovementMagnitude: 0
+  _internalResultingMovementDirection: {x: 0, y: 0, z: 0}
+  _isMovingFromAttachedRigidbody: 0
+  _cachedWorldUp: {x: 0, y: 0, z: 0}
+  _cachedWorldForward: {x: 0, y: 0, z: 0}
+  _cachedWorldRight: {x: 0, y: 0, z: 0}
+  _cachedZeroVector: {x: 0, y: 0, z: 0}
+  _internalTransientPosition: {x: 0, y: 0, z: 0}
+  _internalTransientRotation: {x: 0, y: 0, z: 0, w: 0}
+  _baseVelocity: {x: 0, y: 0, z: 0}
+  _attachedRigidbodyVelocity: {x: 0, y: 0, z: 0}
 --- !u!114 &1541650720929674829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2384,6 +2216,7 @@ MonoBehaviour:
   interpolationFactor: 3
   debugDuplicatePositions: 0
   debugSnapshotReceived: 0
+  rigidbodyStartedKinematic: 0
 --- !u!114 &3706253442828211355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2402,6 +2235,12 @@ MonoBehaviour:
   recoil: {x: 0, y: 0}
   idealLocalCameraPos: {x: 0, y: 0, z: 0}
   dontRaycastToPivot: 0
+  currentPivotVerticalOffset: 0
+  currentPivotVerticalOffsetVelocity: 0
+  targetRecoil: {x: 0, y: 0}
+  recoilVelocity: {x: 0, y: 0}
+  targetRecoilVelocity: {x: 0, y: 0}
+  aimVelocity: {x: 0, y: 0, z: 0}
 --- !u!114 &6305769735283807710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2415,12 +2254,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _modelTransform: {fileID: 6109401557624152620}
+  modelDestructionNotifier: {fileID: 0}
   modelBaseTransform: {fileID: 3522869542733378610}
   dontReleaseModelOnDeath: 0
   autoUpdateModelTransform: 1
   dontDetatchFromParent: 0
+  modelParentTransform: {fileID: 0}
   noCorpse: 0
   normalizeToFloor: 0
+  normalSmoothdampVelocity: {x: 0, y: 0, z: 0}
+  targetNormal: {x: 0, y: 0, z: 0}
+  currentNormal: {x: 0, y: 0, z: 0}
+  characterMotor: {fileID: 0}
   preserveModel: 0
 --- !u!114 &8017431033970727735
 MonoBehaviour:
@@ -2434,6 +2279,12 @@ MonoBehaviour:
   m_Script: {fileID: -1549848242, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterBody: {fileID: 0}
+  _aimDirection: {x: 0, y: 0, z: 0}
+  lastRaycastTime: 0
+  lastFixedRaycastTime: 0
+  didLastRaycastHit: 0
+  lastMaxDistance: 0
   moveVector: {x: 0, y: 0, z: 0}
 --- !u!114 &2078449224695479818
 MonoBehaviour:
@@ -2453,7 +2304,18 @@ MonoBehaviour:
   magnetiCharge: 0
   dontShowHealthbar: 0
   globalDeathEventChanceCoefficient: 1
+  _killingDamageType: 0
   body: {fileID: 149941984924589380}
+  modelLocator: {fileID: 0}
+  devilOrbHealPool: 0
+  devilOrbTimer: 0
+  regenAccumulator: 0
+  wasAlive: 0
+  adaptiveArmorValue: 0
+  ospTimer: 0
+  serverDamageTakenThisUpdate: 0
+  repeatHealComponent: {fileID: 0}
+  currentEquipmentIndex: 0
 --- !u!114 &8547358971090606424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2467,7 +2329,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hideAllyCardDisplay: 0
-  _teamIndex: -1
+  _teamIndex: 1
+  oldTeamIndex: 0
+  indicator: {fileID: 0}
 --- !u!114 &679179361833045543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2480,6 +2344,19 @@ MonoBehaviour:
   m_Script: {fileID: 1144835783, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
+  _rechargeTime:
+    t: 0
+  hasEffectiveAuthority: 0
+  healthComponent: {fileID: 0}
+  inputBank: {fileID: 0}
+  teamComponent: {fileID: 0}
+  missileTimer: 0
+  bfgChargeTimer: 0
+  subcooldownTimer: 0
+  remainingMissiles: 0
+  passiveHealingFollower: {fileID: 0}
+  goldgatControllerObject: {fileID: 0}
 --- !u!114 &1584232049871338642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2493,6 +2370,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightInteractor: 0
+  inputReceived: 0
+  networkIdentity: {fileID: 0}
+  inputBank: {fileID: 0}
+  characterBody: {fileID: 0}
+  equipmentSlot: {fileID: 0}
+  interactableCooldown: 0
+--- !u!114 &7932989709726024690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5150082409466045905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1512185436, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxInteractionDistance: 3
 --- !u!114 &5406192945659207257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2510,23 +2406,11 @@ MonoBehaviour:
   idleStateMachine:
   - {fileID: 3186568078115682601}
   hurtState:
-    _typeName: EntityStates.Idle
+    _typeName: EntityStates.Idle, Assembly-CSharp
   canBeHitStunned: 0
   canBeStunned: 0
   canBeFrozen: 1
---- !u!114 &7932989709726024690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5150082409466045905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1512185436, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxInteractionDistance: 3
+  hasEffectiveAuthority: 0
 --- !u!114 &5193476027950814862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2561,19 +2445,7 @@ MonoBehaviour:
   - {fileID: 1924159537892393820}
   - {fileID: 3186568078115682601}
   - {fileID: 1828519427922832693}
---- !u!114 &5421485336691505776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5150082409466045905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 261648291, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  emoteDefinitions: []
+  networkIdentity: {fileID: 0}
 --- !u!114 &8974545370554662113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2617,6 +2489,11 @@ MonoBehaviour:
     skillDescriptionToken: 
     keywordToken: 
     icon: {fileID: 0}
+  networkIdentity: {fileID: 0}
+  allSkills: []
+  hasEffectiveAuthority: 0
+  skillDefDirtyFlags: 0
+  inDeserialize: 0
 --- !u!114 &1924159537892393820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2683,6 +2560,10 @@ MonoBehaviour:
   _skillFamily: {fileID: 11400000, guid: 03858c0e973eba7489ab3211cfba4599, type: 2}
   skillName: SlashCombo
   hideInCharacterSelect: 0
+  bonusStockFromBody: 0
+  finalRechargeInterval: 0
+  _cooldownScale: 0
+  _flatCooldownReduction: 0
   hasExecutedSuccessfully: 0
 --- !u!114 &7547938369507707091
 MonoBehaviour:
@@ -2699,6 +2580,10 @@ MonoBehaviour:
   _skillFamily: {fileID: 11400000, guid: b9af8d0bc3c5ec94582a1f771061c578, type: 2}
   skillName: Shoot
   hideInCharacterSelect: 0
+  bonusStockFromBody: 0
+  finalRechargeInterval: 0
+  _cooldownScale: 0
+  _flatCooldownReduction: 0
   hasExecutedSuccessfully: 0
 --- !u!114 &5798053586363276620
 MonoBehaviour:
@@ -2715,6 +2600,10 @@ MonoBehaviour:
   _skillFamily: {fileID: 11400000, guid: cdff63706e775e14987b015de818097e, type: 2}
   skillName: Roll
   hideInCharacterSelect: 0
+  bonusStockFromBody: 0
+  finalRechargeInterval: 0
+  _cooldownScale: 0
+  _flatCooldownReduction: 0
   hasExecutedSuccessfully: 0
 --- !u!114 &1164185605384601705
 MonoBehaviour:
@@ -2731,8 +2620,12 @@ MonoBehaviour:
   _skillFamily: {fileID: 11400000, guid: c2a0f91f124b15f4bb2df1cb9e0671c0, type: 2}
   skillName: ThrowBomb
   hideInCharacterSelect: 0
+  bonusStockFromBody: 0
+  finalRechargeInterval: 0
+  _cooldownScale: 0
+  _flatCooldownReduction: 0
   hasExecutedSuccessfully: 0
---- !u!114 &114728205093271174
+--- !u!114 &114092017221833178
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3526,7 +3419,6 @@ Transform:
   m_Children:
   - {fileID: 2997542515235986308}
   - {fileID: 3848967846730420046}
-  - {fileID: 3132097047213116911}
   m_Father: {fileID: 2286423991882371542}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 48.069645, y: -127.06892, z: -67.02242}
@@ -3996,7 +3888,6 @@ GameObject:
   - component: {fileID: 3839127963709967719}
   - component: {fileID: 8108761937298438120}
   - component: {fileID: 1858679710920426314}
-  - component: {fileID: 5819685620723303453}
   - component: {fileID: 1653352859212111922}
   m_Layer: 0
   m_Name: mdlHenry
@@ -4021,7 +3912,6 @@ Transform:
   - {fileID: 9008967229564586431}
   - {fileID: 460974336854491964}
   - {fileID: 4643461710446495220}
-  - {fileID: 6889634326330810439}
   - {fileID: 7689697505092977275}
   - {fileID: 5274750116198463682}
   - {fileID: 3681037610335068864}
@@ -4074,19 +3964,39 @@ MonoBehaviour:
     defaultMaterial: {fileID: 2100000, guid: 14d6d121af8aca345b797120c5f6331b, type: 2}
     defaultShadowCastingMode: 0
     ignoreOverlays: 0
-  - renderer: {fileID: 6095712401252130753}
-    defaultMaterial: {fileID: 2100000, guid: 327e0e8f5c745f5418a294ab0a8a3043, type: 2}
-    defaultShadowCastingMode: 0
-    ignoreOverlays: 0
-  - renderer: {fileID: 5063317414591434238}
-    defaultMaterial: {fileID: 2100000, guid: 327e0e8f5c745f5418a294ab0a8a3043, type: 2}
-    defaultShadowCastingMode: 0
-    ignoreOverlays: 0
   - renderer: {fileID: 5443914023815260605}
     defaultMaterial: {fileID: 2100000, guid: 14d6d121af8aca345b797120c5f6331b, type: 2}
     defaultShadowCastingMode: 0
     ignoreOverlays: 0
   baseLightInfos: []
+  childLocator: {fileID: 0}
+  goldAffixEffect: {fileID: 0}
+  coreTransform: {fileID: 0}
+  _visibility: 0
+  _isGhost: 0
+  _isDoppelganger: 0
+  _isEcho: 0
+  materialsDirty: 0
+  inventoryEquipmentIndex: 0
+  myEliteIndex: 0
+  fade: 0
+  firstPersonFade: 0
+  mainSkinnedMeshRenderer: {fileID: 0}
+  particleMaterialOverride: {fileID: 0}
+  poisonAffixEffect: {fileID: 0}
+  hauntedAffixEffect: {fileID: 0}
+  affixHauntedCloakLockoutDuration: 0
+  currentEquipmentDisplayIndex: 0
+  enabledItemDisplays:
+    array: 
+  limbFlagSet:
+    flagCounts: 
+    flags: 0
+  currentOverlays: []
+  activeOverlayCount: 0
+  wasPreviouslyClayGooed: 0
+  wasPreviouslyHaunted: 0
+  shaderEliteRampIndex: 0
 --- !u!114 &2901848322307180315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4102,6 +4012,7 @@ MonoBehaviour:
   skins:
   - {fileID: 11400000, guid: a10181e4d63a83345ab2b06cd5521fb3, type: 2}
   - {fileID: 11400000, guid: f51a27720bb3b21488f0e032142780bc, type: 2}
+  characterModel: {fileID: 0}
 --- !u!114 &7442342089140502370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4166,6 +4077,14 @@ MonoBehaviour:
   m_DistantDisable: 1
   m_ReferenceObject: {fileID: 0}
   m_DistanceToObject: 60
+  m_LocalGravity: {x: 0, y: 0, z: 0}
+  m_ObjectMove: {x: 0, y: 0, z: 0}
+  m_ObjectPrevPosition: {x: 0, y: 0, z: 0}
+  m_BoneTotalLength: 0
+  m_ObjectScale: 0
+  m_Time: 0
+  m_Weight: 0
+  m_DistantDisabled: 0
 --- !u!114 &7795272710642230045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4182,6 +4101,13 @@ MonoBehaviour:
   sprintFootstepOverrideString: 
   enableFootstepDust: 1
   footstepDustPrefab: {fileID: 0}
+  childLocator: {fileID: 0}
+  bodyInventory: {fileID: 0}
+  animator: {fileID: 0}
+  footstepDustInstanceTransform: {fileID: 0}
+  footstepDustInstanceParticleSystem: {fileID: 0}
+  footstepDustInstanceShakeEmitter: {fileID: 0}
+  body: {fileID: 0}
 --- !u!114 &8039656297804706648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4195,6 +4121,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundCenter: {fileID: 0}
+  bodyObject: {fileID: 0}
+  characterModel: {fileID: 0}
+  childLocator: {fileID: 0}
+  entityLocator: {fileID: 0}
+  meshRenderer: {fileID: 0}
+  modelLocator: {fileID: 0}
+  printHeight: 0
+  printTime: 0
 --- !u!114 &8083766375530253010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4223,6 +4157,7 @@ MonoBehaviour:
   - {fileID: 94909989650026650}
   componentsToDisableOnRagdoll:
   - {fileID: 7442342089140502370}
+  animator: {fileID: 0}
 --- !u!114 &7394615856827772399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4250,6 +4185,10 @@ MonoBehaviour:
   fullYaw: 0
   aimType: 0
   enableAimWeight: 0
+  animatorComponent: {fileID: 0}
+  pitchClipCycleEnd: 0
+  yawClipCycleEnd: 0
+  giveupTimer: 0
 --- !u!114 &3839127963709967719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4282,6 +4221,7 @@ MonoBehaviour:
   - {fileID: 5252845886591818817}
   mainHurtBox: {fileID: 5252845886591818817}
   bullseyeCount: 1
+  _hurtBoxesDeactivatorCounter: 0
 --- !u!114 &1858679710920426314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4297,21 +4237,6 @@ MonoBehaviour:
   groupName: Sword
   hitBoxes:
   - {fileID: 7490863130313705601}
---- !u!114 &5819685620723303453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8771454438400096566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1294804675, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  groupName: Punch
-  hitBoxes:
-  - {fileID: 4402439465625140384}
 --- !u!114 &1653352859212111922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4384,11 +4309,11 @@ MonoBehaviour:
   - name: SwingRight
     transform: {fileID: 3681037611603131111}
   - name: BoxingGloveL
-    transform: {fileID: 3132097047213116911}
+    transform: {fileID: 0}
   - name: BoxingGloveR
-    transform: {fileID: 6718969556208430826}
+    transform: {fileID: 0}
   - name: PunchHitbox
-    transform: {fileID: 6889634326330810439}
+    transform: {fileID: 0}
 --- !u!1 &9005789435143537469
 GameObject:
   m_ObjectHideFlags: 0
@@ -4417,7 +4342,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6109401557624152620}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9025722366502397048
 GameObject:

@@ -37,6 +37,8 @@ namespace ThunderHenry
         // use this to toggle debug on stuff, make sure it's false before releasing
         public static bool debug = true;
 
+        public static bool cancel;
+
         public static ThunderHenryPlugin instance;
 
         private void Awake()
@@ -45,6 +47,7 @@ namespace ThunderHenry
 
             // Load/Configure assets and read Config
             Modules.Assets.Init();
+            if (cancel) return;
             Modules.Tokens.Init();
             Modules.Prefabs.Init();
             Modules.Buffs.Init();
