@@ -532,15 +532,15 @@ PlayerSettings:
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
   scriptingDefineSymbols:
-    1: thunderkit;bbepis-bepinexpack;twiner-rainofstages;riskofthunder-hookgenpatcher;tristanmcpherson-r2api
-    7: thunderkit;bbepis-bepinexpack;twiner-rainofstages;riskofthunder-hookgenpatcher;tristanmcpherson-r2api
-    13: thunderkit;bbepis-bepinexpack;twiner-rainofstages;riskofthunder-hookgenpatcher;tristanmcpherson-r2api
-    19: thunderkit;bbepis-bepinexpack;twiner-rainofstages;riskofthunder-hookgenpatcher;tristanmcpherson-r2api
-    21: thunderkit;bbepis-bepinexpack;twiner-rainofstages;riskofthunder-hookgenpatcher;tristanmcpherson-r2api
-    25: thunderkit;bbepis-bepinexpack;twiner-rainofstages;riskofthunder-hookgenpatcher;tristanmcpherson-r2api
-    26: thunderkit;bbepis-bepinexpack;twiner-rainofstages;riskofthunder-hookgenpatcher;tristanmcpherson-r2api
-    27: thunderkit;bbepis-bepinexpack;twiner-rainofstages;riskofthunder-hookgenpatcher;tristanmcpherson-r2api
-    28: thunderkit;bbepis-bepinexpack;twiner-rainofstages;riskofthunder-hookgenpatcher;tristanmcpherson-r2api
+    1: thunderkit;bbepis-bepinexpack;twiner-rainofstages;riskofthunder-hookgenpatcher;tristanmcpherson-r2api;valex-stubbedshaderconverter
+    7: thunderkit;bbepis-bepinexpack;twiner-rainofstages;riskofthunder-hookgenpatcher;tristanmcpherson-r2api;valex-stubbedshaderconverter
+    13: thunderkit;bbepis-bepinexpack;twiner-rainofstages;riskofthunder-hookgenpatcher;tristanmcpherson-r2api;valex-stubbedshaderconverter
+    19: thunderkit;bbepis-bepinexpack;twiner-rainofstages;riskofthunder-hookgenpatcher;tristanmcpherson-r2api;valex-stubbedshaderconverter
+    21: thunderkit;bbepis-bepinexpack;twiner-rainofstages;riskofthunder-hookgenpatcher;tristanmcpherson-r2api;valex-stubbedshaderconverter
+    25: thunderkit;bbepis-bepinexpack;twiner-rainofstages;riskofthunder-hookgenpatcher;tristanmcpherson-r2api;valex-stubbedshaderconverter
+    26: thunderkit;bbepis-bepinexpack;twiner-rainofstages;riskofthunder-hookgenpatcher;tristanmcpherson-r2api;valex-stubbedshaderconverter
+    27: thunderkit;bbepis-bepinexpack;twiner-rainofstages;riskofthunder-hookgenpatcher;tristanmcpherson-r2api;valex-stubbedshaderconverter
+    28: thunderkit;bbepis-bepinexpack;twiner-rainofstages;riskofthunder-hookgenpatcher;tristanmcpherson-r2api;valex-stubbedshaderconverter
   platformArchitecture: {}
   scriptingBackend: {}
   il2cppCompilerConfiguration: {}
