@@ -9,10 +9,15 @@ namespace ThunderHenry.SkillStates.BaseStates
 {
     public class BaseMeleeAttack : BaseSkillState
     {
+        [SerializeField]
+        public NetworkSoundEventDef impactSound;
+        [SerializeField]
+        public GameObject swingEffectPrefab;
+        [SerializeField]
+        public GameObject hitEffectPrefab;
+
         public int swingIndex;
-
         protected string hitboxName = "Sword";
-
         protected DamageType damageType = DamageType.Generic;
         protected float damageCoefficient = 3.5f;
         protected float procCoefficient = 1f;
@@ -26,18 +31,10 @@ namespace ThunderHenry.SkillStates.BaseStates
         protected float attackRecoil = 0.75f;
         protected float hitHopVelocity = 4f;
         protected bool cancelled = false;
-
         protected string swingSoundString = "";
         protected string hitSoundString = "";
         protected string muzzleString = "SwingCenter";
         protected NetworkSoundEventIndex impactSoundIndex;
-
-        [SerializeField]
-        public NetworkSoundEventDef impactSound;
-        [SerializeField]
-        public GameObject swingEffectPrefab;
-        [SerializeField]
-        public GameObject hitEffectPrefab;
 
         private float earlyExitTime;
         public float duration;
