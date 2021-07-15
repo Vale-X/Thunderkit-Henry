@@ -60,6 +60,7 @@ MonoBehaviour:
   Dependencies:
   - {fileID: 11400000, guid: 6893422731aa6d67012f5f4d8209c304, type: 2}
   - {fileID: 11400000, guid: c8c954e10545f6cd0045de066bc4846b, type: 2}
+  - {fileID: 11400000, guid: 8c9723f54a9077defbd277e7d46281d2, type: 2}
 --- !u!114 &114431642618062350
 MonoBehaviour:
   m_ObjectHideFlags: 1

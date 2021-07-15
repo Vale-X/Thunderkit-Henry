@@ -30,16 +30,6 @@ MonoBehaviour:
     defaultMaterial: {fileID: 2100000, guid: 14d6d121af8aca345b797120c5f6331b, type: 2}
     defaultShadowCastingMode: 0
     ignoreOverlays: 0
-  - renderer: {fileID: 6095712401252130753, guid: bd791d6404f562f49998cfe7297b2846,
-      type: 3}
-    defaultMaterial: {fileID: 2100000, guid: 327e0e8f5c745f5418a294ab0a8a3043, type: 2}
-    defaultShadowCastingMode: 0
-    ignoreOverlays: 0
-  - renderer: {fileID: 5063317414591434238, guid: bd791d6404f562f49998cfe7297b2846,
-      type: 3}
-    defaultMaterial: {fileID: 2100000, guid: 327e0e8f5c745f5418a294ab0a8a3043, type: 2}
-    defaultShadowCastingMode: 0
-    ignoreOverlays: 0
   - renderer: {fileID: 5443914023815260605, guid: bd791d6404f562f49998cfe7297b2846,
       type: 3}
     defaultMaterial: {fileID: 2100000, guid: 14d6d121af8aca345b797120c5f6331b, type: 2}
