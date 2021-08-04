@@ -46,6 +46,7 @@ namespace ThunderHenry
             instance = this;
 
             // Load/Configure assets and read Config
+            Modules.Config.ReadConfig();
             Modules.Assets.Init();
             if (cancel) return;
             Modules.Tokens.Init();

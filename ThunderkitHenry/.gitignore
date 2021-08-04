@@ -10,6 +10,7 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 /[Tt]hunderkit/
+/[Pp]ackages/Risk of Rain 2/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
@@ -74,4 +75,3 @@ crashlytics-build.properties
 # Custom removals
 /[Aa]ssets/[Ee]ditor/PrefabReferencePropertyDrawer.cs
 /[Aa]ssets/[Ee]ditor/PrefabReferencePropertyDrawer.cs.meta
-

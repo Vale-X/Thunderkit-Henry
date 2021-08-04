@@ -39,8 +39,14 @@ namespace ThunderHenry.Modules
 				ThunderHenryPlugin.cancel = true;
                 return;
             }
+			if (Modules.Config.characterEnabled.Value == false)
+			{
+				Debug.LogFormat(ThunderHenryPlugin.MODNAME + ": Character enabled config value is false. Not loading mod.");
+				ThunderHenryPlugin.cancel = true;
+				return;
+			}
 
-            LoadAssetBundle();
+			LoadAssetBundle();
             LoadSoundBank();
             PopulateAssets();
         }
