@@ -29,6 +29,107 @@
             </summary>
             <returns>true if added, false otherwise</returns>
         </member>
+        <member name="T:R2API.ArtifactCodeAPI">
+            <summary>
+            API for adding custom artifact codes to the game.
+            </summary>
+        </member>
+        <member name="P:R2API.ArtifactCodeAPI.Loaded">
+            <summary>
+            Return true if the submodule is loaded.
+            </summary>
+        </member>
+        <member name="M:R2API.ArtifactCodeAPI.PrintSha256HashCode(On.RoR2.PortalDialerController.orig_PerformActionServer,RoR2.PortalDialerController,System.Byte[])">
+            <summary>
+            Prints the Artifact Code that the player inputs in the dialer. Useful for mod creators.
+            </summary>
+        </member>
+        <member name="M:R2API.ArtifactCodeAPI.AddCodes(On.RoR2.PortalDialerController.orig_Awake,RoR2.PortalDialerController)">
+            <summary>
+            Adds custom ArtifactCodes to the portal dialer controller instance found in sky meadow.
+            </summary>
+        </member>
+        <member name="M:R2API.ArtifactCodeAPI.AddCode(RoR2.ArtifactDef,RoR2.Sha256HashAsset)">
+            <summary>
+            Add a custom Artifact code to the SkyMeadow Artifact portal dialer.
+            The artifactDef must exist within the initialized ArtifactCatalog for it to properly added to the portal dialer.
+            </summary>
+            <param name="artifactDef">The artifactDef tied to the artifact code.</param>
+            <param name="sha256HashAsset">The artifact code.</param>
+        </member>
+        <member name="M:R2API.ArtifactCodeAPI.AddCode(RoR2.ArtifactDef,R2API.ArtifactCode)">
+            <summary>
+            Add a custom Artifact code to the SkyMeadow Artifact portal dialer.
+            The artifactDef must exist within the initialized ArtifactCatalog for it to properly added to the portal dialer.
+            </summary>
+            <param name="artifactDef">The artifactDef tied to the artifact code.</param>
+            <param name="artifactCode">The artifactCode written in the ArtifactCodeScriptableObject.</param>
+        </member>
+        <member name="M:R2API.ArtifactCodeAPI.AddCode(RoR2.ArtifactDef,System.UInt64,System.UInt64,System.UInt64,System.UInt64)">
+            <summary>
+            Add a custom Artifact code to the SkyMeadow Artifact portal dialer.
+            The artifactDef must exist within the initialized Artifactcatalog for it to be properly added to the portal dialer.
+            </summary>
+            <param name="artifactDef">The artifactDef tied to the artifact code.</param>
+            <param name="code_00_07">The values printed by R2API when a code is inputted.</param>
+            <param name="code_08_15">The values printed by R2API when a code is inputted.</param>
+            <param name="code_16_23">The values printed by R2API when a code is inputted.</param>
+            <param name="code_24_31">The values printed by R2API when a code is inputted.</param>
+        </member>
+        <member name="M:R2API.ArtifactCodeAPI.AddCode(RoR2.ArtifactDef,System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>
+            Add a custom Artifact code to the SkyMeadow Artifact portal dialer.
+            The artifactDef must exist within the initialized ArtifactCatalog for it to be properly added to the portal dialer.
+            </summary>
+            <param name="artifactDef">The artifactDef tied to the artifact code.</param>
+            <param name="CompoundValues">An IEnumerable of type "int" with a size of 9 filled with compound values.</param>
+        </member>
+        <member name="M:R2API.ArtifactCodeAPI.AddCompound(RoR2.ArtifactCompoundDef)">
+            <summary>
+            Add a custom Artifact Compound to the SkyMeadow's Artifact Buttons.
+            </summary>
+            <param name="artifactCompoundDef">The Artifact Compound to add. The value in the def must be unique, otherwise if a duplicate is found, it doesnt add the compound.</param>
+            <returns>True if added to the button prefab, false otherwise.</returns>
+        </member>
+        <member name="M:R2API.ArtifactCodeAPI.AddCompound(System.Int32,UnityEngine.Material,UnityEngine.GameObject)">
+            <summary>
+            Add a custom Artifact Compound to the SkyMeadow's Artifact Buttons
+            </summary>
+            <param name="compoundValue">The Value of the Compound.</param>
+            <param name="compoundDecalMaterial">The Decal Material of the Compound.</param>
+            <param name="compoundModelPrefab">The Model Prefab of the Compound.</param>
+            <returns></returns>
+        </member>
+        <member name="T:R2API.ArtifactCodeAPI.CompoundValues">
+            <summary>
+            Contains the values of Vanilla risk of rain 2 Artifact Compounds.
+            </summary>
+        </member>
+        <member name="F:R2API.ArtifactCodeAPI.CompoundValues.Empty">
+            <summary>
+            Value of the Empty compound.
+            </summary>
+        </member>
+        <member name="F:R2API.ArtifactCodeAPI.CompoundValues.Square">
+            <summary>
+            Value of the Square compound.
+            </summary>
+        </member>
+        <member name="F:R2API.ArtifactCodeAPI.CompoundValues.Circle">
+            <summary>
+            Value of the Circle compound.
+            </summary>
+        </member>
+        <member name="F:R2API.ArtifactCodeAPI.CompoundValues.Triangle">
+            <summary>
+            Value for the Triangle compound.
+            </summary>
+        </member>
+        <member name="F:R2API.ArtifactCodeAPI.CompoundValues.Diamond">
+            <summary>
+            Value for the Diamond compound.
+            </summary>
+        </member>
         <member name="T:R2API.AssetBundleResourcesProvider">
             <summary>
             This class provides a wrapper around an AssetBundle for integrating it into the regular Unity Resources library
@@ -1060,25 +1161,29 @@
             </summary>
             <param name="newEliteTiers">The new elite tiers that will be used by the combat director.</param>
         </member>
-        <member name="M:R2API.EliteAPI.AddCustomEliteTier(RoR2.CombatDirector.EliteTierDef)">
+        <member name="M:R2API.EliteAPI.AppendCustomEliteTier(RoR2.CombatDirector.EliteTierDef)">
             <summary>
             Allows for adding a new elite tier def to the combat director.
             When adding a new elite tier,
             do not fill the eliteTypes field with your custom elites defs if your goal is to add your custom elite in it right after.
             Because when doing EliteAPI.Add, the API will add your elite to the specified tiers <see cref="F:R2API.CustomElite.EliteTierDefs"/>.
-            Note that if your eliteTierDef has a cheaper cost than let's say the highest vanilla tier,
-            you'll have to use the indexToInsertAt parameter to put it before the tier in array
+            </summary>
+            <param name="eliteTierDef">The new elite tier to add.</param>
+        </member>
+        <member name="M:R2API.EliteAPI.AddCustomEliteTier(RoR2.CombatDirector.EliteTierDef)">
+            <summary>
+            Allows for adding a new elite tier def to the combat director.
+            Automatically insert the eliteTierDef at the correct position in the array based on its <see cref="F:RoR2.CombatDirector.EliteTierDef.costMultiplier"/>
+            When adding a new elite tier, do not fill the eliteTypes field with your custom elites defs if your goal is to add your custom elite in it right after.
+            Because when doing EliteAPI.Add, the API will add your elite to the specified tiers <see cref="F:R2API.CustomElite.EliteTierDefs"/>.
             </summary>
             <param name="eliteTierDef">The new elite tier to add.</param>
         </member>
         <member name="M:R2API.EliteAPI.AddCustomEliteTier(RoR2.CombatDirector.EliteTierDef,System.Int32)">
             <summary>
             Allows for adding a new elite tier def to the combat director.
-            When adding a new elite tier,
-            do not fill the eliteTypes field with your custom elites defs if your goal is to add your custom elite in it right after.
+            When adding a new elite tier, do not fill the eliteTypes field with your custom elites defs if your goal is to add your custom elite in it right after.
             Because when doing EliteAPI.Add, the API will add your elite to the specified tiers <see cref="F:R2API.CustomElite.EliteTierDefs"/>.
-            Note that if your eliteTierDef has a cheaper cost than let's say the highest vanilla tier,
-            you'll have to use the indexToInsertAt parameter to put it before the tier in the final array
             </summary>
             <param name="eliteTierDef">The new elite tier to add.</param>
             <param name="indexToInsertAt">Optional index to specify if you want to insert a cheaper elite tier</param>
@@ -1205,20 +1310,6 @@
             <summary>
             Return true if the submodule is loaded.
             </summary>
-        </member>
-        <member name="M:R2API.ItemDropAPI.AddItemByTier(RoR2.ItemTier,RoR2.ItemIndex[])">
-            <summary>
-            Add the given items to the given drop table.
-            </summary>
-            <param name="itemTier">The drop table to add the items to.</param>
-            <param name="items">The item indices to add to the given drop table.</param>
-        </member>
-        <member name="M:R2API.ItemDropAPI.RemoveItemByTier(RoR2.ItemTier,RoR2.ItemIndex[])">
-            <summary>
-            Remove the given items to the given drop table.
-            </summary>
-            <param name="itemTier">The drop table to remove the items from.</param>
-            <param name="items">The item indices to remove from the given drop table.</param>
         </member>
         <member name="T:R2API.LanguageAPI">
             <summary>
@@ -1564,6 +1655,15 @@
             Return true if the submodule is loaded.
             </summary>
         </member>
+        <member name="M:R2API.PrefabAPI.InstantiateClone(UnityEngine.GameObject,System.String)">
+            <summary>
+            Duplicates a GameObject and leaves it in a "sleeping" state where it is inactive, but becomes active when spawned.
+            Also registers the clone to network.
+            </summary>
+            <param name="g">The GameObject to clone</param>
+            <param name="nameToSet">The name to give the clone (Should be unique)</param>
+            <returns>The GameObject of the clone</returns>
+        </member>
         <member name="M:R2API.PrefabAPI.InstantiateClone(UnityEngine.GameObject,System.String,System.Boolean)">
             <summary>
             Duplicates a GameObject and leaves it in a "sleeping" state where it is inactive, but becomes active when spawned.
@@ -1644,10 +1744,13 @@
             <summary>Added to base health regen. HEALTH_REGEN ~ (BASE_REGEN + baseRegenAdd) * (REGEN_MULT + regenMultAdd).</summary>
         </member>
         <member name="F:R2API.RecalculateStatsAPI.StatHookEventArgs.baseMoveSpeedAdd">
-            <summary>Added to base move speed. MOVE_SPEED ~ (BASE_MOVE_SPEED + baseMoveSpeedAdd) * (MOVE_SPEED_MULT + moveSpeedMultAdd)</summary>
+            <summary>Added to base move speed. MOVE_SPEED ~ (BASE_MOVE_SPEED + baseMoveSpeedAdd) * (MOVE_SPEED_MULT + moveSpeedMultAdd / MOVE_SPEED_REDUCTION_MULT + moveSpeedReductionMultAdd)</summary>
         </member>
         <member name="F:R2API.RecalculateStatsAPI.StatHookEventArgs.moveSpeedMultAdd">
-            <summary>Added to the direct multiplier to move speed. MOVE_SPEED ~ (BASE_MOVE_SPEED + baseMoveSpeedAdd) * (MOVE_SPEED_MULT + moveSpeedMultAdd)</summary>
+            <summary>Added to the direct multiplier to move speed. MOVE_SPEED ~ (BASE_MOVE_SPEED + baseMoveSpeedAdd) * (MOVE_SPEED_MULT + moveSpeedMultAdd / MOVE_SPEED_REDUCTION_MULT + moveSpeedReductionMultAdd)</summary>
+        </member>
+        <member name="F:R2API.RecalculateStatsAPI.StatHookEventArgs.moveSpeedReductionMultAdd">
+            <summary>Added reduction multiplier to move speed. MOVE_SPEED ~ (BASE_MOVE_SPEED + baseMoveSpeedAdd) * (MOVE_SPEED_MULT + moveSpeedMultAdd / MOVE_SPEED_REDUCTION_MULT + moveSpeedReductionMultAdd)</summary>
         </member>
         <member name="F:R2API.RecalculateStatsAPI.StatHookEventArgs.jumpPowerMultAdd">
             <summary>Added to the direct multiplier to jump power. JUMP_POWER ~ BASE_JUMP_POWER * (JUMP_POWER_MULT + jumpPowerMultAdd)</summary>
@@ -1720,9 +1823,34 @@
             the GameObject[] will contains the scene root game objects.</param>
             <exception cref="T:System.InvalidOperationException"></exception>
         </member>
+        <member name="T:R2API.ArtifactCode">
+            <summary>
+            Scriptable object to ease the creation of Artifact codes.
+            </summary>
+        </member>
+        <member name="F:R2API.ArtifactCode.ArtifactCompounds">
+            <summary>
+            The code for the Artifact. for a list of accepted vanilla compound values, check ArtifactCodeAPI.CompoundValues
+            </summary>
+        </member>
+        <member name="F:R2API.ArtifactCode.hashAsset">
+            <summary>
+            The Sha256HashAsset stored in this Scriptable Object.
+            </summary>
+        </member>
+        <member name="M:R2API.ArtifactCode.Start">
+            <summary>
+            Creates the Sha256HashAsset
+            </summary>
+        </member>
         <member name="T:R2API.SoundAPI">
             <summary>
-            API for adding music with Wwise
+            API for adding sounds with Wwise
+            </summary>
+        </member>
+        <member name="P:R2API.SoundAPI.Loaded">
+            <summary>
+            Return true if the submodule is loaded.
             </summary>
         </member>
         <member name="M:R2API.SoundAPI.LoadBanks">
@@ -1805,6 +1933,162 @@
             <summary>
             List of all the Banks
             </summary>
+        </member>
+        <member name="M:R2API.SoundAPI.AddNetworkedSoundEvent(RoR2.NetworkSoundEventDef)">
+            <summary>
+            Add a custom network sound event to the list of available network sound events.
+            If this is called after the NetworkSoundEventCatalog inits then this will return false and ignore the custom network sound event.
+            </summary>
+            <param name="networkSoundEventDef">The network sound event def to add.</param>
+            <returns>true if added, false otherwise</returns>
+        </member>
+        <member name="M:R2API.SoundAPI.AddNetworkedSoundEvent(System.String)">
+            <summary>
+            Add a custom network sound event to the list of available network sound events.
+            If this is called after the NetworkSoundEventCatalog inits then this will return false and ignore the custom network sound event.
+            </summary>
+            <param name="eventName">The name of the AKWwise Sound Event to add.</param>
+            <returns>true if added, false otherwise</returns>
+        </member>
+        <member name="T:R2API.SoundAPI.Music">
+            <summary>
+            Class for adding music to the game music system.
+            <see href="https://github.com/risk-of-thunder/R2Wiki/wiki/Custom-Music---WWise">Tutorial available here</see>
+            </summary>
+        </member>
+        <member name="T:R2API.SoundAPI.Music.CustomMusicData">
+            <summary>
+            Class that contains all the needed information
+            for the api to process your custom tracks into
+            the game music system.
+            </summary>
+        </member>
+        <member name="F:R2API.SoundAPI.Music.CustomMusicData.BepInPlugin">
+            <summary>
+            Used for logging purposes.
+            </summary>
+        </member>
+        <member name="F:R2API.SoundAPI.Music.CustomMusicData.PlayMusicSystemEventName">
+            <summary>
+            The event name that is used for firing the whole custom music system.
+            It must be different than the game one which is <see cref="F:R2API.SoundAPI.Music.GameEventNamePlayMusicSystem"></see>.
+            </summary>
+        </member>
+        <member name="F:R2API.SoundAPI.Music.CustomMusicData.BanksFolderPath">
+            <summary>
+            The absolute path of the folder that contains your init bank and your sound bank.
+            </summary>
+        </member>
+        <member name="F:R2API.SoundAPI.Music.CustomMusicData.InitBankName">
+            <summary>
+            Should be different than the game one which is called <see cref="F:R2API.SoundAPI.Music.GameInitBankName"></see>.
+            </summary>
+        </member>
+        <member name="F:R2API.SoundAPI.Music.CustomMusicData.SoundBankName">
+            <summary>
+            The name of the sound bank that contains your music tracks.
+            </summary>
+        </member>
+        <member name="F:R2API.SoundAPI.Music.CustomMusicData.SceneDefToTracks">
+            <summary>
+            Dictionary for replacing the main and boss tracks of scene defs.
+            Can be null.
+            </summary>
+        </member>
+        <member name="P:R2API.SoundAPI.Music.CustomMusicData.LoadedInitBankId">
+            <summary>
+            Will be filled after using <see cref="M:R2API.SoundAPI.Music.Add(R2API.SoundAPI.Music.CustomMusicData)"></see> and after the Wwise sound engine get initialized.
+            </summary>
+        </member>
+        <member name="P:R2API.SoundAPI.Music.CustomMusicData.LoadedSoundBankId">
+            <inheritdoc cref="P:R2API.SoundAPI.Music.CustomMusicData.LoadedInitBankId"/>
+        </member>
+        <member name="T:R2API.SoundAPI.Music.MainAndBossTracks">
+            <summary>
+            Contains the two MusicTrackDef that are fired by the game music system depending on the game current state.
+            <see cref="F:RoR2.MusicTrackDef.states"></see> usually have only two states.
+            One <see cref="T:AK.Wwise.State"></see> should serve a similar purpose as the game one called gameplaySongChoice,
+            which is normally used for telling Wwise which track to play.
+            That gameplaySongChoice <see cref="T:AK.Wwise.State"></see> should have a custom group id associated with it which
+            should be different than the game one called gameplaySongChoice.
+            The other <see cref="T:AK.Wwise.State"></see> should have the same group id as the game one which
+            is currently called Music_system and is used for telling the game if
+            its either a Gameplay, a Bossfight, or a Menu track.
+            </summary>
+        </member>
+        <member name="F:R2API.SoundAPI.Music.MainAndBossTracks.MainTrack">
+            <inheritdoc cref="T:R2API.SoundAPI.Music.MainAndBossTracks"/>
+        </member>
+        <member name="F:R2API.SoundAPI.Music.MainAndBossTracks.BossTrack">
+            <inheritdoc cref="T:R2API.SoundAPI.Music.MainAndBossTracks"/>
+        </member>
+        <member name="M:R2API.SoundAPI.Music.MainAndBossTracks.#ctor(RoR2.MusicTrackDef,RoR2.MusicTrackDef)">
+            <inheritdoc cref="T:R2API.SoundAPI.Music.MainAndBossTracks"/>
+        </member>
+        <member name="T:R2API.SoundAPI.Music.CustomMusicTrackDef">
+            <summary>
+            Extended <see cref="T:RoR2.MusicTrackDef"/> for a more code based project.
+            This can also be used to an extent by unity editor users as a baseline for whats needed.
+            </summary>
+        </member>
+        <member name="T:R2API.SoundAPI.Music.CustomMusicTrackDef.CustomState">
+            <summary>
+            Struct for storing the wwise state data
+            that will be posted to the wwise engine
+            through <see cref="M:AkSoundEngine.SetState(System.UInt32,System.UInt32)"/>
+            </summary>
+        </member>
+        <member name="F:R2API.SoundAPI.Music.CustomMusicTrackDef.CustomState.GroupId">
+            <summary>
+            First arg of <see cref="M:AkSoundEngine.SetState(System.UInt32,System.UInt32)"/>
+            </summary>
+        </member>
+        <member name="F:R2API.SoundAPI.Music.CustomMusicTrackDef.CustomState.StateId">
+            <summary>
+            Second arg of <see cref="M:AkSoundEngine.SetState(System.UInt32,System.UInt32)"/>
+            </summary>
+        </member>
+        <member name="F:R2API.SoundAPI.Music.CustomMusicTrackDef.CustomStates">
+            <summary>
+            Iterated in the <see cref="M:R2API.SoundAPI.Music.CustomMusicTrackDef.Play"/> and <see cref="M:R2API.SoundAPI.Music.CustomMusicTrackDef.Stop"/> methods.
+            </summary>
+        </member>
+        <member name="F:R2API.SoundAPI.Music.CustomMusicTrackDef.SoundBankName">
+            <summary>
+            Used in the <see cref="M:R2API.SoundAPI.Music.CustomMusicTrackDef.Preload"/> (which should be called by <see cref="M:R2API.SoundAPI.Music.CustomMusicTrackDef.Play"/>).
+            Can NOT be null or whitespace.
+            </summary>
+        </member>
+        <member name="M:R2API.SoundAPI.Music.CustomMusicTrackDef.Preload">
+            <summary>
+            Preload should try to load your music bank with <see cref="F:R2API.SoundAPI.Music.CustomMusicTrackDef.SoundBankName"/>
+            </summary>
+        </member>
+        <member name="M:R2API.SoundAPI.Music.CustomMusicTrackDef.Play">
+            <summary>
+            Call Preload and set the states to the Wwise sound engine.
+            </summary>
+        </member>
+        <member name="M:R2API.SoundAPI.Music.CustomMusicTrackDef.Stop">
+            <summary>
+            Set the states to 0 to the Wwise sound engine
+            </summary>
+        </member>
+        <member name="M:R2API.SoundAPI.Music.Add(R2API.SoundAPI.Music.CustomMusicData)">
+            <summary>
+            Please refer to the <see cref="T:R2API.SoundAPI.Music.CustomMusicData"/> fields documentation
+            for indication on how to fill the fields properly.
+            </summary>
+            <returns>True if the preliminary checks succeed</returns>
+        </member>
+        <member name="M:R2API.SoundAPI.Music.Remove(R2API.SoundAPI.Music.CustomMusicData)">
+            <summary>
+            Remove everything related to your custom music data.
+            Both the sound banks get unloaded.
+            The scene tracks that were override by your dictionary are restored.
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
         </member>
         <member name="P:R2API.SurvivorAPI.Loaded">
             <summary>
@@ -1905,13 +2189,14 @@
             Return true if the submodule is loaded.
             </summary>
         </member>
-        <member name="M:R2API.UnlockableAPI.AddUnlockable``1(System.Boolean)">
+        <member name="M:R2API.UnlockableAPI.AddUnlockable``1(System.Type,RoR2.UnlockableDef)">
             <summary>
             Add an unlockable tied to an achievement.
-            For an example usage check <see href="https://github.com/ArcPh1r3/HenryTutorial/blob/master/HenryMod/Modules/Achievements/HenryMasteryAchievement.cs">Rob repository</see>
+            For an example usage check <see href="https://github.com/ArcPh1r3/HenryTutorial/blob/master/HenryMod/Modules/Achievements/HenryMasteryAchievement.cs">rob repository</see>
             </summary>
-            <typeparam name="TUnlockable">Class that herit from BaseAchievement and implement IModdedUnlockableDataProvider</typeparam>
-            <param name="serverTracked">whether or not the achievement should be tracked by the server.</param>
+            <typeparam name="TUnlockable">Class that inherits from BaseAchievement and implements IModdedUnlockableDataProvider</typeparam>
+            <param name="serverTrackerType">Type that inherits from BaseServerAchievement for achievements that the server needs to track</param>
+            <param name="unlockableDef">For UnlockableDefs created in advance. Leaving null will generate an UnlockableDef instead.</param>
             <returns></returns>
         </member>
         <member name="T:R2API.Utils.R2APISubmoduleDependency">

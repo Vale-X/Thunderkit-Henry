@@ -1,5 +1,4 @@
 ﻿using RoR2;
-using RoR2.Skills;
 using UnityEngine;
 
 namespace ThunderHenry.Modules.Components
@@ -19,11 +18,6 @@ namespace ThunderHenry.Modules.Components
             this.childLocator = this.gameObject.GetComponentInChildren<ChildLocator>();
             this.model = this.gameObject.GetComponentInChildren<CharacterModel>();
             this.modelAnimator = this.gameObject.GetComponentInChildren<Animator>();
-
-            Debug.LogWarning(this.characterBody);
-            Debug.LogWarning(this.childLocator);
-            Debug.LogWarning(this.model);
-            Debug.LogWarning(this.modelAnimator);
 
             Invoke("CheckWeapon", 0.2f);
         }

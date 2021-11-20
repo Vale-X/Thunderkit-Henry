@@ -2,13 +2,14 @@
 using System;
 using UnityEngine;
 using ThunderHenry.Modules;
+using R2API;
 
 namespace ThunderHenry.Achievements
 {
-    internal class ThunderHenryMastery : UnlockableCreator.ThunderHenryAchievement
+    internal class ThunderHenryMastery : ModdedUnlockable
     {
         // this prefix variable is ROBVALE_THUNDERHENRY_BODY_UNLOCK_ by default.
-        public override string Prefix => ThunderHenryPlugin.developerPrefix + Tokens.henryPrefix + "UNLOCK_";
+        public string Prefix => ThunderHenryPlugin.developerPrefix + Tokens.henryPrefix + "UNLOCK_";
 
         // Requires Tokens created in tokens.cs, as they are displayed to the player.
         public override string AchievementNameToken => Prefix + "MASTERY_NAME";
@@ -17,20 +18,14 @@ namespace ThunderHenry.Achievements
         // Used for referencing and must be unique to the achievement.
         public override string AchievementIdentifier => Prefix + "MASTERY_ID";
         public override string UnlockableIdentifier => Prefix + "MASTERY_REWARD_ID";
+        public override string UnlockableNameToken => Prefix + "MASTERY_UNLOCK";
 
         // If PrerequisiteUnlockableIdentifier matches the name of an existing AchievementIdentifier, 
         // you need to have the Achievement unlocked in order to be able to unlock this achievement.
         // In this case you need to have HenryUnlockAchievement completed in order to meet the requirements for this achivement.
         public override string PrerequisiteUnlockableIdentifier => Prefix + "SURVIVOR_ID";
 
-        // make sure this matches the NAME of the UnlockableDef you create for the achievement.
-        public override UnlockableDef UnlockableDef => Modules.Assets.mainAssetBundle.LoadAsset<UnlockableDef>("Skins.ThunderHenry.Alt1");
         public override Sprite Sprite => Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texHenryAchievement");
-
-        public override void Initialize()
-        {
-            UnlockableCreator.AddUnlockable<ThunderHenryMastery>(true);
-        }
 
         public override void OnInstall()
         {
@@ -92,7 +87,5 @@ namespace ThunderHenry.Achievements
             Language.GetString(AchievementNameToken),
             Language.GetString(AchievementDescToken)
         });
-
-
     }
 }

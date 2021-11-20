@@ -36,4 +36,4 @@ MonoBehaviour:
   Description: MMHOOK generation at runtime.
   Version: 3.0.43
   Dependencies:
-  - {fileID: 11400000, guid: 6893422731aa6d67012f5f4d8209c304, type: 2}
+  - {fileID: 11400000, guid: 2d4d09ec817c24698d35dc9bf0704fdc, type: 2}

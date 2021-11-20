@@ -1,10 +1,6 @@
-﻿using System;
+﻿using RoR2;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
-using RoR2;
 
 namespace ThunderHenry.Modules
 {
@@ -14,6 +10,7 @@ namespace ThunderHenry.Modules
         // This lets you reference any bodyPrefabs or displayPrefabs throughout your code.
 
         internal static List<GameObject> bodyPrefabs = new List<GameObject>();
+        internal static List<BodyIndex> bodyIndexes = new List<BodyIndex>();
         internal static List<GameObject> displayPrefabs = new List<GameObject>();
 
         private static PhysicMaterial ragdollMaterial;
@@ -83,6 +80,7 @@ namespace ThunderHenry.Modules
             foreach (SurvivorDef s in d)
             {
                 bodyPrefabs.Add(s.bodyPrefab);
+                bodyIndexes.Add(BodyCatalog.FindBodyIndex(s.bodyPrefab));
                 displayPrefabs.Add(s.displayPrefab);
             }
         }

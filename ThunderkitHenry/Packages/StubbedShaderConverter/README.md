@@ -13,6 +13,24 @@ Information on how to use this as a mod developer can be found within [the Githu
 
 # Changelog
 
+`0.1.0`
+
+- __StubbedShaderConverter's `ShaderConverter` has been reworked.__
+    - The namespace has been renamed from `ShaderConvert` to `ShaderConverter`.
+	- `ShaderConvert` is kept in this release for compatibility, but will be removed in the future. Please update to use `ShaderConverter` instead!
+    - The cloud remap issues, which most of the methods in this tool were used to solve, has been figured out! All of StubbedShaderConverter's main converter methods have been removed.
+	- The new primary method is `ShaderConverter.ConvertStubbedShaders()` which accepts AssetBundles, GameObjects, Renderers and Materials as input. This can be called in awake and correctly handles cloud remap shaders.
+	- Please check out [the Github](https://github.com/Vale-X/StubbedShaderConverter) for information on cloud remap materials.
+- __Added a new `AddMaterialController` component.__
+    - Used for adding KomradeSpectre's Material Controller to any prefab contained within your asset bundle on start.
+- __KomradeSpectre's Material Controller has been updated.__
+    - Now supports all Renderer types.
+	- Now supports `HGSnowTopped` shaders.
+
+`0.0.2`
+
+- `ConvertAssetBundleShaders` now returns an AssetBundle.
+
 `0.0.1`
 
 - Initial Release.

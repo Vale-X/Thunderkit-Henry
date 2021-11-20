@@ -3,13 +3,14 @@ using System;
 using UnityEngine;
 using ThunderHenry.Modules;
 using RoR2.Networking;
+using R2API;
 
 namespace ThunderHenry.Achievements
 {
-   internal class ThunderHenryUnlock : UnlockableCreator.ThunderHenryAchievement
+   internal class ThunderHenryUnlock : ModdedUnlockable
     {
         // this prefix variable is ROBVALE_THUNDERHENRY_BODY_UNLOCK_ by default.
-        public override string Prefix => ThunderHenryPlugin.developerPrefix + Tokens.henryPrefix + "UNLOCK_";
+        public string Prefix => ThunderHenryPlugin.developerPrefix + Tokens.henryPrefix + "UNLOCK_";
 
         // Requires Tokens created in tokens.cs, as they are displayed to the player.
         public override string AchievementNameToken => Prefix + "SURVIVOR_NAME";
@@ -18,6 +19,7 @@ namespace ThunderHenry.Achievements
         // Used for referencing and must be unique to the achievement.
         public override string AchievementIdentifier => Prefix + "SURVIVOR_ID";
         public override string UnlockableIdentifier => Prefix + "SURVIVOR_REWARD_ID";
+        public override string UnlockableNameToken => Prefix + "SURVIVOR_UNLOCKABLE_NAME";
 
         // If PrerequisiteUnlockableIdentifier matches the name of an existing AchievementIdentifier, 
         // you need to have the Achievement unlocked in order to be able to unlock this achievement.
@@ -25,13 +27,7 @@ namespace ThunderHenry.Achievements
         public override string PrerequisiteUnlockableIdentifier => Prefix + "SURVIVOR_PREREQ_ID";
 
         // make sure this matches the NAME of the UnlockableDef you create for the achievement.
-        public override UnlockableDef UnlockableDef => Modules.Assets.mainAssetBundle.LoadAsset<UnlockableDef>("Characters.ThunderHenry");
         public override Sprite Sprite => Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texHenryAchievement");
-
-        public override void Initialize()
-        {
-            UnlockableCreator.AddUnlockable<ThunderHenryUnlock>(true);
-        }
 
         public override void OnInstall()
         {

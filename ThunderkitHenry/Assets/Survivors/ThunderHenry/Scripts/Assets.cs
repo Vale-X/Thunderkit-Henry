@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using Path = System.IO.Path;
-using RoR2.ContentManagement;
-using System.Collections;
-using System.Reflection;
-using UnityEngine;
-using System.Linq;
+﻿using EntityStates;
 using R2API;
 using RoR2;
-using EntityStates;
-using StubbedConverter;
+using RoR2.ContentManagement;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using UnityEngine;
+using Path = System.IO.Path;
 
 namespace ThunderHenry.Modules
 {
@@ -33,7 +32,7 @@ namespace ThunderHenry.Modules
 
         internal static void Init()
         {
-            if (assetBundleName == "thunderassetbundle")
+            if (assetBundleName == "myassetbundle2")
             {
                 Debug.LogError(ThunderHenryPlugin.MODNAME + ": AssetBundle name hasn't been changed. Not loading any assets to avoid conflicts.");
 				ThunderHenryPlugin.cancel = true;
@@ -154,9 +153,11 @@ namespace ThunderHenry.Modules
 				((Func<System.Type, bool>)(type => typeof(EntityState).IsAssignableFrom(type))).ToArray<System.Type>());
 
 			if (ThunderHenryPlugin.debug)
-			foreach (Type t in mainContentPack.entityStateTypes)
-            {
-					Debug.LogWarning(t);
+			{
+				foreach (Type t in mainContentPack.entityStateTypes)
+				{
+					Debug.Log(ThunderHenryPlugin.MODNAME + ": Added EntityStateType: " + t);
+				}
 			}
 		}
     }

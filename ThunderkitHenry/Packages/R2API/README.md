@@ -45,6 +45,30 @@ The most recent changelog can always be found on the [GitHub](https://github.com
 
 **Current**
 
+* [Extended SoundAPI for adding custom music](https://github.com/risk-of-thunder/R2API/pull/305) 
+* [Added support for using existing UnlockableDefs in UnlockableAPI](https://github.com/risk-of-thunder/R2API/pull/304)
+
+**3.0.52**
+
+* [Add NetworkSoundEventDef registration to SoundAPI](https://github.com/risk-of-thunder/R2API/pull/301)
+
+**3.0.50**
+
+* [Added ArtifactCodeAPI](https://github.com/risk-of-thunder/R2API/pull/299)
+* [Added support for new Artifact Code compounds](https://github.com/risk-of-thunder/R2API/pull/300)
+
+**3.0.48**
+
+* [Documentation for ItemDropAPI](https://github.com/risk-of-thunder/R2API/blob/master/ItemDropAPI%20Instructions%20For%20Use.txt)
+* [ItemDropAPI Overhall](https://github.com/risk-of-thunder/R2API/pull/295)
+* [Added MonsterItemsAPI back in](https://github.com/risk-of-thunder/R2API/pull/295)
+
+**3.0.44**
+
+* [Fixed PrefabAPI network registration](https://github.com/risk-of-thunder/R2API/pull/294)
+
+**3.0.43**
+
 * **IMPORTANT FOR MOD DEVS:** [R2API will no longer register mods to network if they don't depend on it with HardDependecy](https://github.com/risk-of-thunder/R2API/pull/286)
 * [Added DeployableAPI](https://github.com/risk-of-thunder/R2API/pull/279)
 * [Added DamageAPI](https://github.com/risk-of-thunder/R2API/pull/284)
@@ -67,6 +91,7 @@ The most recent changelog can always be found on the [GitHub](https://github.com
 
 * [Updated UnlockableAPI, ItemDropAPI Overhall](https://github.com/risk-of-thunder/R2API/pull/265)
 * [Update internals for 1.1.1.2 game version](https://github.com/risk-of-thunder/R2API/pull/267)
+* Removed MonsterItemsAPI
 * Removed `patchers` folder
 
 **3.0.11**
@@ -88,7 +113,7 @@ The most recent changelog can always be found on the [GitHub](https://github.com
 * No longer include `monomod` folder
 * [Various API Fixes. Removed AssetsAPI, InvetoryAPI. Moved MMHook to separate mod called (HookGenPatcher)](https://github.com/risk-of-thunder/R2API/pull/252)
 * Removed obsolete APIs and methods: [A](https://github.com/risk-of-thunder/R2API/pull/249) [B](https://github.com/risk-of-thunder/R2API/pull/243)
-* ItemAPI, ItemDropApi overhall. Added MosterItemAPI: [A](https://github.com/risk-of-thunder/R2API/pull/214) [B](https://github.com/risk-of-thunder/R2API/pull/223) [C](https://github.com/risk-of-thunder/R2API/pull/228) [D](https://github.com/risk-of-thunder/R2API/pull/233) [E](https://github.com/risk-of-thunder/R2API/pull/234) [F](https://github.com/risk-of-thunder/R2API/pull/240) [G](https://github.com/risk-of-thunder/R2API/pull/245)
+* ItemAPI, ItemDropApi overhall. Added MonsterItemAPI: [A](https://github.com/risk-of-thunder/R2API/pull/214) [B](https://github.com/risk-of-thunder/R2API/pull/223) [C](https://github.com/risk-of-thunder/R2API/pull/228) [D](https://github.com/risk-of-thunder/R2API/pull/233) [E](https://github.com/risk-of-thunder/R2API/pull/234) [F](https://github.com/risk-of-thunder/R2API/pull/240) [G](https://github.com/risk-of-thunder/R2API/pull/245)
 * LanguageAPI refactoring and fixes: [A](https://github.com/risk-of-thunder/R2API/pull/229) [B](https://github.com/risk-of-thunder/R2API/pull/244)
 * [Added ILLine](https://github.com/risk-of-thunder/R2API/pull/230)
 * [Fix for networked achievements](https://github.com/risk-of-thunder/R2API/pull/208)

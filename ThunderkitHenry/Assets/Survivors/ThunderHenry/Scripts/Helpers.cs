@@ -26,6 +26,13 @@ namespace ThunderHenry.Modules
             var state = new SerializableEntityStateType(typeof(ThunderHenry.SkillStates.Shoot));
             Debug.LogWarning(ThunderHenryPlugin.MODNAME + ": DEBUG: TypeName print: " + state.typeName);
         }
+
+        // Some Debug related content can only be done in start.
+        // If you need some of that, put it here.
+        public static void StartDebug()
+        {
+
+        }
     }
 
     internal static class ArrayHelper

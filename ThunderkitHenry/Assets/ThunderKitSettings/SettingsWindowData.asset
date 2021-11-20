@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: SettingsWindowData
   m_EditorClassIdentifier: 
   FirstLoad: 1
-  ShowOnStartup: 1
+  ShowOnStartup: 0

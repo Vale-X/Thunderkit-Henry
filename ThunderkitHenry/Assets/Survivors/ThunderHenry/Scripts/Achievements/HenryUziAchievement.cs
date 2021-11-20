@@ -3,13 +3,14 @@ using System;
 using UnityEngine;
 using ThunderHenry.Modules;
 using RoR2.Achievements;
+using R2API;
 
 namespace ThunderHenry.Achievements
 {
-    internal class ThunderHenryUzi : UnlockableCreator.ThunderHenryAchievement
+    internal class ThunderHenryUzi : ModdedUnlockable
     {
         // this prefix variable is ROBVALE_THUNDERHENRY_BODY_UNLOCK_ by default.
-        public override string Prefix => ThunderHenryPlugin.developerPrefix + Tokens.henryPrefix + "UNLOCK_";
+        public string Prefix => ThunderHenryPlugin.developerPrefix + Tokens.henryPrefix + "UNLOCK_";
 
         // Requires Tokens created in tokens.cs, as they are displayed to the player.
         public override string AchievementNameToken => Prefix + "UZI_NAME";
@@ -18,22 +19,16 @@ namespace ThunderHenry.Achievements
         // Used for referencing and must be unique to the achievement.
         public override string AchievementIdentifier => Prefix + "UZI_ID";
         public override string UnlockableIdentifier => Prefix + "UZI_REWARD_ID";
+        public override string UnlockableNameToken => Prefix + "UZI_UNLOCKABLE_NAME";
 
         // If PrerequisiteUnlockableIdentifier matches the name of an existing AchievementIdentifier, 
         // you need to have the Achievement unlocked in order to be able to unlock this achievement.
         // In this case you need to have HenryUnlockAchievement completed in order to meet the requirements for this achivement.
         public override string PrerequisiteUnlockableIdentifier => Prefix + "SURVIVOR_ID";
 
-        // make sure this matches the NAME of the UnlockableDef you create for the achievement.
-        public override UnlockableDef UnlockableDef => Modules.Assets.mainAssetBundle.LoadAsset<UnlockableDef>("Skills.ThunderHenry.SecondaryAlt1");
         public override Sprite Sprite => Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texUziIcon");
 
         private const float requirement = 3.5f;
-
-        public override void Initialize()
-        {
-            UnlockableCreator.AddUnlockable<ThunderHenryUzi>(true);
-        }
 
         public override void OnInstall()
         {

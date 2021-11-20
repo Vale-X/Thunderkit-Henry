@@ -1,10 +1,8 @@
 ﻿using BepInEx;
 using R2API.Utils;
 using RoR2;
-using System.Collections.Generic;
 using System.Security;
 using System.Security.Permissions;
-using StubbedConverter;
 
 [module: UnverifiableCode]
 [assembly: SecurityPermission(SecurityAction.RequestMinimum, SkipVerification = true)]
@@ -21,6 +19,7 @@ namespace ThunderHenry
         "PrefabAPI",
         "LanguageAPI",
         "SoundAPI",
+        "UnlockableAPI"
     })]
     public class ThunderHenryPlugin : BaseUnityPlugin
     {
@@ -29,7 +28,7 @@ namespace ThunderHenry
         //   this shouldn't even have to be said
         public const string MODUID = "com.valex.ThunderHenry";
         public const string MODNAME = "ThunderHenry";
-        public const string MODVERSION = "1.0.0";
+        public const string MODVERSION = "1.1.0";
 
         // a prefix for name tokens to prevent conflicts- please capitalize all name tokens for convention
         public const string developerPrefix = "ROBVALE";
@@ -49,6 +48,7 @@ namespace ThunderHenry
             Modules.Config.ReadConfig();
             Modules.Assets.Init();
             if (cancel) return;
+            Modules.Shaders.init();
             Modules.Tokens.Init();
             Modules.Prefabs.Init();
             Modules.Buffs.Init();
@@ -67,8 +67,9 @@ namespace ThunderHenry
 
         private void Start()
         {
-            // Using StubbedShaderConverter to convert stubbed materials into Hopoo equivalents.
-            ShaderConvert.ConvertAssetBundleShaders(Modules.Assets.mainAssetBundle, true, debug);
+            // If Awake isn't the right place for launch debug, you can put some in Start here.
+            // Most of the time Awake will do fine though.
+            if (debug) { Modules.Helpers.StartDebug(); }
         }
 
         private void Hook()
@@ -83,10 +84,8 @@ namespace ThunderHenry
             // a simple stat hook, adds armor after stats are recalculated
             if (self)
             {
-                if (self.HasBuff(Modules.Buffs.buffDefs[0].buffIndex))
-                {
-                    self.armor += 300f;
-                }
+                Modules.Buffs.HandleBuffs(self);
+                Modules.Buffs.HandleDebuffs(self);
             }
         }
     }

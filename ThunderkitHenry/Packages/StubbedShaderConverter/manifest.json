@@ -1,6 +1,6 @@
 {
 	"name": "StubbedShaderConverter",
-	"version_number": "0.0.1",
+	"version_number": "1.0.0",
 	"website_url": "https://github.com/Vale-X/StubbedShaderConverter",
 	"description": "An externally referenced tool for using Hopoo shaders in mods. Contains pre-stubbed shaders.",
 	"dependencies": [
