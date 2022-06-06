@@ -3,6 +3,9 @@
 
 See the [ThunderHenry Wiki](https://github.com/Vale-X/Thunderkit-Henry/wiki/Creating-Survivors-with-ThunderHenry) for a WORK IN PROGRESS tutorial on how to use this template, and how to create ThunderKit survivors in general.
 
+## About Beta Branch
+The Beta branch for this project is just for me to upload WIP updates and project changes, and isn't recommended to use as a template for your own characters. Use the Main Branch as a template instead. When updates are ready to be used in templates, it will be pushed to the main branch.
+
 ## Changelog
 
 __Major Update 1__
@@ -17,5 +20,4 @@ __Major Update 1__
 - Updated `Unlockables.cs`, now uses R2API's UnlockableAPI.
 - Fixed an issue with `Assembly-CSharp.Public.dll`.
 
-## About Beta Branch
-The Beta branch for this project is just for me to upload WIP updates and project changes, and isn't recommended to use as a template for your own characters. Use the Main Branch as a template instead. When updates are ready to be used in templates, it will be pushed to the main branch.
+
