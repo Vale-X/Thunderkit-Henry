@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="ChildLocatorEntryContainer">
+        <Style src="/Packages/riskofthunder-ror2editorkit/Assets/USS/ChildLocatorEntry.uss" />
+        <uie:PropertyField name="name" />
+        <uie:PropertyField name="transform" />
+    </ui:VisualElement>
+</ui:UXML>

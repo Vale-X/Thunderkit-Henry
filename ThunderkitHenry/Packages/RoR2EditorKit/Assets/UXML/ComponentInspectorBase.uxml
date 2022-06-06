@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="ComponentToggleContainer" class="genericHolder">
+        <Style src="/Packages/riskofthunder-ror2editorkit/Assets/USS/Inspectors/ComponentInspector.uss" />
+        <ui:Toggle value="false" text="Enable Inspector" name="InspectorToggle" class="inspectorToggle">
+            <ui:Label text="scriptType" name="scriptType" class="scriptType genericHolderHeader" />
+        </ui:Toggle>
+    </ui:VisualElement>
+</ui:UXML>

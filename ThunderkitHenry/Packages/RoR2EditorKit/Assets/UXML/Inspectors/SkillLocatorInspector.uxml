@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:Template name="ComponentInspectorBase" src="/Packages/riskofthunder-ror2editorkit/Assets/UXML/ComponentInspectorBase.uxml" />
+    <ui:Instance template="ComponentInspectorBase" name="ComponentInspectorBase">
+        <Style src="/Packages/riskofthunder-ror2editorkit/Assets/USS/Inspectors/ComponentInspector.uss" />
+    </ui:Instance>
+    <ui:VisualElement name="InspectorDataContainer" class="genericHolder">
+        <Style src="/Packages/riskofthunder-ror2editorkit/Assets/USS/Inspectors/ComponentInspector.uss" />
+        <uie:PropertyField name="primary" binding-path="primary" />
+        <uie:PropertyField name="secondary" binding-path="secondary" />
+        <uie:PropertyField name="utility" binding-path="utility" />
+        <uie:PropertyField name="special" binding-path="special" />
+        <ui:Foldout text="Passive Skill" name="PassiveSkillContainer" class="genericHolderFoldout">
+            <uie:PropertyField name="enabled" binding-path="passiveSkill.enabled" />
+            <uie:PropertyField name="skillNameToken" binding-path="passiveSkill.skillNameToken" />
+            <uie:PropertyField name="skillDescriptionToken" binding-path="passiveSkill.skillDescriptionToken" />
+            <uie:PropertyField name="icon" binding-path="passiveSkill.icon" />
+        </ui:Foldout>
+    </ui:VisualElement>
+</ui:UXML>

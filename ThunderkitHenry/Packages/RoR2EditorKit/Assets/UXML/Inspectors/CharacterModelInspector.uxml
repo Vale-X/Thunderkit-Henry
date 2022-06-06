@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:Template name="ComponentInspectorBase" src="/Packages/riskofthunder-ror2editorkit/Assets/UXML/ComponentInspectorBase.uxml" />
+    <ui:Instance template="ComponentInspectorBase" name="ComponentInspectorBase">
+        <Style src="/Packages/riskofthunder-ror2editorkit/Assets/USS/Inspectors/ComponentInspector.uss" />
+    </ui:Instance>
+    <ui:VisualElement name="InspectorDataContainer" class="genericHolder">
+        <Style src="/Packages/riskofthunder-ror2editorkit/Assets/USS/Inspectors/ComponentInspector.uss" />
+        <uie:PropertyField name="body" binding-path="body" tooltip="The body component of this GameObject" />
+        <uie:PropertyField name="itemDisplayRuleSet" tooltip="The ItemDisplayRuleSet for this model." binding-path="itemDisplayRuleSet" />
+        <uie:PropertyField name="autoPopulateLightInfos" binding-path="autoPopulateLightInfos" />
+        <uie:PropertyField name="baseRendererInfos" binding-path="baseRendererInfos" class="genericHolderFoldout" />
+        <uie:PropertyField name="baseLightInfos" binding-path="baseLightInfos" class="genericHolderFoldout" />
+    </ui:VisualElement>
+</ui:UXML>

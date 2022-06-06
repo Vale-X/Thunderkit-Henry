@@ -1,20 +1,23 @@
 {
     "name": "ThunderHenry",
-    "references": [],
-    "optionalUnityReferences": [],
+    "references": [
+        "GUID:a44f47cf3ada4435dbc516bad0bc86fe"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,
     "precompiledReferences": [
-        "Assembly-CSharp.Public.dll",
         "BepInEx.dll",
+        "RoR2.dll",
+        "MMHOOK_RoR2.dll",
         "R2API.dll",
-        "MMHOOK_Assembly-CSharp.dll",
-        "StubbedShaderConverter.dll",
         "Mono.Cecil.dll",
-        "MonoMod.Utils.dll"
+        "MonoMod.Utils.dll",
+        "KinematicCharacterController.dll"
     ],
     "autoReferenced": true,
-    "defineConstraints": []
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

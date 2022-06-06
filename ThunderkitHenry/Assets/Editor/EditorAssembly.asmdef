@@ -1,9 +1,9 @@
 {
     "name": "EntityStateEditor",
     "references": [
-        "ThunderHenry"
+        "ThunderHenry",
+        "ThunderKit.Core"
     ],
-    "optionalUnityReferences": [],
     "includePlatforms": [
         "Editor"
     ],
@@ -11,8 +11,10 @@
     "allowUnsafeCode": false,
     "overrideReferences": true,
     "precompiledReferences": [
-        "Assembly-CSharp.dll"
+        "RoR2.dll"
     ],
     "autoReferenced": true,
-    "defineConstraints": []
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

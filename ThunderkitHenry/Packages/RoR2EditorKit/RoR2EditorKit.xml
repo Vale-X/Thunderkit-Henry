@@ -1,0 +1,1095 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RoR2EditorKit</name>
+    </assembly>
+    <members>
+        <member name="T:RoR2EditorKit.Common.Constants">
+            <summary>
+            Class filled with constants to use for asset creation or attributes
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Common.Constants.NullMaterial">
+            <summary>
+            Loads the RoR2EditorKit null material
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Common.Constants.NullMesh">
+            <summary>
+            Loads the RoR2EditorKit null mesh
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Common.Constants.NullSprite">
+            <summary>
+            Loads the RoR2EditorKit null sprite
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Common.Constants.NullPrefab">
+            <summary>
+            Loads the RoR2EditorKit null prefab
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Common.Constants.Icon">
+            <summary>
+            Loads the RoR2EditorKit icon
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Common.TreeListControl.HoverItem">
+            <summary>
+                The selected item
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Common.TreeListControl.m_forceButtonText">
+            <summary>
+                Force to use the button text
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Common.TreeListControl.m_forceDefaultSkin">
+            <summary>
+                Use the default skin
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Common.TreeListControl.m_roomItem">
+            <summary>
+                The root item
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Common.TreeListControl.m_scrollView">
+            <summary>
+                Handle the unity scrolling vector
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Common.TreeListControl.m_skinHover">
+            <summary>
+                Skin used by the tree view
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Common.TreeListControl.m_textureBlank">
+            <summary>
+                Texture skin references
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Common.TreeListControl.Header">
+            <summary>
+                Accesses the root item header
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Common.TreeListControl.DataContext">
+            <summary>
+                Accesses the root data context
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Common.TreeListControl.Items">
+            <summary>
+                Accessor to the root items
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Common.TreeListControl.ShowButtonTexture(UnityEngine.Texture2D)">
+            <summary>
+                Show the button texture
+            </summary>
+            <param name="texture">
+                A <see cref="T:UnityEngine.Texture2D" />
+            </param>
+            <returns>
+                A <see cref="T:System.Boolean" />
+            </returns>
+        </member>
+        <member name="M:RoR2EditorKit.Common.TreeListControl.Button(RoR2EditorKit.Common.TreeListItem.TextureIcons)">
+            <summary>
+                Find the button texture/text by enum
+            </summary>
+            <param name="item"></param>
+            <param name="x"></param>
+            <param name="y"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+            <returns></returns>
+        </member>
+        <member name="M:RoR2EditorKit.Common.TreeListControl.DisplayTreeView(RoR2EditorKit.Common.TreeListControl.DisplayTypes)">
+            <summary>
+                Called from OnGUI or EditorWindow.OnGUI
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Common.TreeListItem.m_hoverTime">
+            <summary>
+                The distance to the hover item
+            </summary>
+        </member>
+        <member name="T:RoR2EditorKit.Settings.EditorInspectorSettings">
+            <summary>
+            The RoR2EK Editor Inspector Settings
+            </summary>
+        </member>
+        <member name="T:RoR2EditorKit.Settings.EditorInspectorSettings.InspectorSetting">
+            <summary>
+            Represents an ExtendedInspector
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Settings.EditorInspectorSettings.InspectorSetting.inspectorName">
+            <summary>
+            The name of the inspector
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Settings.EditorInspectorSettings.InspectorSetting.typeReference">
+            <summary>
+            The type of the inspector
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Settings.EditorInspectorSettings.InspectorSetting.isEnabled">
+            <summary>
+            Wether the inspector is enabled or not
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Settings.EditorInspectorSettings.enableNamingConventions">
+            <summary>
+            If true, RoR2EditorKit will notify the user when theyre not following the modding community's naming conventions
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Settings.EditorInspectorSettings.inspectorSettings">
+            <summary>
+            The list of inspector settings
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Settings.EditorInspectorSettings.MainSettings">
+            <summary>
+            Direct access to the main settings file
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Settings.EditorInspectorSettings.GetOrCreateInspectorSetting(System.Type)">
+            <summary>
+            Tries to get or create the settings for an inspector
+            </summary>
+            <param name="type">The inspector's Type</param>
+            <returns>The Inspector's InspectorSetting</returns>
+        </member>
+        <member name="T:RoR2EditorKit.Settings.MaterialEditorSettings">
+            <summary>
+            The RoR2EK Material Editor Settings
+            </summary>
+        </member>
+        <member name="T:RoR2EditorKit.Settings.MaterialEditorSettings.ShaderStringPair">
+            <summary>
+            Represents a pair of string and shader
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Settings.MaterialEditorSettings.ShaderStringPair.shaderName">
+            <summary>
+            The shader's name, ideally this should be the File name, not the actual shader.name
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Settings.MaterialEditorSettings.ShaderStringPair.shader">
+            <summary>
+            The shader that belongs to this pair
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Settings.MaterialEditorSettings.ShaderStringPair.typeReference">
+            <summary>
+            The type that added this ShaderStringPair
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Settings.MaterialEditorSettings.EnableMaterialEditor">
+            <summary>
+            Wether the material editor system is enabled or disabled
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Settings.MaterialEditorSettings.shaderStringPairs">
+            <summary>
+            The Shader String Pairs of the Material Editor Setting
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Settings.MaterialEditorSettings.MainSettings">
+            <summary>
+            Direct access to the main settings file
+            </summary>
+        </member>
+        <member name="T:RoR2EditorKit.Settings.RoR2EditorKitSettings">
+            <summary>
+            The main settings file of RoR2EditorKit
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Settings.RoR2EditorKitSettings.TokenPrefix">
+            <summary>
+            The tokenPrefix thats used for this project
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Settings.RoR2EditorKitSettings.MainManifest">
+            <summary>
+            The main manifest of this project
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Settings.RoR2EditorKitSettings.madeRoR2EKAssetsNonEditable">
+            <summary>
+            Used to check if the assets of ror2EK have been made ineditable
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Settings.RoR2EditorKitSettings.InspectorSettings">
+            <summary>
+            Direct access to RoR2EditorKit's Inspector Settings
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Settings.RoR2EditorKitSettings.MaterialEditorSettings">
+            <summary>
+            Direct access to RoR2EditorKit's MaterialEditorSettings
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Settings.RoR2EditorKitSettings.GetPrefixUppercase">
+            <summary>
+            Returns the token prefix with all Chars uppercase.
+            <para>Example: "myToken" => "MYTOKEN"</para>
+            </summary>
+            <returns>The token prefix on all uppercase</returns>
+        </member>
+        <member name="M:RoR2EditorKit.Settings.RoR2EditorKitSettings.GetPrefixLowercase">
+            <summary>
+            Returns the token prefix with all Chars lowercase
+            <para>Example: "MyToken" => "mytoken"</para>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RoR2EditorKit.Settings.RoR2EditorKitSettings.GetPrefix1stUpperRestLower">
+            <summary>
+            Returns the token prefix with the first char Uppercase and the rest lowerCase
+            <para>Example: "MyToken" => "Mytoken"</para>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:RoR2EditorKit.Core.Inspectors.ComponentInspector`1">
+            <summary>
+            Inherit from this class to make your own Component Inspectors.
+            </summary>
+        </member>
+        <member name="T:RoR2EditorKit.Core.Inspectors.ContextMenuData">
+            <summary>
+            Data that defines a ContextMenu that's going to be handled by the ExtendedInspector
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Core.Inspectors.ContextMenuData.menuName">
+            <summary>
+            The menu name for this contextMenu
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Core.Inspectors.ContextMenuData.menuAction">
+            <summary>
+            The action that runs when the context menu is clicked
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Core.Inspectors.ContextMenuData.actionStatusCheck">
+            <summary>
+            A status check to see if the menu should appear or not
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.ContextMenuData.#ctor(System.String,System.Action{UnityEngine.UIElements.DropdownMenuAction})">
+            <summary>
+            ContextMenuData Constructor
+            </summary>
+            <param name="name">The name of the Context Menu</param>
+            <param name="action">An action that runs when the Context Menu is clicked</param>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.ContextMenuData.#ctor(System.String,System.Action{UnityEngine.UIElements.DropdownMenuAction},System.Func{UnityEngine.UIElements.DropdownMenuAction,UnityEngine.UIElements.DropdownMenuAction.Status})">
+            <summary>
+            ContextMenuData Constructor
+            </summary>
+            <param name="name">The name of the ContextMenu</param>
+            <param name="action">An action that runs when the ContextMenu is clicked</param>
+            <param name="statusCheck">A function to check if the ContextMenu is clickable or not</param>
+        </member>
+        <member name="T:RoR2EditorKit.Core.Inspectors.ExtendedInspector`1">
+            <summary>
+            Base inspector for all the RoR2EditorKit Inspectors. Uses visual elements instead of IMGUI
+            <para>Automatically retrieves the UXML asset for the editor by looking for an UXML asset with the same name as the inheriting type</para>
+            <para>Extended Inspectors can be enabled or disabled</para>
+            <para>If you want to make a Scriptable Object Inspector, you'll probably want to use the <see cref="T:RoR2EditorKit.Core.Inspectors.ScriptableObjectInspector`1"/></para>
+            <para>If you want to make an Inspector for a Component, you'll probably want to use the <see cref="T:RoR2EditorKit.Core.Inspectors.ComponentInspector`1"/></para>
+            </summary>
+            <typeparam name="T">The type of Object being inspected</typeparam>
+        </member>
+        <member name="P:RoR2EditorKit.Core.Inspectors.ExtendedInspector`1.Settings">
+            <summary>
+            Access to the main RoR2EditorKit Settings file
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Core.Inspectors.ExtendedInspector`1.InspectorSetting">
+            <summary>
+            The setting for this inspector
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Core.Inspectors.ExtendedInspector`1.InspectorEnabled">
+            <summary>
+            Check if the inspector is enabled
+            <para>If you're setting the value, and the value is different from the old value, the inspector will redraw completely to accomodate the new look using either the base inspector or custom inspector</para>
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Core.Inspectors.ExtendedInspector`1.RootVisualElement">
+            <summary>
+            The root visual element of the inspector, This is what gets returned by CreateInspectorGUI()
+            <para>When the inspector is enabled, the "DrawInspectorElement" is added to this</para>
+            <para>When the inspector is disabled, the "IMGUIContainerElement" with the default inspector is added to this.</para>
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Core.Inspectors.ExtendedInspector`1.DrawInspectorElement">
+            <summary>
+            The root visual element where your custom inspector will be drawn.
+            <para>This visual element will have the VisualTreeAsset applied.</para>
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Core.Inspectors.ExtendedInspector`1.IMGUIContainerElement">
+            <summary>
+            The root visual element where the default, IMGUI inspector is drawn
+            <para>This visual element will not have the VisualTreeAsset applied</para>
+            <para>The IMGUIContainer that gets returned by the default inspector is added to this, it's name is "defaultInspector" if you need to Query it.</para>
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Core.Inspectors.ExtendedInspector`1.HasDoneFirstDrawing">
+            <summary>
+            Wether the inspector has done its first drawing.
+            <para>When the inspector draws for the first time, unity calls Bind() on <see cref="P:RoR2EditorKit.Core.Inspectors.ExtendedInspector`1.RootVisualElement"/>, this creates all the necesary fields for property fields, however, this runs only once.</para>
+            <para>When HasDoneFirstDrawing is true, the ExtendedInspector will call Bind() to ensure property fields always appear.</para>
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Core.Inspectors.ExtendedInspector`1.TargetType">
+            <summary>
+            Direct access to the object that's being inspected as its type.
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Core.Inspectors.ExtendedInspector`1.HasVisualTreeAsset">
+            <summary>
+            If the editor has a visual tree asset, if set to false, RoR2EK will supress the null reference exception that appears from not having one.
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.ExtendedInspector`1.OnEnable">
+            <summary>
+            Called when the inspector is enabled, always keep the original implementation unless you know what youre doing
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.ExtendedInspector`1.OnDisable">
+            <summary>
+            Called when the inspector is disabled, always keepp the original implementation unless you know what you're doing
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.ExtendedInspector`1.ValidateUXMLPath(System.String)">
+            <summary>
+            Used to validate the path of a potential UXML asset, overwrite this if youre making an inspector that isnt in the same assembly as RoR2EK.
+            </summary>
+            <param name="path">A potential UXML asset path</param>
+            <returns>True if the path is for this inspector, false otherwise</returns>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.ExtendedInspector`1.CreateInspectorGUI">
+            <summary>
+            Cannot be overwritten, creates the inspector by checking if the editor is enabled or not
+            <para>If the editor is enabled, the custom UI from the visual tree asset is drawn, to finish the implementation of said UI, implement <see cref="M:RoR2EditorKit.Core.Inspectors.ExtendedInspector`1.DrawInspectorGUI"/></para>
+            <para>If the editor is disabled, the default IMGUI UI is drawn.</para>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:RoR2EditorKit.Core.Inspectors.ExtendedInspector`1.OnRootElementsCleared">
+            <summary>
+            Invoked when the RootVisualElement, DrawInspectorElement and IMGUIContainerElement are cleared;
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Core.Inspectors.ExtendedInspector`1.OnVisualTreeCopy">
+            <summary>
+            Invoked when the VisualTree assigned to this inspector has been copied to the "DrawInspectorElement"
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Core.Inspectors.ExtendedInspector`1.OnIMGUIContainerElementAdded">
+            <summary>
+            Invoked right after "IMGUIContainerElement" is added to the "RootVisualElement"
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Core.Inspectors.ExtendedInspector`1.OnDrawInspectorElementAdded">
+            <summary>
+            Invoked right after the "DrawInspectorElement" is added to the "RootVisualElement"
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.ExtendedInspector`1.DrawInspectorGUI">
+            <summary>
+            Implement The code functionality of your inspector here.
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.ExtendedInspector`1.CreateHelpBox(System.String,UnityEditor.MessageType)">
+            <summary>
+            Creates a HelpBox and attatches it to a visualElement using IMGUIContainer
+            </summary>
+            <param name="message">The message that'll appear on the help box</param>
+            <param name="messageType">The type of message</param>
+            <param name="attachToRootIfElementToAttachIsNull">If left true, and the elementToAttach is not null, the IMGUIContainer is added to the RootVisualElement.</param>
+            <param name="elementToAttach">Optional, if specified, the Container will be added to this element, otherwise if the "attachToRootIfElementToAttachIsNull" is true, it'll attach it to the RootVisualElement, otherwise if both those conditions fail, it returns the IMGUIContainer unattached.</param>
+            <returns>An IMGUIContainer that's either not attached to anything, attached to the RootElement, or attached to the elementToAttach argument.</returns>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.ExtendedInspector`1.AddSimpleContextMenu(UnityEngine.UIElements.VisualElement,RoR2EditorKit.Core.Inspectors.ContextMenuData)">
+            <summary>
+            Adds a ContextMenu to a visual element using RoR2EK's <see cref="T:RoR2EditorKit.Core.Inspectors.ContextMenuData"/> wrapper
+            </summary>
+            <param name="element">The element that's going to be used for the ContextMenu</param>
+            <param name="contextMenuData">The data for the ContextMenu</param>
+        </member>
+        <member name="T:RoR2EditorKit.Core.Inspectors.ExtendedMaterialInspector">
+            <summary>
+            An Extended version of unity's MaterialEditor, the RoR2EK ExtendedMaterialInspector allows the ability to create new inspectors for specific shaders without the need to specify the editor in the shaderLab code.
+            <para>This class cannot be inherited, for creating new inspectors, check <see cref="M:RoR2EditorKit.Core.Inspectors.ExtendedMaterialInspector.AddShaderEditor(System.String,System.Action,System.Type)"/></para>
+            <para>The inspector works by checking if the material's shader has an action, and if so, it creates the custom editor by running the action asociated with the shader.</para>
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Core.Inspectors.ExtendedMaterialInspector.shaderNameToAction">
+            <summary>
+            The shader dictionary, If you want to add a new shader editor, use <see cref="M:RoR2EditorKit.Core.Inspectors.ExtendedMaterialInspector.AddShaderEditor(System.String,System.Action,System.Type)"/>
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Core.Inspectors.ExtendedMaterialInspector.Settings">
+            <summary>
+            The main RoR2EditorKit settings
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Core.Inspectors.ExtendedMaterialInspector.MaterialEditorEnabled">
+            <summary>
+            Checks if the Material Editor system is enabled or not
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Core.Inspectors.ExtendedMaterialInspector.Instance">
+            <summary>
+            The current instance of the MaterialEditor, can be null
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.ExtendedMaterialInspector.Awake">
+            <summary>
+            Function that gets called when the script is loaded
+            <para>sets the action for the material, do not override without calling base.</para>
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.ExtendedMaterialInspector.OnEnable">
+            <summary>
+            Function that gets called when the material editor becomes enabled
+            <para>Sets the action for the material, do not override without calling base.</para>
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.ExtendedMaterialInspector.OnShaderChanged">
+            <summary>
+            Function that gets called when the material's shader changes
+            <para>Sets the action for the material, do not override without calling base.</para>
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.ExtendedMaterialInspector.AddShaderEditor(System.String,System.Action,System.Type)">
+            <summary>
+            Adds a Shader editor to the Extended Material Inspector.
+            <para>Adding the shader will make it appear in the MaterialEditorSettings section of the ThunderkitSettings window</para>
+            </summary>
+            <param name="shaderName">The name of the shader, try to use the file name instead of the actual name.</param>
+            <param name="inspectorForShader">A method for drawing the material inspector</param>
+            <param name="callingType">The type that's calling the method</param>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.ExtendedMaterialInspector.DrawProperty(System.String)">
+            <summary>
+            Draws a Material Property in the inspector, using the shader's Property UI
+            </summary>
+            <param name="name">The name of the property to draw</param>
+            <returns>The Drawn Property, If no material editor instance exists, it returns null</returns>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.ExtendedMaterialInspector.GetProperty(System.String)">
+            <summary>
+            Grabs a MaterialProperty from the inspected material
+            </summary>
+            <param name="name">The name of the property to grab</param>
+            <returns>The requested property, If no material editor instance exists, it returns null</returns>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.ExtendedMaterialInspector.ShaderKeyword(UnityEditor.MaterialProperty)">
+            <summary>
+            Checks if a Shader keyword is enabled. By looking if the given property's float value is 0 (false) or 1 (true)
+            </summary>
+            <param name="prop">The property to check</param>
+            <returns>True if the float value is 1, false if its 0, or if the value is not 0 or 1</returns>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.ExtendedMaterialInspector.Header(System.String)">
+            <summary>
+            Creates a Header for the inspector
+            </summary>
+            <param name="label">The text for the label used in this header</param>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.ExtendedMaterialInspector.Header(System.String,System.String)">
+            <summary>
+            Creates a Header with a tooltip for the inspector
+            </summary>
+            <param name="label">The text for the label used in this header</param>
+            <param name="tooltip">A tooltip that's displayed after the mouse hovers over the label</param>
+        </member>
+        <member name="T:RoR2EditorKit.Core.Inspectors.IMGUIToVisualElementInspector`1">
+            <summary>
+            Inherit from this inspector to make an Editor that looks exactly like the default inspector, but uses UIElements.
+            <para>Perfect for later on creating a property drawer for a specific property in said inspector, so that you dont have to rewrite the original inspector's functionality.</para>
+            <para>Unlike the other Editor wrappers from RoR2EditorKit, this editor cannot be enabled or disabled.</para>
+            <para>The child elements that get added to this RootVisualElement can be identifier by their name</para>
+            <para>The m_Script property is an ObjectField, it's name is "m_Script"</para>
+            <para>All other first level serializedProperties are drawn with PropertyFields, their names are the same as their property names.</para>
+            </summary>
+            <typeparam name="T">The type of object being inspected</typeparam>
+        </member>
+        <member name="P:RoR2EditorKit.Core.Inspectors.IMGUIToVisualElementInspector`1.RootVisualElement">
+            <summary>
+            The Editor's RootVisualElement.
+            <para>It's name is a combination of the inheriting type's name plus "_RootElement"</para>
+            <para>Example: MyInspector_RootElement</para>
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Core.Inspectors.IMGUIToVisualElementInspector`1.TargetType">
+            <summary>
+            Direct access to the object that's being inspected as its type
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.IMGUIToVisualElementInspector`1.CreateInspectorGUI">
+            <summary>
+            Cannot be overwritten, creates the inspector gui using the serialized object's visible children and property fields
+            <para>If you want to draw extra visual elements, write them in the <see cref="M:RoR2EditorKit.Core.Inspectors.IMGUIToVisualElementInspector`1.FinishGUI"/> method</para>
+            </summary>
+            <returns>The <see cref="P:RoR2EditorKit.Core.Inspectors.IMGUIToVisualElementInspector`1.RootVisualElement"/> property</returns>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.IMGUIToVisualElementInspector`1.FinishGUI">
+            <summary>
+            Override this method to finish the implementation of your GUI by modifying the RootVisualElement
+            </summary>
+        </member>
+        <member name="T:RoR2EditorKit.Core.Inspectors.PrefixData">
+            <summary>
+            Data that represents a Prefix thats going to be used for the naming convention system
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Core.Inspectors.PrefixData.tooltipMessage">
+            <summary>
+            The message in the tooltip for the messageBox, can be null
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Core.Inspectors.PrefixData.contextMenuAction">
+            <summary>
+            The context menu action for the helpBox
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.PrefixData.#ctor(System.Action,System.String)">
+            <summary>
+            PrefixData constructor
+            </summary>
+            <param name="contextMenuAction">An action that runs when the message box is right clicked</param>
+            <param name="tooltipMessage">Optional tooltip message</param>
+        </member>
+        <member name="T:RoR2EditorKit.Core.Inspectors.IObjectNameConvention">
+            <summary>
+            An interface that makes an ExtendedInspector inform a user when theyre not following the Object's naming conventions.
+            </summary>
+        </member>
+        <member name="T:RoR2EditorKit.Core.Inspectors.ListViewHelper">
+            <summary>
+            A wrapper for ListView for ease of use.
+            <para>The wrapper allows the end user to create a Listview that automatically binds to children in the property given by its constructor.</para>
+            <para>Unlike normally setting the Listview's bindingPath and relying on that, the ListViewHelper allows for extra modification of the elements created and bound.</para>
+            <para>ListViewHelper also always ensures the ListView's style height is never 0</para>
+            <para>For usage, look at RoR2EK's NetworkStateMachineInspector</para>
+            </summary>
+        </member>
+        <member name="T:RoR2EditorKit.Core.Inspectors.ListViewHelper.ListViewHelperData">
+            <summary>
+            Data for initializing a ListViewHelper
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.ListViewHelper.ListViewHelperData.#ctor(UnityEditor.SerializedProperty,UnityEngine.UIElements.ListView,UnityEditor.UIElements.IntegerField,System.Func{UnityEngine.UIElements.VisualElement},System.Action{UnityEngine.UIElements.VisualElement,UnityEditor.SerializedProperty})">
+            <summary>
+            ListViewHelperData Constructor
+            </summary>
+            <param name="sp">The SerializedProperty thats going to be displayed using the ListView, Property must be an Array Property</param>
+            <param name="lv">The ListView element</param>
+            <param name="intfld">An IntegerField that's used for modifying the SerializedProperty's ArraySize</param>
+            <param name="crtItem">Function for creating a new Element to display</param>
+            <param name="bnd">Action for binding the SerializedProperty to the VisualElement, there is no need to call Bind() on any elements, as the ListViewHelper takes care of it.</param>
+        </member>
+        <member name="P:RoR2EditorKit.Core.Inspectors.ListViewHelper.SerializedObject">
+            <summary>
+            The SerializedObject that owns the <see cref="P:RoR2EditorKit.Core.Inspectors.ListViewHelper.SerializedProperty"/>
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Core.Inspectors.ListViewHelper.SerializedProperty">
+            <summary>
+            The SerializedProperty thats being used for the ListView
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Core.Inspectors.ListViewHelper.TiedListView">
+            <summary>
+            The ListView element
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Core.Inspectors.ListViewHelper.ArraySize">
+            <summary>
+            An IntegerField thats used for modifying the <see cref="P:RoR2EditorKit.Core.Inspectors.ListViewHelper.SerializedProperty"/>'s ArraySize
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Core.Inspectors.ListViewHelper.BindElement">
+            <summary>
+            The Action for Binding a VisualElement
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Core.Inspectors.ListViewHelper.CreateElement">
+            <summary>
+            The Function for creating the VisualElement
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.ListViewHelper.#ctor(RoR2EditorKit.Core.Inspectors.ListViewHelper.ListViewHelperData)">
+            <summary>
+            ListViewHelper Constructor
+            </summary>
+            <param name="data">The Data for constructiong the ListView</param>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.ListViewHelper.Refresh">
+            <summary>
+            Refreshes the listview helper by setting the serialized property's array size to itself's size
+            This causes a chain reaction that redraws the entirety of the elements tied to the helper
+            </summary>
+        </member>
+        <member name="T:RoR2EditorKit.Core.Inspectors.PropertyValidator`1">
+            <summary>
+            Class for creating validation methods for PropertyFields or VisualElements that implement INotifyValueChanged.
+            </summary>
+            <typeparam name="T">The type that's used for the change event</typeparam>
+        </member>
+        <member name="T:RoR2EditorKit.Core.Inspectors.PropertyValidator`1.TiedElementType">
+            <summary>
+            The type of the TiedElement
+            </summary>
+        </member>
+        <member name="T:RoR2EditorKit.Core.Inspectors.PropertyValidator`1.ActionContainerPair">
+            <summary>
+            A pair of an Action for drawing the HelpBox, and the IMGUI container for it.
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Core.Inspectors.PropertyValidator`1.TiedElement">
+            <summary>
+            The element that's tied to this PropertyValidator
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:RoR2EditorKit.Core.Inspectors.PropertyValidator`1.TypeOfTiedElement" -->
+        <member name="P:RoR2EditorKit.Core.Inspectors.PropertyValidator`1.ParentElement">
+            <summary>
+            The VisualElement where the HelpBoxes will be attached to
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Core.Inspectors.PropertyValidator`1.ChangeEvent">
+            <summary>
+            Retrieves the latest ChangeEvent that has ran for this PropertyValidator, can be null.
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.PropertyValidator`1.#ctor(UnityEditor.UIElements.PropertyField,UnityEngine.UIElements.VisualElement)">
+            <summary>
+            PropertyValidator constructor
+            </summary>
+            <param name="propField">The propertyField that's going to be validated</param>
+            <param name="parentElementToAttach">The element where the HelpBoxes will be attached to.</param>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.PropertyValidator`1.#ctor(UnityEngine.UIElements.INotifyValueChanged{`0},UnityEngine.UIElements.VisualElement)">
+            <summary>
+            PropertyValidator constructor
+            </summary>
+            <param name="valueChangedInterface">A VisualElement that implements INotifyValueChanged, this is going to be the element thats going to be validated</param>
+            <param name="parentElementToAttach">The element where the HelpBoxes will be attached to.</param>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.PropertyValidator`1.AddValidator(System.Func{System.Nullable{System.Boolean}},System.String,UnityEditor.MessageType)">
+            <summary>
+            Adds a new Validator to the PropeprtyValidator
+            </summary>
+            <param name="condition">The condition that must happen for the MessageBox to appear. if the returned bool is null, it'll skip the rest of the validation logic.</param>
+            <param name="message">The message of the MessageBox</param>
+            <param name="messageType">The type of Message</param>
+        </member>
+        <member name="M:RoR2EditorKit.Core.Inspectors.PropertyValidator`1.ForceValidation">
+            <summary>
+            Forces the validation to run, regardless if there's a changeEvent or not.
+            </summary>
+        </member>
+        <member name="T:RoR2EditorKit.Core.Inspectors.ScriptableObjectInspector`1">
+            <summary>
+            Inherit from this class to make your own Scriptable Object Inspectors.
+            </summary>
+            <typeparam name="T">The type of scriptable object thats being inspected</typeparam>
+        </member>
+        <member name="T:RoR2EditorKit.Core.ManifestDatums.LanguageFolder">
+            <summary>
+            A struct that represents a Language folder
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Core.ManifestDatums.LanguageFolder.languageName">
+            <summary>
+            The name of the language, IE: "en", "es-419"
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Core.ManifestDatums.LanguageFolder.languageFiles">
+            <summary>
+            The .JSon/.TxT files for the language
+            </summary>
+        </member>
+        <member name="T:RoR2EditorKit.Core.ManifestDatums.LanguageFolderTree">
+            <summary>
+            Manifest datum for the pipeline StageLanguageFiles
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Core.ManifestDatums.LanguageFolderTree.rootFolderName">
+            <summary>
+            The name of the root folder
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Core.ManifestDatums.LanguageFolderTree.languageFolders">
+            <summary>
+            A collection of language folders
+            </summary>
+        </member>
+        <member name="T:RoR2EditorKit.Core.ManifestDatums.ReplaceTextInFilesDatum">
+            <summary>
+            Manifest datum for the pipeline ReplaceTextInFiles
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Core.ManifestDatums.ReplaceTextInFilesDatum.Objects">
+            <summary>
+            A collection of objects which text will be modified from
+            </summary>
+        </member>
+        <member name="T:RoR2EditorKit.Core.ManifestDatums.SetObjectFlagsDatum">
+            <summary>
+            Manifest datum for the pipeline SetObjectFlags
+            </summary>
+        </member>
+        <member name="F:RoR2EditorKit.Core.ManifestDatums.SetObjectFlagsDatum.objects">
+            <summary>
+            A collection of objects which flags will be modified
+            </summary>
+        </member>
+        <member name="T:RoR2EditorKit.Core.PipelineJobs.ReplaceTextInFiles">
+            <summary>
+            Pipeline for replacing text in files
+            <para>Requires manifest datum of type ReplaceTextInFiles</para>
+            </summary>
+        </member>
+        <member name="T:RoR2EditorKit.Core.PipelineJobs.SetObjectFlags">
+            <summary>
+            Pipeline for setting object flags
+            <para>Requires manifest datum of type SetObjectFlagsDatum</para>
+            </summary>
+        </member>
+        <member name="T:RoR2EditorKit.Core.PipelineJobs.StageLanguageFiles">
+            <summary>
+            Pipeline for staging a LanguageFolderTree
+            <para>Requires manifest datum of type LanguageFolderTree</para>
+            <para>Is a manifest processor</para>
+            </summary>
+        </member>
+        <member name="T:RoR2EditorKit.Core.EditorWindows.ExtendedEditorWindow">
+            <summary>
+            Base EditorWindow for all the RoR2EditorKit Editor Windows. Uses VisualElements instead of IMGUI
+            <para>Automatically retrieves the UXML asset for the editor by looking for an asset with the same name as the inheriting type</para>
+            <para>If you want to create an EditorWindow for editing an object, you'll probably want to use the <see cref="T:RoR2EditorKit.Core.EditorWindows.ObjectEditingEditorWindow`1"/></para>
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Core.EditorWindows.ExtendedEditorWindow.Settings">
+            <summary>
+            RoR2EK's main settings file
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Core.EditorWindows.ExtendedEditorWindow.SerializedObject">
+            <summary>
+            The serialized object for this window
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Core.EditorWindows.ExtendedEditorWindow.OpenEditorWindow``1(System.String)">
+            <summary>
+            Opens an ExtendedEditorWindow and sets it's <see cref="P:RoR2EditorKit.Core.EditorWindows.ExtendedEditorWindow.SerializedObject"/> to the new ExtendedEditorWindow instance
+            </summary>
+            <typeparam name="TEditorWindow">The type of ExtendedEditorWindow to open</typeparam>
+            <param name="windowName">The name for this window, leaving this null nicifies the <typeparamref name="TEditorWindow"/>'s type name</param>
+        </member>
+        <member name="M:RoR2EditorKit.Core.EditorWindows.ExtendedEditorWindow.OnWindowOpened">
+            <summary>
+            Finish any initialization here
+            Keep base implementation unless you know what you're doing.
+            <para>OnWindowOpened binds the root visual element to the <see cref="P:RoR2EditorKit.Core.EditorWindows.ExtendedEditorWindow.SerializedObject"/></para>
+            <para>Execution order: OnEnable -> CreateGUI -> OnWindowOpened</para>
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Core.EditorWindows.ExtendedEditorWindow.CreateGUI">
+            <summary>
+            Create or finalize your VisualElement UI here.
+            Keep base implementation unless you know what you're doing.
+            <para>RoR2EditorKit copies the VisualTreeAsset to the rootVisualElement in this method.</para>
+            <para>Execution order: OnEnable -> CreateGUI -> OnWindowOpened</para>
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Core.EditorWindows.ExtendedEditorWindow.ValidateUXMLPath(System.String)">
+            <summary>
+            Used to validate the path of a potential UXML asset, overwrite this if youre making a window that isnt in the same assembly as RoR2EK.
+            </summary>
+            <param name="path">A potential UXML asset path</param>
+            <returns>True if the path is for this editor window, false otherwise</returns>
+        </member>
+        <member name="T:RoR2EditorKit.Core.EditorWindows.ObjectEditingEditorWindow`1">
+            <summary>
+            A variation of the <see cref="T:RoR2EditorKit.Core.EditorWindows.ExtendedEditorWindow"/>, this editor window is used for editing objects, allowing for more space and better control over the inspected object
+            </summary>
+            <typeparam name="TObject">The type of object being inspected/edited</typeparam>
+        </member>
+        <member name="P:RoR2EditorKit.Core.EditorWindows.ObjectEditingEditorWindow`1.TargetType">
+            <summary>
+            Direct access to the SerializedObject's targetObject as it's type
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Core.EditorWindows.ObjectEditingEditorWindow`1.OpenEditorWindow``1(System.String)">
+            <summary>
+            Not supported for ObjectEditingEditorWindows, use <see cref="M:RoR2EditorKit.Core.EditorWindows.ObjectEditingEditorWindow`1.OpenEditorWindow``1(UnityEngine.Object,System.String)"/> instead
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Core.EditorWindows.ObjectEditingEditorWindow`1.OpenEditorWindow``1(UnityEngine.Object,System.String)">
+            <summary>
+            Opens the ObjectEditingEditorWindow specified in <typeparamref name="TEditorWindow"/>, and sets the SerializedObject
+            </summary>
+            <typeparam name="TEditorWindow">The type of ObjectEditingEditorWindow to open</typeparam>
+            <param name="obj">The object being edited in the window, cannot be null</param>
+            <param name="windowName">The name for this window, leaving this null nicifies the <typeparamref name="TEditorWindow"/>'s type name</param>
+            <exception cref="T:System.NullReferenceException">Thrown when <paramref name="obj"/> is null</exception>
+        </member>
+        <member name="T:RoR2EditorKit.ErrorShorthands">
+            <summary>
+            Shorthands for throwing Errors.
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.ErrorShorthands.NullString(System.String)">
+            <summary>
+            Returns a null reference exception with the following message:
+            <para>"Field <paramref name="fieldName"/> cannot be Empty or Null"</para>
+            </summary>
+            <param name="fieldName">The name of the field that's empty or null</param>
+            <returns>The null reference exception</returns>
+        </member>
+        <member name="M:RoR2EditorKit.ErrorShorthands.NullTokenPrefix">
+            <summary>
+            Returns a null reference exception with the following message:
+            <para>"Your TokenPrefix in the RoR2EditorKit settings is Empty or Null"</para>
+            </summary>
+            <returns>The null reference exception</returns>
+        </member>
+        <member name="M:RoR2EditorKit.ErrorShorthands.NullMainManifest">
+            <summary>
+            Returns a null reference exception with the following message:
+            <para>Your Main Manifest in the RoR2EditorKit Settings is Empty</para>
+            </summary>
+            <returns>The null reference exception</returns>
+        </member>
+        <member name="T:RoR2EditorKit.Utilities.AddressablesUtils">
+            <summary>
+            Utilities for loading an asset via addressables.
+            </summary>
+        </member>
+        <member name="P:RoR2EditorKit.Utilities.AddressablesUtils.AddressableCatalogExists">
+            <summary>
+            Returns true if ThunderKit has loaded the AddressableCatalog
+            <para>Basically when the ScriptingDefine symbols contain "TK_ADDRESSABLE"</para>
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Utilities.AddressablesUtils.LoadAssetFromCatalog``1(System.Object)">
+            <summary>
+            Loads an asset of type <typeparamref name="T"/> from the AddressableCatalog, while the loading process is running, it shows a progress bar popup.
+            </summary>
+            <typeparam name="T">The type of asset to load, must be an Unity Object</typeparam>
+            <param name="address">The address of the aset</param>
+            <returns>A Task that can be awaited for obtaining the loaded object</returns>
+            <exception cref="T:System.InvalidOperationException">Thrown when the ScriptingDefains do not contain the "TK_ADDRESSABLE" defaine.</exception>
+        </member>
+        <member name="M:RoR2EditorKit.Utilities.AssetDatabaseUtils.FindAssetsByType``1(System.String)">
+            <summary>
+            Finds all assets of Type T
+            </summary>
+            <typeparam name="T">The Type of asset to find</typeparam>
+            <param name="assetNameFilter">A filter to narrow down the search results</param>
+            <returns>An IEnumerable of all the Types found inside the AssetDatabase.</returns>
+        </member>
+        <member name="M:RoR2EditorKit.Utilities.AssetDatabaseUtils.FindAssetByType``1(System.String)">
+            <summary>
+            Finds an asset of Type T
+            </summary>
+            <typeparam name="T">The Type of asset to find</typeparam>
+            <param name="assetNameFilter">A filter to narrow down the search results</param>
+            <returns>The asset found</returns>
+        </member>
+        <member name="M:RoR2EditorKit.Utilities.AssetDatabaseUtils.CreateAssetAtSelectionPath(UnityEngine.Object)">
+            <summary>
+            Creates a generic asset at the currently selected folder
+            </summary>
+            <param name="asset">The asset to create</param>
+            <returns>The Created asset</returns>
+        </member>
+        <member name="M:RoR2EditorKit.Utilities.AssetDatabaseUtils.CreatePrefabAtSelectionPath(UnityEngine.GameObject)">
+            <summary>
+            Creates a prefab at the currently selected folder
+            </summary>
+            <param name="asset">The prefab to create</param>
+            <returns>The newely created prefab in the AssetDatabase</returns>
+        </member>
+        <member name="M:RoR2EditorKit.Utilities.AssetDatabaseUtils.UpdateNameOfObject(UnityEngine.Object)">
+            <summary>
+            Updates the assetName of <paramref name="obj"/> so it displays properly
+            </summary>
+            <param name="obj">The object to update</param>
+        </member>
+        <member name="T:RoR2EditorKit.Utilities.ExtensionUtils">
+            <summary>
+            Class holding a multitude of extension methods.
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Utilities.ExtensionUtils.IsNullOrEmptyOrWhitespace(System.String)">
+            <summary>
+            Ensures that the string object is not Null, Empty or WhiteSpace.
+            </summary>
+            <param name="text">The string object to check</param>
+            <returns>True if the string object is not Null, Empty or Whitespace, false otherwise.</returns>
+        </member>
+        <member name="M:RoR2EditorKit.Utilities.ExtensionUtils.Deconstruct``2(System.Collections.Generic.KeyValuePair{``0,``1},``0@,``1@)">
+            <summary>
+            Extension to allow tuple style deconstruction of keys and values when enumerating a dictionary.
+            Example: foreach(var (key, value) in myDictionary)
+            </summary>
+            <typeparam name="TKey"></typeparam>
+            <typeparam name="TValue"></typeparam>
+            <param name="kvp"></param>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:RoR2EditorKit.Utilities.ExtensionUtils.GetBindedProperty(UnityEngine.UIElements.IBindable,UnityEditor.SerializedObject)">
+            <summary>
+            Returns the serialized property that's bound to this bindable element.
+            </summary>
+            <param name="objField">The BindableElement that has a bounded property</param>
+            <param name="objectBound">The SerializedObject that has the objectField's property binding path.</param>
+            <returns>The serialized property</returns>
+            <exception cref="T:System.NullReferenceException">when the objField does not have a bindingPath set.</exception>
+        </member>
+        <member name="M:RoR2EditorKit.Utilities.ExtensionUtils.GetVisibleChildren(UnityEditor.SerializedObject)">
+            <summary>
+            Obtains a List of all the top layer serialized properties from a serialized object.
+            </summary>
+            <param name="serializedObject">The serialized object to get the children</param>
+            <returns>A List of all the top layer serialized properties</returns>
+        </member>
+        <member name="M:RoR2EditorKit.Utilities.ExtensionUtils.UpdateAndApply(UnityEditor.SerializedObject)">
+            <summary>
+            Runs SerializedObject.Update(), then applies modified properties.
+            </summary>
+            <param name="serializedObject"></param>
+        </member>
+        <member name="M:RoR2EditorKit.Utilities.ExtensionUtils.GetParentProperty(UnityEditor.SerializedProperty)">
+            <summary>
+            Finds the parent property of the selected serialized property
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Utilities.ExtensionUtils.SetObjectType``1(UnityEditor.UIElements.ObjectField)">
+            <summary>
+            Quick method to set the ObjectField's object type
+            </summary>
+            <typeparam name="TObj">The type of object to set</typeparam>
+            <param name="objField">The object field</param>
+        </member>
+        <member name="M:RoR2EditorKit.Utilities.ExtensionUtils.Wipe(UnityEngine.UIElements.VisualElement)">
+            <summary>
+            Quick method to Clear a visual element's USS Class List, Hierarchy, and Unbind it from a serializedObject
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Utilities.ExtensionUtils.QContainer``1(UnityEngine.UIElements.Foldout,System.String,System.String)">
+            <summary>
+            Queries a visual element from the FoldoutElement's container
+            </summary>
+            <typeparam name="T">The type of VisualElement to query</typeparam>
+            <param name="foldout">The foldout to query from</param>
+            <param name="name">The name of the visual element to query</param>
+            <param name="className">The class name of the visual element to query</param>
+            <returns>The queried element if found, null otherwise</returns>
+        </member>
+        <member name="M:RoR2EditorKit.Utilities.ExtensionUtils.SetDisplay(UnityEngine.UIElements.VisualElement,UnityEngine.UIElements.DisplayStyle)">
+            <summary>
+            Quickly sets the display of a visual element
+            </summary>
+            <param name="visualElement">The element to change the display style</param>
+            <param name="displayStyle">new display style value</param>
+        </member>
+        <member name="M:RoR2EditorKit.Utilities.ExtensionUtils.GetRootObject(UnityEngine.GameObject)">
+            <summary>
+            Retrieves the root GameObject, aka the first object in the hierarchy of a prefab
+            </summary>
+            <param name="obj"></param>
+            <returns>The root GameObject</returns>
+        </member>
+        <member name="T:RoR2EditorKit.Utilities.IOUtils">
+            <summary>
+            General System.IO related utilities.
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Utilities.IOUtils.EnsureDirectory(System.String)">
+            <summary>
+            If the directory specified in <paramref name="directoryPath"/> does not exist, it creates it.
+            </summary>
+            <param name="directoryPath">The directory path to ensure its existence</param>
+        </member>
+        <member name="T:RoR2EditorKit.Utilities.MarkdownUtils">
+            <summary>
+            Generate markdown utilities for usage with Thunderkit's Markdown Element.
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Utilities.MarkdownUtils.GenerateAssetLink(UnityEngine.Object)">
+            <summary>
+            Generates an AssetLink that points to the object specified.
+            </summary>
+            <param name="obj">The object to point towards</param>
+            <returns>A string that represents the object's location, using the asset's GUID to ensure stability.</returns>
+        </member>
+        <member name="M:RoR2EditorKit.Utilities.MarkdownUtils.GenerateAssetLink(System.String,System.String)">
+            <summary>
+            Generates an AssetLink that points to a specified path.
+            </summary>
+            <param name="name">The name of the clickable link</param>
+            <param name="path">The path to the asset, needs to be relative to the project</param>
+            <returns>A string that represents the object's location, using the asset's GUID to ensure stability</returns>
+        </member>
+        <member name="M:RoR2EditorKit.Utilities.ReflectionUtils.GetTypesSafe(System.Reflection.Assembly,System.Type[]@)">
+            <summary>
+            Gets all the types from an assembly safely by getting the types from a ReflectionTypeLoadException if one is thrown
+            </summary>
+            <param name="assembly"></param>
+            <param name="assemblyTypes"></param>
+            <returns>true if a ReflectionTypeLoadException was caught</returns>
+        </member>
+        <member name="T:RoR2EditorKit.Utilities.ScriptableObjectUtils">
+            <summary>
+            Wrapper class of ThunderKit.Core.Utilities.ScriptableHelper
+            </summary>
+        </member>
+        <member name="M:RoR2EditorKit.Utilities.ScriptableObjectUtils.CreateNewScriptableObject``1(System.Action{``0})">
+            <summary>
+            Creates and Saves a ScriptableObject of Type T allowing the user the input the name of the new asset, or cancel by pressing escape
+            The asset will be created in one of the folowing:
+                The selected folder
+                The containing folder of a selected asset
+                The Assets folder if there is no selection in the Project window
+            </summary>
+            <typeparam name="T">Type of ScriptableObject to create</typeparam>
+            <param name="afterCreated">Delegate to run after asset creation process has completed</param>
+        </member>
+        <member name="M:RoR2EditorKit.Utilities.ScriptableObjectUtils.CreateNewScriptableObject(System.Type,System.Func{System.String})">
+            <summary>
+            Creates and Saves a ScriptableObject of Type t
+            The asset will be created in one of the folowing:
+                The selected folder
+                The containing folder of a selected asset
+                The Assets folder if there is no selection in the Project window
+            </summary>
+            <param name="t">Type of ScriptableObject to create</param>
+            <param name="overrideName">Delegate which returns a string to be assigned as the name of the new asset</param>
+        </member>
+        <member name="M:RoR2EditorKit.Utilities.ScriptableObjectUtils.EnsureScriptableObjectExists``1(System.String,System.Action{``0})">
+            <summary>
+            if an Asset of Type T does not exist at assetPath, creates and saves a new asset of Type T
+            </summary>
+            <typeparam name="T">Type of ScriptableObject to create</typeparam>
+            <param name="assetPath">Path to ScriptableObject</param>
+            <param name="initializer">Delegate to run after asset creation process has completed</param>
+            <returns>Created ScriptableObject</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:RoR2EditorKit.Utilities.ScriptableObjectUtils.EnsureScriptableObjectExists(System.String,System.Type,System.Action{System.Object})" -->
+    </members>
+</doc>

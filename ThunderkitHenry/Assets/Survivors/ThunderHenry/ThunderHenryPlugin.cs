@@ -16,7 +16,6 @@ namespace ThunderHenry
     [BepInPlugin(MODUID, MODNAME, MODVERSION)]
     [R2APISubmoduleDependency(new string[]
     {
-        "PrefabAPI",
         "LanguageAPI",
         "SoundAPI",
         "UnlockableAPI"
@@ -48,12 +47,10 @@ namespace ThunderHenry
             Modules.Config.ReadConfig();
             Modules.Assets.Init();
             if (cancel) return;
-            Modules.Shaders.init();
             Modules.Tokens.Init();
             Modules.Prefabs.Init();
             Modules.Buffs.Init();
             Modules.ItemDisplays.Init();
-            Modules.Unlockables.Init();
             
             
             // Any debug stuff you need to do can go here before initialisation

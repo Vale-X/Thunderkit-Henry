@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:Template name="ComponentInspectorBase" src="/Packages/riskofthunder-ror2editorkit/Assets/UXML/ComponentInspectorBase.uxml" />
+    <ui:Instance template="ComponentInspectorBase" name="ComponentInspectorBase">
+        <Style src="/Packages/riskofthunder-ror2editorkit/Assets/USS/Inspectors/ComponentInspector.uss" />
+    </ui:Instance>
+    <ui:VisualElement name="InspectorDataContainer" class="genericHolder">
+        <Style src="/Packages/riskofthunder-ror2editorkit/Assets/USS/Inspectors/ComponentInspector.uss" />
+        <uie:IntegerField label="Amount of Children" value="42" name="arraySize" />
+        <ui:ListView focusable="true" name="nameTransformPairs" binding-path="nameTransformPairs" item-height="20" class="listView" style="height: 100px;" />
+    </ui:VisualElement>
+</ui:UXML>

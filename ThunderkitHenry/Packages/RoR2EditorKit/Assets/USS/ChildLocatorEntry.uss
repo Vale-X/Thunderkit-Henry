@@ -1,0 +1,15 @@
+﻿Label {
+	min-width: auto;
+}
+
+#name {
+	min-width: 50%;
+}
+
+#transform {
+	min-width: 50%;
+}
+
+#ChildLocatorEntryContainer {
+	flex-direction: row;
+}

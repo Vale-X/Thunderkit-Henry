@@ -110,7 +110,7 @@ namespace ThunderHenry.SkillStates.BaseStates
 
             if (!this.hasHopped)
             {
-                if (base.characterMotor && !base.characterMotor.isGrounded && this.hitHopVelocity > 0f)
+                if (base.characterMotor != null && !base.characterMotor.isGrounded && this.hitHopVelocity > 0f)
                 {
                     base.SmallHop(base.characterMotor, this.hitHopVelocity);
                 }

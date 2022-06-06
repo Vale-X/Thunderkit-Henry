@@ -28,7 +28,7 @@ namespace ThunderHenry.Modules
             //If you want to change the 'defaults' set in ForEachReferences, then set them for individual bodyPrefabs here.
             //This is if you want to use a custom crosshair or other stuff.
 
-            // bodyPrefabs[0].GetComponent<CharacterBody>().crosshairPrefab = ...whatever you wanna set here.
+            // bodyPrefabs[0].GetComponent<CharacterBody>()._defaultCrosshairPrefab = ...whatever you wanna set here.
         }
 
         // Some variables have to be set and reference assets we don't have access to in Thunderkit.
@@ -38,7 +38,7 @@ namespace ThunderHenry.Modules
             foreach (GameObject g in bodyPrefabs)
             {
                 var cb = g.GetComponent<CharacterBody>();
-                cb.crosshairPrefab = Resources.Load<GameObject>("prefabs/crosshair/StandardCrosshair");
+                cb._defaultCrosshairPrefab = Resources.Load<GameObject>("prefabs/crosshair/StandardCrosshair");
                 cb.preferredPodPrefab = Resources.Load<GameObject>("prefabs/networkedobjects/SurvivorPod");
 
                 var fs = g.GetComponentInChildren<FootstepHandler>();

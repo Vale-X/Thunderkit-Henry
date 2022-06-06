@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Container" class="genericHolder">
+        <Style src="/Packages/riskofthunder-ror2editorkit/Assets/USS/Inspectors/ScriptableObjectInspector.uss" />
+        <ui:Label text="Label" name="scriptType" class="genericHolderHeader scriptType" />
+        <ui:VisualElement name="InspectorDataContainer">
+            <uie:IntegerField label="Amount of Assets" value="42" name="arraySize" />
+            <ui:ListView focusable="true" name="assets" item-height="25" style="height: 100px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

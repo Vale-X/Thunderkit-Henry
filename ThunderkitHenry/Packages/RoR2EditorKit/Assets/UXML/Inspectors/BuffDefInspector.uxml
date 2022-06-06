@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Container" class="genericHolder">
+        <Style src="/Packages/riskofthunder-ror2editorkit/Assets/USS/Inspectors/ScriptableObjectInspector.uss" />
+        <ui:Label text="Label" name="scriptType" class="genericHolderHeader scriptType" />
+        <ui:VisualElement name="InspectorDataContainer">
+            <uie:PropertyField name="iconSprite" tooltip="The icon that&apos;s used for displaying this buff, The icon should be Grayscale" binding-path="iconSprite" />
+            <uie:PropertyField name="buffColor" tooltip="The color of this buff, used to tint the buff&apos;s icon" binding-path="buffColor" />
+            <uie:PropertyField name="eliteDef" tooltip="The Associated EliteDef for this buff. The EliteDef&apos;s EquipmentDef&apos;s PassiveBuffDef should point to this BuffDef!" binding-path="eliteDef" label="Associated Elite Def" />
+            <uie:PropertyField name="startSfx" tooltip="A sound effect to play when the Buff gets inflicted on a Body" binding-path="startSfx" />
+            <ui:Label text="Toggles" name="Toggles" class="separatorLabel genericHolderHeader" />
+            <uie:PropertyField name="canStack" binding-path="canStack" tooltip="Whether this buff is Stackable" />
+            <uie:PropertyField name="isCooldown" binding-path="isCooldown" tooltip="Wether this buff is a Cooldown buff (IE: Elemental Rings Cooldown)" />
+            <uie:PropertyField name="isHidden" binding-path="isHidden" tooltip="Hidden buffs do not display on the HUD" />
+            <uie:PropertyField name="isDebuff" binding-path="isDebuff" tooltip="Whether this buff has negative effects, Debuffs can be cleansed from the Blast Shower" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

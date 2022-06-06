@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Container" class="genericHolder">
+        <Style src="/Packages/riskofthunder-ror2editorkit/Assets/USS/Inspectors/ScriptableObjectInspector.uss" />
+        <ui:Label text="Label" name="scriptType" class="genericHolderHeader scriptType" />
+        <ui:VisualElement name="InspectorDataContainer">
+            <ui:Label text="Label" name="assemblyQualifiedName" binding-path="targetType.assemblyQualifiedName" style="visibility: visible; display: none;" />
+            <uie:PropertyField name="targetType" binding-path="targetType" tooltip="The EntityState Type thats being configured" />
+            <ui:VisualElement name="InstanceFieldsContainer" class="genericHolder" style="display: none;">
+                <ui:Label text="Instance Fields" name="instanceFields" class="genericHolderHeader separatorLabel" />
+            </ui:VisualElement>
+            <ui:VisualElement name="StaticFieldsContainer" class="genericHolder" style="display: none;">
+                <ui:Label text="Static Fields" name="staticFields" class="genericHolderHeader separatorLabel" />
+            </ui:VisualElement>
+            <ui:VisualElement name="UnrecognizedFieldsContainer" class="genericHolder" style="display: none;">
+                <ui:Label text="Unrecognized Fields" name="unrecognizedFields" class="genericHolderHeader separatorLabel" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

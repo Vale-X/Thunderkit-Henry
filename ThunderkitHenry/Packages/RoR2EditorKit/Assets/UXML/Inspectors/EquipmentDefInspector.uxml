@@ -1,0 +1,30 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Container" class="genericHolder">
+        <Style src="/Packages/riskofthunder-ror2editorkit/Assets/USS/Inspectors/ScriptableObjectInspector.uss" />
+        <ui:Label text="Label" name="scriptType" class="genericHolderHeader scriptType" />
+        <ui:VisualElement name="InspectorDataContainer">
+            <ui:Label text="Equipment Settings" name="EquipmentSettings" class="separatorLabel genericHolderHeader" />
+            <uie:PropertyField name="cooldown" binding-path="cooldown" tooltip="How long until this equipment can be activated again" />
+            <uie:PropertyField name="pickupModelPrefab" binding-path="pickupModelPrefab" tooltip="The Pickup model for this equipment" />
+            <uie:PropertyField name="pickupIconSprite" binding-path="pickupIconSprite" tooltip="The icon used for this equipment" />
+            <uie:PropertyField name="passiveBuffDef" binding-path="passiveBuffDef" tooltip="If assigned, this BuffDef is applied to the body when this equipment is held. If the buffDef has an associated Elitedef, the Elitedef&apos;s EquipmentDef needs to point to this EquipmenttDef!" />
+            <uie:PropertyField name="dropOnDeathChance" binding-path="dropOnDeathChance" tooltip="The chance that this equipment is dropped on death" focusable="true" />
+            <uie:PropertyField name="canDrop" binding-path="canDrop" tooltip="Whether this equipment can be dropped from Barrels or Pods" />
+            <uie:PropertyField name="randomlyTriggered" binding-path="randomlyTriggered" tooltip="Wether this equipment can be triggered by Bottled Chaos&apos; effectt" />
+            <uie:PropertyField name="enigmaCompatible" binding-path="enigmaCompatible" tooltip="Wether this equipment is compatible with Artifact of Enigma" />
+            <uie:PropertyField name="isLunar" tooltip="Wether this equipment is a Lunar equipment" binding-path="isLunar" />
+            <uie:PropertyField name="isBoss" binding-path="isBoss" tooltip="Wether this equipment is dropped from a boss" />
+            <uie:PropertyField name="appearsInMultiPlayer" binding-path="appearsInMultiPlayer" tooltip="Wether this equipment appears in Multiplayer runs" />
+            <uie:PropertyField name="appearsInSinglePlayer" binding-path="appearsInSinglePlayer" tooltip="Wether this equipment appears in Single Player" />
+            <ui:Label text="Unlockable And ExpansionDef" name="UnlockableAndExpansionDef" class="genericHolderHeader separatorLabel" />
+            <uie:PropertyField name="requiredUnlockable" binding-path="unlockableDef" tooltip="This unlockable must be obtained before the equipment can appear in runs" />
+            <uie:PropertyField name="requiredExpansion" binding-path="requiredExpansion" tooltip="This ExpansionDef must be enabled for this equipment to drop" />
+            <ui:Foldout text="Language Tokens" tooltip="Tokens for this EquipmentDef" name="TokenContainer" class="genericHolderFoldout">
+                <uie:PropertyField name="nameToken" binding-path="nameToken" tooltip="Ingame name of the equipment" />
+                <uie:PropertyField name="pickupToken" binding-path="pickupToken" tooltip="Short description of the equipment&apos;s effects, shows on pickup" />
+                <uie:PropertyField name="descriptionToken" binding-path="descriptionToken" tooltip="Detailed descriptions of the equipment&apos;s effects, shows in the loogbook" />
+                <uie:PropertyField name="loreToken" binding-path="loreToken" tooltip="Token for the lore thats displayed on the Logbook" />
+            </ui:Foldout>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

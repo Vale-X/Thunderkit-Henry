@@ -1,0 +1,27 @@
+{
+    "name": "RoR2EditorScripts",
+    "references": [
+        "RoR2EditorKit",
+        "com.unity.multiplayer-hlapi.Runtime",
+        "ThunderKit.Core",
+        "ThunderKit.Common"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "RoR2.dll",
+        "HGCSharpUtils.dll",
+        "Assembly-CSharp.dll",
+        "HGUnityUtils.dll",
+        "Unity.ResourceManager.dll",
+        "Unity.Addressables.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
