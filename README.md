@@ -16,3 +16,6 @@ __Major Update 1__
 - Updated `Prefabs.cs`, adding a `bodyIndexes` list.
 - Updated `Unlockables.cs`, now uses R2API's UnlockableAPI.
 - Fixed an issue with `Assembly-CSharp.Public.dll`.
+
+## About Beta Branch
+The Beta branch for this project is just for me to upload WIP updates and project changes, and isn't recommended to use as a template for your own characters. Use the Main Branch as a template instead. When updates are ready to be used in templates, it will be pushed to the main branch.
