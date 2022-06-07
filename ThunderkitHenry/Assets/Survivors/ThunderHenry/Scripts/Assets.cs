@@ -1,5 +1,6 @@
 ﻿using EntityStates;
 using R2API;
+using R2API.ScriptableObjects;
 using RoR2;
 using RoR2.ContentManagement;
 using System;
@@ -90,8 +91,8 @@ namespace ThunderHenry.Modules
 			AddEntityStateTypes();
 			CreateEffectDefs();
 			ContentPackProvider.contentPack = mainContentPack;
+			
 		}
-
 
 		// Loads the sound bank for any custom sounds. 
         internal static void LoadSoundBank()

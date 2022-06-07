@@ -36,8 +36,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 21761292761573592}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -79,7 +78,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5108796886903473902}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Script: {fileID: 11500000, guid: f8258ea15b8f74c4889ce485d21cbbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_SceneId:
@@ -112,7 +111,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5108796886903473902}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1848696948, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
+  m_Script: {fileID: -1848696948, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   catalogIndex: -1
@@ -120,7 +119,9 @@ MonoBehaviour:
     type: 3}
   ghostTransformAnchor: {fileID: 0}
   startSound: 
+  cannotBeDeleted: 0
   flightSoundLoop: {fileID: 0}
+  canImpactOnTrigger: 0
   allowPrediction: 0
   owner: {fileID: 0}
   procCoefficient: 1
@@ -133,7 +134,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5108796886903473902}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -270136354, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
+  m_Script: {fileID: -270136354, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   positionTransmitInterval: 0.033333335
@@ -148,7 +149,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5108796886903473902}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1895344032, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
+  m_Script: {fileID: -1895344032, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   defaultTeam: 1
@@ -161,11 +162,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5108796886903473902}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1819008361, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
+  m_Script: {fileID: -1819008361, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  desiredForwardSpeed: 50
   lifetime: 5
+  lifetimeExpiredEffect: {fileID: 0}
+  desiredForwardSpeed: 50
   updateAfterFiring: 0
   enableVelocityOverLifetime: 0
   velocityOverLifetime:
@@ -186,25 +188,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 5108796886903473902}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -317677761, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
+  m_Script: {fileID: -317677761, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionSoundString: 
   falloffModel: 2
   blastRadius: 16
   blastDamageCoefficient: 1
   blastProcCoefficient: 1
   blastAttackerFiltering: 0
   bonusBlastForce: {x: 0, y: 600, z: 0}
+  canRejectForce: 1
+  projectileHealthComponent: {fileID: 0}
+  explosionEffect: {fileID: 0}
+  explosionSoundString: 
   fireChildren: 0
   childrenProjectilePrefab: {fileID: 0}
   childrenCount: 0
   childrenDamageCoefficient: 0
   minAngleOffset: {x: 0, y: 0, z: 0}
   maxAngleOffset: {x: 0, y: 0, z: 0}
+  minRollDegrees: 0
+  rangeRollDegrees: 0
+  minPitchDegrees: 0
+  rangePitchDegrees: 0
   useLocalSpaceForChildren: 0
-  projectileHealthComponent: {fileID: 0}
-  explosionEffect: {fileID: 0}
+  applyDot: 0
+  dotIndex: -1
+  dotDuration: 0
+  dotDamageMultiplier: 1
+  applyMaxStacksFromAttacker: 0
+  maxStacksFromAttacker: 4294967295
+  calculateTotalDamage: 0
+  totalDamageMultiplier: 0
   impactEffect: {fileID: 5462667972647009399, guid: 05b273758480af74a919e826c7b80a86,
     type: 3}
   lifetimeExpiredSoundString: 
@@ -226,7 +241,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5108796886903473902}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1790887305, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
+  m_Script: {fileID: 1790887305, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
@@ -234,6 +249,8 @@ MonoBehaviour:
   force: 0
   damageColorIndex: 0
   damageType: 0
+  useDotMaxStacksFromAttacker: 0
+  dotMaxStacksFromAttacker: 4294967295
 --- !u!114 &5849149825005664729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,51 +260,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 5108796886903473902}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -132178706, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
+  m_Script: {fileID: -132178706, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   localTorque: {x: 300, y: 300, z: 300}
   randomize: 1
---- !u!1 &8304115213533304009
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 21761292761573592}
-  - component: {fileID: 3885621443621565658}
-  m_Layer: 14
-  m_Name: Sphere
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &21761292761573592
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8304115213533304009}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5633910304661553357}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3885621443621565658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8304115213533304009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1783796254, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

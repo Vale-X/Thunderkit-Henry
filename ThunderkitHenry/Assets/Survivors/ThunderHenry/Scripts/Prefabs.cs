@@ -12,6 +12,7 @@ namespace ThunderHenry.Modules
         internal static List<GameObject> bodyPrefabs = new List<GameObject>();
         internal static List<BodyIndex> bodyIndexes = new List<BodyIndex>();
         internal static List<GameObject> displayPrefabs = new List<GameObject>();
+        internal static List<SurvivorDef> survivorDefs = new List<SurvivorDef>(); 
 
         private static PhysicMaterial ragdollMaterial;
 
@@ -31,10 +32,11 @@ namespace ThunderHenry.Modules
             // bodyPrefabs[0].GetComponent<CharacterBody>()._defaultCrosshairPrefab = ...whatever you wanna set here.
         }
 
-        // Some variables have to be set and reference assets we don't have access to in Thunderkit.
-        // So instead we set them here.
+        
         private static void ForEachReferences()
         {
+            // Some variables have to be set and reference assets we don't have access to in Thunderkit.
+            // So instead we set them here.
             foreach (GameObject g in bodyPrefabs)
             {
                 var cb = g.GetComponent<CharacterBody>();
@@ -45,6 +47,12 @@ namespace ThunderHenry.Modules
                 fs.footstepDustPrefab = Resources.Load<GameObject>("prefabs/GenericFootstepDust");
 
                 SetupRagdoll(g);
+            }
+
+            // SurvivorDef.cachedName needs to be set before content pack initialization for eclipse (the gamemode) tracking to work.
+            foreach (SurvivorDef s in survivorDefs)
+            {
+                s.cachedName = s.ToString();
             }
         }
 
@@ -82,6 +90,7 @@ namespace ThunderHenry.Modules
                 bodyPrefabs.Add(s.bodyPrefab);
                 bodyIndexes.Add(BodyCatalog.FindBodyIndex(s.bodyPrefab));
                 displayPrefabs.Add(s.displayPrefab);
+                survivorDefs.Add(s);
             }
         }
     }

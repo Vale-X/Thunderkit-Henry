@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9057f7f601990a4883b2cb295c4f43e, type: 3}
   m_Name: ThunderKitSettings
   m_EditorClassIdentifier: 
-  FirstLoad: 0
+  FirstLoad: 1
   ShowOnStartup: 1
   GameExecutable: Risk of Rain 2.exe
   GamePath: D:\Program Files (x86)\Steam\steamapps\common\Risk of Rain 2
@@ -21,9 +21,10 @@ MonoBehaviour:
   CreatedDateFormat: MMM/dd HH:mm:ss
   ShowLogWindow: 1
   MarkdownOpenMode: 0
-  SelectedPipeline: {fileID: 0}
-  SelectedManifest: {fileID: 0}
+  SelectedPipeline: {fileID: 11400000, guid: b6c20d320dd4eb048bf42799ed352ef0, type: 2}
+  SelectedManifest: {fileID: 11400000, guid: e247e30317ba0c6163afa8a786e6b148, type: 2}
   QuickAccessPipelines: []
-  QuickAccessManifests: []
+  QuickAccessManifests:
+  - {fileID: 11400000, guid: e247e30317ba0c6163afa8a786e6b148, type: 2}
   ImportConfiguration: {fileID: 11400000, guid: f3f47c90939cc7743962e7258bd44530,
     type: 2}

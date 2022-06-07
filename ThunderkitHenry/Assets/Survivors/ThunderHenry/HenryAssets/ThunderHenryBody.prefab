@@ -200,7 +200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5274750116198463682}
   - component: {fileID: 7230820536901823684}
-  - component: {fileID: 5252845886591818817}
+  - component: {fileID: 7146203910178400780}
   m_Layer: 12
   m_Name: MainHurtbox
   m_TagString: Untagged
@@ -236,7 +236,7 @@ CapsuleCollider:
   m_Height: 1.8346863
   m_Direction: 1
   m_Center: {x: 0, y: -0.22852182, z: 0}
---- !u!114 &5252845886591818817
+--- !u!114 &7146203910178400780
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -245,14 +245,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 715467090554245246}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -202159943, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
+  m_Script: {fileID: -202159943, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   healthComponent: {fileID: 2078449224695479818}
   isBullseye: 1
+  isSniperTarget: 0
   damageModifier: 0
-  hurtBoxGroup: {fileID: 8108761937298438120}
-  indexInGroup: 0
+  hurtBoxGroup: {fileID: 0}
+  indexInGroup: -1
 --- !u!1 &720161354780646839
 GameObject:
   m_ObjectHideFlags: 0
@@ -1061,6 +1062,7 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1072,6 +1074,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1393,7 +1396,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4295488372804331420}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1653386690, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
+  m_Script: {fileID: 1653386690, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Center: {x: 0, y: 0, z: 0}
@@ -1410,7 +1413,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4643461710446495220}
-  - component: {fileID: 7490863130313705601}
+  - component: {fileID: 5807130693924165434}
   m_Layer: 14
   m_Name: SwordHitbox
   m_TagString: Untagged
@@ -1433,7 +1436,7 @@ Transform:
   m_Father: {fileID: 6109401557624152620}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7490863130313705601
+--- !u!114 &5807130693924165434
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1442,7 +1445,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4643461710446495223}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1783796254, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
+  m_Script: {fileID: 1783796254, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4643461710756194157
@@ -1499,6 +1502,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1510,6 +1514,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1533,6 +1538,7 @@ GameObject:
   - component: {fileID: 7992421876680462931}
   - component: {fileID: 3541344111185577536}
   - component: {fileID: 4552909975258188637}
+  - component: {fileID: 1947643148124484440}
   m_Layer: 17
   m_Name: head
   m_TagString: Untagged
@@ -1587,6 +1593,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1947643148124484440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4886131223197953929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -202159943, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthComponent: {fileID: 2078449224695479818}
+  isBullseye: 0
+  isSniperTarget: 1
+  damageModifier: 0
+  hurtBoxGroup: {fileID: 0}
+  indexInGroup: -1
 --- !u!1 &4929426178760357364
 GameObject:
   m_ObjectHideFlags: 0
@@ -1827,7 +1851,7 @@ GameObject:
   - component: {fileID: 8017431033970727735}
   - component: {fileID: 2078449224695479818}
   - component: {fileID: 8547358971090606424}
-  - component: {fileID: 679179361833045543}
+  - component: {fileID: 6006180686928247436}
   - component: {fileID: 1584232049871338642}
   - component: {fileID: 7932989709726024690}
   - component: {fileID: 5406192945659207257}
@@ -1876,7 +1900,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5150082409466045905}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Script: {fileID: 11500000, guid: f8258ea15b8f74c4889ce485d21cbbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_SceneId:
@@ -1958,6 +1982,7 @@ MonoBehaviour:
   baseAttackSpeed: 1
   baseCrit: 1
   baseArmor: 20
+  baseVisionDistance: Infinity
   baseJumpCount: 1
   sprintingSpeedMultiplier: 1.45
   autoCalculateLevelStats: 1
@@ -1996,7 +2021,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  crosshairPrefab: {fileID: 0}
+  _defaultCrosshairPrefab: {fileID: 0}
   hideCrosshair: 0
   aimOriginTransform: {fileID: 4219427529600394877}
   hullClassification: 0
@@ -2121,9 +2146,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraParams: {fileID: 11400000, guid: b03daa83a85fa9d4ebf04474076db4de, type: 2}
   cameraPivotTransform: {fileID: 3289493458484543085}
-  aimMode: 0
+  fovOverride: 0
   recoil: {x: 0, y: 0}
-  idealLocalCameraPos: {x: 0, y: 0, z: 0}
   dontRaycastToPivot: 0
 --- !u!114 &6305769735283807710
 MonoBehaviour:
@@ -2139,12 +2163,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _modelTransform: {fileID: 6109401557624152620}
   modelBaseTransform: {fileID: 3522869542733378610}
-  dontReleaseModelOnDeath: 0
   autoUpdateModelTransform: 1
   dontDetatchFromParent: 0
   noCorpse: 0
-  normalizeToFloor: 0
+  dontReleaseModelOnDeath: 0
   preserveModel: 0
+  normalizeToFloor: 0
+  normalSmoothdampTime: 0.1
+  normalMaxAngleDelta: 90
 --- !u!114 &8017431033970727735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2191,7 +2217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hideAllyCardDisplay: 0
   _teamIndex: 1
---- !u!114 &679179361833045543
+--- !u!114 &6006180686928247436
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2200,7 +2226,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5150082409466045905}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1144835783, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
+  m_Script: {fileID: 1144835783, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1584232049871338642
@@ -2573,7 +2599,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5268477437279434296}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1653386690, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
+  m_Script: {fileID: 1653386690, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Center: {x: 0, y: 0.36, z: 0}
@@ -2658,6 +2684,7 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2669,6 +2696,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2949,7 +2977,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6059761107395868132}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1653386690, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
+  m_Script: {fileID: 1653386690, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Center: {x: 0, y: 0.36, z: 0}
@@ -3065,6 +3093,7 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3076,6 +3105,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -3421,7 +3451,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7881713770549961040}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1653386690, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
+  m_Script: {fileID: 1653386690, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Center: {x: 0, y: 0.19, z: 0}
@@ -3777,14 +3807,17 @@ MonoBehaviour:
     defaultMaterial: {fileID: 2100000, guid: 14d6d121af8aca345b797120c5f6331b, type: 2}
     defaultShadowCastingMode: 0
     ignoreOverlays: 0
+    hideOnDeath: 0
   - renderer: {fileID: 2675993648159799503}
     defaultMaterial: {fileID: 2100000, guid: 14d6d121af8aca345b797120c5f6331b, type: 2}
     defaultShadowCastingMode: 0
     ignoreOverlays: 0
+    hideOnDeath: 0
   - renderer: {fileID: 5443914023815260605}
     defaultMaterial: {fileID: 2100000, guid: 14d6d121af8aca345b797120c5f6331b, type: 2}
     defaultShadowCastingMode: 0
     ignoreOverlays: 0
+    hideOnDeath: 0
   baseLightInfos: []
 --- !u!114 &2901848322307180315
 MonoBehaviour:
@@ -3878,7 +3911,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseFootstepString: Play_player_footstep
+  baseFootliftString: 
   sprintFootstepOverrideString: 
+  sprintFootliftOverrideString: 
   enableFootstepDust: 1
   footstepDustPrefab: {fileID: 0}
 --- !u!114 &8039656297804706648
@@ -3949,6 +3984,7 @@ MonoBehaviour:
   fullYaw: 0
   aimType: 0
   enableAimWeight: 0
+  UseTransformedAimVector: 0
 --- !u!114 &3839127963709967719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3963,6 +3999,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   focusPointTransform: {fileID: 12494958949654509}
   cameraPositionTransform: {fileID: 8920623443692116039}
+  modelRotation: {x: 0, y: 0, z: 0, w: 1}
   minDistance: 1.5
   maxDistance: 3
 --- !u!114 &8108761937298438120
@@ -3978,9 +4015,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hurtBoxes:
-  - {fileID: 5252845886591818817}
-  mainHurtBox: {fileID: 5252845886591818817}
-  bullseyeCount: 1
+  - {fileID: 0}
+  mainHurtBox: {fileID: 0}
+  bullseyeCount: 0
 --- !u!114 &1858679710920426314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3995,7 +4032,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   groupName: Sword
   hitBoxes:
-  - {fileID: 7490863130313705601}
+  - {fileID: 0}
 --- !u!114 &1653352859212111922
 MonoBehaviour:
   m_ObjectHideFlags: 0
