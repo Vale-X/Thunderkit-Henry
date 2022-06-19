@@ -21,3 +21,23 @@ MonoBehaviour:
       fieldValue:
         stringValue: 
         objectValue: {fileID: 11400000, guid: d5bc6e6e2cbd8134a8764594b5749810, type: 2}
+    - fieldName: duration
+      fieldValue:
+        stringValue: 0.5
+        objectValue: {fileID: 0}
+    - fieldName: initialSpeedCoefficient
+      fieldValue:
+        stringValue: 5
+        objectValue: {fileID: 0}
+    - fieldName: finalSpeedCoefficient
+      fieldValue:
+        stringValue: 2.5
+        objectValue: {fileID: 0}
+    - fieldName: dodgeSoundString
+      fieldValue:
+        stringValue: HenryRoll
+        objectValue: {fileID: 0}
+    - fieldName: dodgeFOV
+      fieldValue:
+        stringValue: 0
+        objectValue: {fileID: 0}

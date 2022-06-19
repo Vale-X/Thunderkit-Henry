@@ -7,12 +7,12 @@ namespace ThunderHenry.SkillStates
     public class ShootUzi : BaseSkillState
     {
         public static float damageCoefficient = Modules.StaticValues.uziDamageCoefficient;
-        public static float procCoefficient = Modules.StaticValues.uziProcCoefficient;
+        public static float procCoefficient = 0.75f;
         public static float baseDuration = 0.1f;
         public static float force = 100f;
         public static float recoil = 1.5f;
         public static float range = 256f;
-        public static GameObject tracerEffectPrefab = Resources.Load<GameObject>("Prefabs/Effects/Tracers/TracerCommandoDefault");
+        public static GameObject tracerEffectPrefab = null;
 
         private float duration;
         private string muzzleString;
@@ -20,6 +20,7 @@ namespace ThunderHenry.SkillStates
         public override void OnEnter()
         {
             base.OnEnter();
+            tracerEffectPrefab = Resources.Load<GameObject>("Prefabs/Effects/Tracers/TracerCommandoDefault");
             this.duration = ShootUzi.baseDuration / this.attackSpeedStat;
             base.characterBody.SetAimTimer(2f);
             this.muzzleString = "Muzzle";

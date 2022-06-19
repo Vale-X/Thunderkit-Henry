@@ -35,11 +35,13 @@ MonoBehaviour:
   equipmentDefs: []
   buffDefs:
   - {fileID: 11400000, guid: d5bc6e6e2cbd8134a8764594b5749810, type: 2}
+  - {fileID: 11400000, guid: 213a0fdb63c05824488985a7c42d863a, type: 2}
   eliteDefs: []
   unlockableDefs: []
   survivorDefs:
   - {fileID: 11400000, guid: fb2f77f99ba1aed4e8864dd5b4d784d9, type: 2}
   artifactDefs: []
+  effectDefs: []
   surfaceDefs: []
   networkSoundEventDefs:
   - {fileID: 11400000, guid: c2a3c6484bedfa046ace1d499d7ddea4, type: 2}
@@ -49,7 +51,7 @@ MonoBehaviour:
   musicTrackDefs: []
   gameEndingDefs: []
   entityStateConfigurations:
-  - {fileID: 11400000, guid: 3e0fa7c14fe64914f99146fc56f982e4, type: 2}
+  - {fileID: 11400000, guid: e364875d959471c4cbdd32ed45b25888, type: 2}
   - {fileID: 11400000, guid: 9c1dcec44cde3dc4e955aec1e369f548, type: 2}
   - {fileID: 11400000, guid: 75e43ae0a11a10945a3875618e11b4e4, type: 2}
   - {fileID: 11400000, guid: 726b41d12ecabd8498ae8cade39fb246, type: 2}

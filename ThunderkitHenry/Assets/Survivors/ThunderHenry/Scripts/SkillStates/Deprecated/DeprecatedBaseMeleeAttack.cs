@@ -5,9 +5,9 @@ using System;
 using UnityEngine;
 using UnityEngine.Networking;
 
-namespace ThunderHenry.SkillStates.BaseStates
+namespace ThunderHenry.SkillStates.Deprecated
 {
-    public class BaseMeleeAttack : BaseSkillState
+    public class DeprecatedBaseMeleeAttack : BaseSkillState
     {
         [SerializeField]
         public NetworkSoundEventDef impactSound;
@@ -156,7 +156,7 @@ namespace ThunderHenry.SkillStates.BaseStates
             if (index == 0) index = 1;
             else index = 0;
 
-            this.outer.SetNextState(new BaseMeleeAttack
+            this.outer.SetNextState(new DeprecatedBaseMeleeAttack
             {
                 swingIndex = index
             });

@@ -12,7 +12,7 @@ namespace ThunderHenry.SkillStates
         public static float finalSpeedCoefficient = 2.5f;
 
         public static string dodgeSoundString = "HenryRoll";
-        public static float dodgeFOV = EntityStates.Commando.DodgeState.dodgeFOV;
+        public static float dodgeFOV = 0;
 
         private float rollSpeed;
         private Vector3 forwardDirection;
@@ -25,6 +25,7 @@ namespace ThunderHenry.SkillStates
         public override void OnEnter()
         {
             base.OnEnter();
+            dodgeFOV = EntityStates.Commando.DodgeState.dodgeFOV;
             this.animator = base.GetModelAnimator();
 
             if (base.isAuthority && base.inputBank && base.characterDirection)
@@ -54,7 +55,7 @@ namespace ThunderHenry.SkillStates
 
             if (NetworkServer.active)
             {
-                base.characterBody.AddTimedBuff(armorBuff, 3f * Roll.duration);
+                base.characterBody.AddTimedBuff(armorBuff, Modules.StaticValues.armorBuffDuration * Roll.duration);
                 base.characterBody.AddTimedBuff(RoR2Content.Buffs.HiddenInvincibility, 0.5f * Roll.duration);
             }
         }

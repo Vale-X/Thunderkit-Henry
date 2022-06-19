@@ -1,23 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-959667739161372183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 573ab150ec56ac941be402978877a77f, type: 3}
-  m_Name: StageAssetBundlesAndSwapShaders
-  m_EditorClassIdentifier: 
-  Active: 1
-  AssetBundleBuildOptions: 1
-  buildTarget: 5
-  recurseDirectories: 1
-  simulate: 0
-  BundleArtifactPath: <AssetBundleStaging>
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a3695521163bdd74fa2845bbd3438240, type: 3}
-  m_Name: Stage
+  m_Name: HenryStage
   m_EditorClassIdentifier: 
   Data:
-  - {fileID: -959667739161372183}
+  - {fileID: 8407770098177827633}
   - {fileID: 114643622350610336}
   - {fileID: 114537630434205182}
   - {fileID: 114366308522735304}
-  QuickAccess: 0
+  QuickAccess: 1
   manifest: {fileID: 11400000, guid: e247e30317ba0c6163afa8a786e6b148, type: 2}
 --- !u!114 &114366308522735304
 MonoBehaviour:
@@ -64,7 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Active: 1
   StagingPath: <StagingRoot>
-  ExcludedManifests: []
+  ExcludedManifests:
+  - {fileID: 11400000, guid: bc5e6d3336544e5361d16e63ddfca327, type: 2}
 --- !u!114 &114643622350610336
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -95,3 +78,21 @@ MonoBehaviour:
   m_Name: StageThunderstoreManifest
   m_EditorClassIdentifier: 
   Active: 1
+--- !u!114 &8407770098177827633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 573ab150ec56ac941be402978877a77f, type: 3}
+  m_Name: StageAssetBundlesAndSwapShaders
+  m_EditorClassIdentifier: 
+  Active: 1
+  AssetBundleBuildOptions: 1
+  buildTarget: 5
+  recurseDirectories: 1
+  simulate: 0
+  BundleArtifactPath: <AssetBundleStaging>

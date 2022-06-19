@@ -21,9 +21,10 @@ MonoBehaviour:
   CreatedDateFormat: MMM/dd HH:mm:ss
   ShowLogWindow: 1
   MarkdownOpenMode: 0
-  SelectedPipeline: {fileID: 11400000, guid: b6c20d320dd4eb048bf42799ed352ef0, type: 2}
+  SelectedPipeline: {fileID: 11400000, guid: ad0ca2de8cb83ef439985d7ff7bd4ea1, type: 2}
   SelectedManifest: {fileID: 11400000, guid: e247e30317ba0c6163afa8a786e6b148, type: 2}
-  QuickAccessPipelines: []
+  QuickAccessPipelines:
+  - {fileID: 11400000, guid: ad0ca2de8cb83ef439985d7ff7bd4ea1, type: 2}
   QuickAccessManifests:
   - {fileID: 11400000, guid: e247e30317ba0c6163afa8a786e6b148, type: 2}
   ImportConfiguration: {fileID: 11400000, guid: f3f47c90939cc7743962e7258bd44530,

@@ -7,7 +7,7 @@ namespace ThunderHenry.SkillStates
 {
     public class ThrowBomb : BaseSkillState
     {
-        public static float damageCoefficient = 16f;
+        public static float damageCoefficient = Modules.StaticValues.bombDamageCoefficient;
         public static float procCoefficient = 1f;
         public static float baseDuration = 0.65f;
         public static float throwForce = 80f;

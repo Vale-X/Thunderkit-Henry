@@ -16,4 +16,32 @@ MonoBehaviour:
     assemblyQualifiedName: ThunderHenry.SkillStates.ShootUzi, ThunderHenry, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   serializedFieldsCollection:
-    serializedFields: []
+    serializedFields:
+    - fieldName: damageCoefficient
+      fieldValue:
+        stringValue: 0.75
+        objectValue: {fileID: 0}
+    - fieldName: procCoefficient
+      fieldValue:
+        stringValue: 0.75
+        objectValue: {fileID: 0}
+    - fieldName: baseDuration
+      fieldValue:
+        stringValue: 0.1
+        objectValue: {fileID: 0}
+    - fieldName: force
+      fieldValue:
+        stringValue: 100
+        objectValue: {fileID: 0}
+    - fieldName: recoil
+      fieldValue:
+        stringValue: 1.5
+        objectValue: {fileID: 0}
+    - fieldName: range
+      fieldValue:
+        stringValue: 256
+        objectValue: {fileID: 0}
+    - fieldName: tracerEffectPrefab
+      fieldValue:
+        stringValue: 
+        objectValue: {fileID: 0}

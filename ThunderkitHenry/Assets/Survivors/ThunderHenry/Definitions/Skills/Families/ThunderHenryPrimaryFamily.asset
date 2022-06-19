@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ThunderHenryPrimaryFamily
   m_EditorClassIdentifier: 
   variants:
-  - skillDef: {fileID: 11400000, guid: d02713e6756f42941badf673bf53d45f, type: 2}
+  - skillDef: {fileID: 11400000, guid: 85a04b9ac81a7804a9fa48f475dd07cb, type: 2}
     unlockableName: 
     unlockableDef: {fileID: 0}
   defaultVariantIndex: 0

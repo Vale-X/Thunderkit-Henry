@@ -1109,6 +1109,7 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1120,6 +1121,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1989,6 +1991,7 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2000,6 +2003,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2262,7 +2266,6 @@ MonoBehaviour:
   skins:
   - {fileID: 11400000, guid: a10181e4d63a83345ab2b06cd5521fb3, type: 2}
   - {fileID: 11400000, guid: f51a27720bb3b21488f0e032142780bc, type: 2}
-  characterModel: {fileID: 0}
 --- !u!114 &5084589978243300899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2283,43 +2286,18 @@ MonoBehaviour:
     defaultMaterial: {fileID: 2100000, guid: 14d6d121af8aca345b797120c5f6331b, type: 2}
     defaultShadowCastingMode: 0
     ignoreOverlays: 0
+    hideOnDeath: 0
   - renderer: {fileID: 3855813849063242401}
     defaultMaterial: {fileID: 2100000, guid: 14d6d121af8aca345b797120c5f6331b, type: 2}
     defaultShadowCastingMode: 0
     ignoreOverlays: 0
+    hideOnDeath: 0
   - renderer: {fileID: 6569972001470983123}
     defaultMaterial: {fileID: 2100000, guid: 14d6d121af8aca345b797120c5f6331b, type: 2}
     defaultShadowCastingMode: 0
     ignoreOverlays: 0
+    hideOnDeath: 0
   baseLightInfos: []
-  childLocator: {fileID: 0}
-  goldAffixEffect: {fileID: 0}
-  coreTransform: {fileID: 0}
-  _visibility: 0
-  _isGhost: 0
-  _isDoppelganger: 0
-  _isEcho: 0
-  materialsDirty: 0
-  inventoryEquipmentIndex: 0
-  myEliteIndex: 0
-  fade: 0
-  firstPersonFade: 0
-  mainSkinnedMeshRenderer: {fileID: 0}
-  particleMaterialOverride: {fileID: 0}
-  poisonAffixEffect: {fileID: 0}
-  hauntedAffixEffect: {fileID: 0}
-  affixHauntedCloakLockoutDuration: 0
-  currentEquipmentDisplayIndex: 0
-  enabledItemDisplays:
-    array: 
-  limbFlagSet:
-    flagCounts: 
-    flags: 0
-  currentOverlays: []
-  activeOverlayCount: 0
-  wasPreviouslyClayGooed: 0
-  wasPreviouslyHaunted: 0
-  shaderEliteRampIndex: 0
 --- !u!114 &9084677903791321261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2397,14 +2375,6 @@ MonoBehaviour:
   m_DistantDisable: 1
   m_ReferenceObject: {fileID: 0}
   m_DistanceToObject: 60
-  m_LocalGravity: {x: 0, y: 0, z: 0}
-  m_ObjectMove: {x: 0, y: 0, z: 0}
-  m_ObjectPrevPosition: {x: 0, y: 0, z: 0}
-  m_BoneTotalLength: 0
-  m_ObjectScale: 0
-  m_Time: 0
-  m_Weight: 0
-  m_DistantDisabled: 0
 --- !u!1 &7582485592308054078
 GameObject:
   m_ObjectHideFlags: 0
@@ -2543,6 +2513,7 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2554,6 +2525,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0

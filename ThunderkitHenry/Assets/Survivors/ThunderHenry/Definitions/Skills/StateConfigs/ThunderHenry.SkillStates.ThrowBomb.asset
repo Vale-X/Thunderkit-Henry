@@ -22,3 +22,19 @@ MonoBehaviour:
         stringValue: 
         objectValue: {fileID: 5108796886903473902, guid: 201f3ee149acf3b468badd2d682370cb,
           type: 3}
+    - fieldName: damageCoefficient
+      fieldValue:
+        stringValue: 16
+        objectValue: {fileID: 0}
+    - fieldName: procCoefficient
+      fieldValue:
+        stringValue: 1
+        objectValue: {fileID: 0}
+    - fieldName: baseDuration
+      fieldValue:
+        stringValue: 0.65
+        objectValue: {fileID: 0}
+    - fieldName: throwForce
+      fieldValue:
+        stringValue: 80
+        objectValue: {fileID: 0}

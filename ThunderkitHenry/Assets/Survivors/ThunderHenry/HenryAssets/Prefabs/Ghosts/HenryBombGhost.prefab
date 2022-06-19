@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6254900371561122587}
   - component: {fileID: 114831257985246918}
-  - component: {fileID: 114305697980288924}
+  - component: {fileID: 3455652108554622723}
   m_Layer: 0
   m_Name: HenryBombGhost
   m_TagString: Untagged
@@ -42,7 +42,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6254900371561122584}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Script: {fileID: 11500000, guid: f8258ea15b8f74c4889ce485d21cbbb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_SceneId:
@@ -66,7 +66,7 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
---- !u!114 &114305697980288924
+--- !u!114 &3455652108554622723
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -75,11 +75,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6254900371561122584}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 678291247, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
+  m_Script: {fileID: 678291247, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transform: {fileID: 0}
-  migration: 1
+  inheritScaleFromProjectile: 0
 --- !u!1 &6254900373491945888
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,9 +89,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6254900373492174208}
   - component: {fileID: 6254900373499372132}
-  - component: {fileID: 5145020747322437048}
+  - component: {fileID: 1259177161110370024}
   - component: {fileID: 7763780903449193909}
-  - component: {fileID: 2562201327518948912}
+  - component: {fileID: 7904492141547562307}
   m_Layer: 0
   m_Name: Bomb
   m_TagString: Untagged
@@ -135,7 +134,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5145020747322437048
+--- !u!114 &1259177161110370024
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,16 +143,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 6254900373491945888}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -960361785, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
+  m_Script: {fileID: -960361785, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Root: {fileID: 6254900373492174210}
-  m_UpdateRate: 40
+  m_Root: {fileID: 6254900373492174214}
+  m_UpdateRate: 60
   m_UpdateMode: 0
   m_Damping: 0.1
   m_DampingDistrib:
     serializedVersion: 2
-    m_Curve: []
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -195,14 +212,6 @@ MonoBehaviour:
   m_DistantDisable: 0
   m_ReferenceObject: {fileID: 0}
   m_DistanceToObject: 20
-  m_LocalGravity: {x: 0, y: 0, z: 0}
-  m_ObjectMove: {x: 0, y: 0, z: 0}
-  m_ObjectPrevPosition: {x: 0, y: 0, z: 0}
-  m_BoneTotalLength: 0
-  m_ObjectScale: 0
-  m_Time: 0
-  m_Weight: 0
-  m_DistantDisabled: 0
 --- !u!114 &7763780903449193909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,7 +230,7 @@ MonoBehaviour:
   _rotateAroundAxis: 0
   _relativeTo: 1
   _reverse: 0
---- !u!114 &2562201327518948912
+--- !u!114 &7904492141547562307
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -230,7 +239,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6254900373491945888}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 488236779, guid: 06dd3d5416bf43ea368cc39ff96e6d5a, type: 3}
+  m_Script: {fileID: 488236779, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   useOverallCurveOnly: 1
@@ -276,7 +285,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  timeMax: 0.1
+  timeMax: 0.2
 --- !u!1 &6254900373491945890
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,6 +578,7 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -580,6 +590,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0

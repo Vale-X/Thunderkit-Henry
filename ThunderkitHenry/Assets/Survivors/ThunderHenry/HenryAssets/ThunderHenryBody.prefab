@@ -252,8 +252,8 @@ MonoBehaviour:
   isBullseye: 1
   isSniperTarget: 0
   damageModifier: 0
-  hurtBoxGroup: {fileID: 0}
-  indexInGroup: -1
+  hurtBoxGroup: {fileID: 8108761937298438120}
+  indexInGroup: 0
 --- !u!1 &720161354780646839
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,6 +377,7 @@ Transform:
   m_LocalScale: {x: 0.9999981, y: 1.0000017, z: 1.0000005}
   m_Children:
   - {fileID: 5236439281082440071}
+  - {fileID: 7981539439198284282}
   m_Father: {fileID: 7544020591566508596}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 19.2983, y: -175.73445, z: 16.528622}
@@ -725,6 +726,7 @@ Transform:
   m_LocalScale: {x: 1.0000014, y: 1.0000013, z: 1.0000004}
   m_Children:
   - {fileID: 8166800669178009710}
+  - {fileID: 7430446021132976426}
   m_Father: {fileID: 3954049445923219705}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 37.131954, y: 165.51944, z: -37.803463}
@@ -1609,8 +1611,8 @@ MonoBehaviour:
   isBullseye: 0
   isSniperTarget: 1
   damageModifier: 0
-  hurtBoxGroup: {fileID: 0}
-  indexInGroup: -1
+  hurtBoxGroup: {fileID: 8108761937298438120}
+  indexInGroup: 1
 --- !u!1 &4929426178760357364
 GameObject:
   m_ObjectHideFlags: 0
@@ -2348,11 +2350,11 @@ MonoBehaviour:
   utility: {fileID: 5798053586363276620}
   special: {fileID: 1164185605384601705}
   passiveSkill:
-    enabled: 0
-    skillNameToken: 
-    skillDescriptionToken: 
+    enabled: 1
+    skillNameToken: ROBVALE_THUNDERHENRY_BODY_PASSIVE_NAME
+    skillDescriptionToken: ROBVALE_THUNDERHENRY_BODY_PASSIVE_DESCRIPTION
     keywordToken: 
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 300fd0d0f04eba745be25e7923cc76d2, type: 3}
 --- !u!114 &1924159537892393820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4015,9 +4017,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hurtBoxes:
-  - {fileID: 0}
-  mainHurtBox: {fileID: 0}
-  bullseyeCount: 0
+  - {fileID: 7146203910178400780}
+  - {fileID: 1947643148124484440}
+  mainHurtBox: {fileID: 7146203910178400780}
+  bullseyeCount: 1
 --- !u!114 &1858679710920426314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4032,7 +4035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   groupName: Sword
   hitBoxes:
-  - {fileID: 0}
+  - {fileID: 5807130693924165434}
 --- !u!114 &1653352859212111922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4264,3 +4267,153 @@ Transform:
   m_Father: {fileID: 6511173098591291393}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &5028406079084440836
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7354244628696036918}
+    m_Modifications:
+    - target: {fileID: 3101963623418889470, guid: 57e1831d24e467048829be82c825e6f3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101963623418889470, guid: 57e1831d24e467048829be82c825e6f3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101963623418889470, guid: 57e1831d24e467048829be82c825e6f3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101963623418889470, guid: 57e1831d24e467048829be82c825e6f3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101963623418889470, guid: 57e1831d24e467048829be82c825e6f3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101963623418889470, guid: 57e1831d24e467048829be82c825e6f3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101963623418889470, guid: 57e1831d24e467048829be82c825e6f3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101963623418889470, guid: 57e1831d24e467048829be82c825e6f3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101963623418889470, guid: 57e1831d24e467048829be82c825e6f3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101963623418889470, guid: 57e1831d24e467048829be82c825e6f3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101963623418889470, guid: 57e1831d24e467048829be82c825e6f3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622149649308000440, guid: 57e1831d24e467048829be82c825e6f3,
+        type: 3}
+      propertyPath: m_Name
+      value: HenryThunderFeet
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 57e1831d24e467048829be82c825e6f3, type: 3}
+--- !u!4 &7981539439198284282 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3101963623418889470, guid: 57e1831d24e467048829be82c825e6f3,
+    type: 3}
+  m_PrefabInstance: {fileID: 5028406079084440836}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5481545069306152404
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8180780971825707608}
+    m_Modifications:
+    - target: {fileID: 3101963623418889470, guid: 57e1831d24e467048829be82c825e6f3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101963623418889470, guid: 57e1831d24e467048829be82c825e6f3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101963623418889470, guid: 57e1831d24e467048829be82c825e6f3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101963623418889470, guid: 57e1831d24e467048829be82c825e6f3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101963623418889470, guid: 57e1831d24e467048829be82c825e6f3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101963623418889470, guid: 57e1831d24e467048829be82c825e6f3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101963623418889470, guid: 57e1831d24e467048829be82c825e6f3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101963623418889470, guid: 57e1831d24e467048829be82c825e6f3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101963623418889470, guid: 57e1831d24e467048829be82c825e6f3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101963623418889470, guid: 57e1831d24e467048829be82c825e6f3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101963623418889470, guid: 57e1831d24e467048829be82c825e6f3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622149649308000440, guid: 57e1831d24e467048829be82c825e6f3,
+        type: 3}
+      propertyPath: m_Name
+      value: HenryThunderFeet
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 57e1831d24e467048829be82c825e6f3, type: 3}
+--- !u!4 &7430446021132976426 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3101963623418889470, guid: 57e1831d24e467048829be82c825e6f3,
+    type: 3}
+  m_PrefabInstance: {fileID: 5481545069306152404}
+  m_PrefabAsset: {fileID: 0}

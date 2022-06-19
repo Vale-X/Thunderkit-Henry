@@ -12,7 +12,7 @@ namespace ThunderHenry.SkillStates
         public static float force = 800f;
         public static float recoil = 3f;
         public static float range = 256f;
-        public static GameObject tracerEffectPrefab = Resources.Load<GameObject>("Prefabs/Effects/Tracers/TracerGoldGat");
+        public static GameObject tracerEffectPrefab = null;
 
         private float duration;
         private float fireTime;
@@ -22,6 +22,7 @@ namespace ThunderHenry.SkillStates
         public override void OnEnter()
         {
             base.OnEnter();
+            tracerEffectPrefab = Resources.Load<GameObject>("Prefabs/Effects/Tracers/TracerGoldGat");
             this.duration = Shoot.baseDuration / this.attackSpeedStat;
             this.fireTime = 0.2f * this.duration;
             base.characterBody.SetAimTimer(2f);

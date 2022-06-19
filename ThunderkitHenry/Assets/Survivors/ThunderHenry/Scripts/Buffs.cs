@@ -10,6 +10,7 @@ namespace ThunderHenry.Modules
 
         //Buffs
         internal static BuffDef armorBuff;
+        internal static BuffDef speedBuff;
 
         //Debuffs
 
@@ -25,6 +26,7 @@ namespace ThunderHenry.Modules
         private static void CollectBuffs()
         {
             armorBuff = GetBuff("ThunderHenryArmorBuff");
+            speedBuff = GetBuff("ThunderHenrySpeedBuff");
         }
 
         internal static BuffDef GetBuff(string buffName)
@@ -41,9 +43,14 @@ namespace ThunderHenry.Modules
 
         internal static void HandleBuffs(CharacterBody body)
         {
-            if (body.HasBuff(Modules.Buffs.armorBuff.buffIndex))
+            if (body.HasBuff(armorBuff.buffIndex))
             {
-                body.armor += 300f;
+                body.armor += StaticValues.armorBuffValue;
+            }
+
+            if (body.HasBuff(speedBuff.buffIndex))
+            {
+                body.moveSpeed *= 1 + (StaticValues.speedBuffCoefficient * (body.GetBuffCount(speedBuff.buffIndex)));
             }
         }
 

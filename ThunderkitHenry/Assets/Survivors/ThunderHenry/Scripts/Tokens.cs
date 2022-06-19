@@ -37,8 +37,8 @@ namespace ThunderHenry.Modules
             #endregion
 
             #region Passive
-            LanguageAPI.Add(prefix + "PASSIVE_NAME", "Thunder Henry passive");
-            LanguageAPI.Add(prefix + "PASSIVE_DESCRIPTION", "Sample text.");
+            LanguageAPI.Add(prefix + "PASSIVE_NAME", "Thunder");
+            LanguageAPI.Add(prefix + "PASSIVE_DESCRIPTION", "Gain a <style=cIsUtility>stacking bonus to movement speed</style> on kill.");
             #endregion
 
             #region Primary
